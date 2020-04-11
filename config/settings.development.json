@@ -1,13 +1,216 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme"
+    }
   ],
-
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "name": "Basket",
+      "quantity": 3,
+      "owner": "john@foo.com",
+      "condition": "excellent"
+    },
+    {
+      "name": "Bicycle",
+      "quantity": 2,
+      "owner": "john@foo.com",
+      "condition": "poor"
+    },
+    {
+      "name": "Banana",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "good"
+    },
+    {
+      "name": "Boogie Board",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "excellent"
+    }
+  ],
+  "defaultFoodTrucks": [
+    {
+      "name": "Poke"
+    },
+    {
+      "name": "Shave Ice"
+    }
+  ],
+  "defaultRestaurant": [
+    {
+      "name": "Sistahs"
+    },
+    {
+      "name": "Tacos"
+    }
+  ],
+  "defaultHours": [
+    {
+      "restaurantName": "Sistahs",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Tacos",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Poke",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Shave Ice",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    }
+  ],
+  "defaultLocation": [
+    {
+      "restaurantName": "Sistahs",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Campus Centre",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Tacos",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Campus Centre",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Poke",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Campus Centre",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Shave Ice",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Campus Centre",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    }
+  ],
+  "defaultMenuItem": [
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Test11",
+      "price": "11"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Test12",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Tacos",
+      "itemName": "Test21",
+      "price": "21"
+    },
+    {
+      "restaurantName": "Tacos",
+      "itemName": "Test22",
+      "price": "22"
+    },
+    {
+      "restaurantName": "Poke",
+      "itemName": "Test31",
+      "price": "31"
+    },
+    {
+      "restaurantName": "Poke",
+      "itemName": "Test32",
+      "price": "32"
+    },
+    {
+      "restaurantName": "Shave Ice",
+      "itemName": "Test41",
+      "price": "41"
+    },
+    {
+      "restaurantName": "Shave Ice",
+      "itemName": "Test42",
+      "price": "42"
+    }
+  ],
+  "defaultReview": [
+    {
+      "restaurantName": "Sistahs",
+      "rating": "5",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigstockphoto.com%2F&psig=AOvVaw1a-xsLFvFITvGxASkOBCA6&ust=1586675542125000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODY8pHp3-gCFQAAAAAdAAAAABAD"
+    },
+    {
+      "restaurantName": "Tacos",
+      "rating": "5",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigstockphoto.com%2F&psig=AOvVaw1a-xsLFvFITvGxASkOBCA6&ust=1586675542125000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODY8pHp3-gCFQAAAAAdAAAAABAD"
+    },
+    {
+      "restaurantName": "Poke",
+      "rating": "5",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigstockphoto.com%2F&psig=AOvVaw1a-xsLFvFITvGxASkOBCA6&ust=1586675542125000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODY8pHp3-gCFQAAAAAdAAAAABAD"
+    },
+    {
+      "restaurantName": "Shave Ice",
+      "rating": "5",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigstockphoto.com%2F&psig=AOvVaw1a-xsLFvFITvGxASkOBCA6&ust=1586675542125000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODY8pHp3-gCFQAAAAAdAAAAABAD"
+    }
   ]
+
 }
