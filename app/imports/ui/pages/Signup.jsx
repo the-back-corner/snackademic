@@ -11,7 +11,7 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    this.state = { username: '', email: '', password: '', error: '', redirectToReferer: false };
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -33,7 +33,7 @@ class Signup extends React.Component {
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
-    const { value } = this.state;
+    /* const { value } = this.state; */
     const { from } = this.props.location.state || { from: { pathname: '/add' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
@@ -48,12 +48,13 @@ class Signup extends React.Component {
             </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
+                {/*
                 <Form.Input
                     label="First Name"
                     icon="user circle"
                     iconPosition="left"
                     name="firstName"
-                    type="name"
+                    type="text"
                     placeholder="First Name"
                     onChange={this.handleChange}
                 />
@@ -62,7 +63,7 @@ class Signup extends React.Component {
                     icon="user circle outline"
                     iconPosition="left"
                     name="lastName"
-                    type="name"
+                    type="text"
                     placeholder="Last Name"
                     onChange={this.handleChange}
                 />
@@ -71,8 +72,18 @@ class Signup extends React.Component {
                     icon="truck"
                     iconPosition="left"
                     name="vendor"
-                    type="vendor"
+                    type="text"
                     placeholder="Please enter your restaurant or food truck name"
+                    onChange={this.handleChange}
+                />
+                */}
+                <Form.Input
+                    label="Username"
+                    icon="user circle"
+                    iconPosition="left"
+                    name="username"
+                    type="text"
+                    placeholder="Enter a username"
                     onChange={this.handleChange}
                 />
                 <Form.Input
@@ -93,6 +104,7 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
+                {/*
                 <Form.Group inline>
                   <label>Are you a Student or Vendor?</label>
                   <Form.Radio
@@ -109,6 +121,7 @@ class Signup extends React.Component {
                   />
                 </Form.Group>
                 <Form.Button color="teal" content="Submit"/>
+                */}
               </Segment>
             </Form>
             <Message>
