@@ -33,6 +33,7 @@ class Signup extends React.Component {
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
+    const { value } = this.state;
     const { from } = this.props.location.state || { from: { pathname: '/add' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
@@ -43,13 +44,40 @@ class Signup extends React.Component {
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Header as="h2" textAlign="center">
-              Register your account
+              Sign Up For Your Account Here!
             </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Input
+                    label="First Name"
+                    icon="user circle"
+                    iconPosition="left"
+                    name="firstName"
+                    type="name"
+                    placeholder="First Name"
+                    onChange={this.handleChange}
+                />
+                <Form.Input
+                    label="Last Name"
+                    icon="user circle outline"
+                    iconPosition="left"
+                    name="lastName"
+                    type="name"
+                    placeholder="Last Name"
+                    onChange={this.handleChange}
+                />
+                <Form.Input
+                    label="Business Name"
+                    icon="truck"
+                    iconPosition="left"
+                    name="vendor"
+                    type="vendor"
+                    placeholder="Please enter your restaurant or food truck name"
+                    onChange={this.handleChange}
+                />
+                <Form.Input
                   label="Email"
-                  icon="user"
+                  icon="envelope"
                   iconPosition="left"
                   name="email"
                   type="email"
@@ -65,7 +93,22 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Group inline>
+                  <label>Are you a Student or Vendor?</label>
+                  <Form.Radio
+                      label='Student'
+                      value='stuVal'
+                      checked={value === 'stuVal'}
+                      onChange={this.handleChange}
+                  />
+                  <Form.Radio
+                      label='Vendor'
+                      value='venVal'
+                      checked={value === 'venVal'}
+                      onChange={this.handleChange}
+                  />
+                </Form.Group>
+                <Form.Button color="teal" content="Submit"/>
               </Segment>
             </Form>
             <Message>
