@@ -8,7 +8,7 @@ class RestaurantLocationItem extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.foodTruck.name}</Table.Cell>
+          <Table.Cell>{this.props.restaurant.name}</Table.Cell>
           <Table.Cell> test
           </Table.Cell>
         </Table.Row>
@@ -18,7 +18,7 @@ class RestaurantLocationItem extends React.Component {
 
 /** Require a document to be passed to this component. */
 RestaurantLocationItem.propTypes = {
-  foodTruck: PropTypes.object.isRequired,
+  restaurant: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

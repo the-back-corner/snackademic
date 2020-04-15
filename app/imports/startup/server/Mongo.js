@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
-import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTruckCollection';
+import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { HoursCollection } from '../../api/hours/HoursCollection';
 import { LocationCollection } from '../../api/location/LocationCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';

@@ -3,11 +3,8 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Stuffs } from '../../api/stuff/Stuff';
-import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTruckCollection';
+import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
-import { LocationCollection } from '../../api/location/LocationCollection';
-import StuffItem from '../components/StuffItem';
 import RestaurantLocationItem from '../components/RestaurantLocationItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -31,7 +28,11 @@ class Map extends React.Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.foodTrucksCollection.map((foodTruck) => <RestaurantLocationItem key={foodTruck._id} foodTruck={foodTruck} />)}
+              {this.props.foodTrucksCollection.map((foodTruck) => <RestaurantLocationItem
+                  key={foodTruck._id} restaurant={foodTruck} />)}
+              {this.props.restaurantCollection.map((restaurant) => <RestaurantLocationItem
+                  key={restaurant._id} restaurant={restaurant} />)}
+
             </Table.Body>
           </Table>
         </Container>
@@ -42,6 +43,7 @@ class Map extends React.Component {
 /** Require an array of Stuff documents in the props. */
 Map.propTypes = {
   foodTrucksCollection: PropTypes.array.isRequired,
+  restaurantCollection: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -49,8 +51,10 @@ Map.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('FoodTrucksCollection');
+  const subscription1 = Meteor.subscribe('RestaurantCollection');
   return {
     foodTrucksCollection: FoodTrucksCollection.find({}).fetch(),
-    ready: subscription.ready(),
+    restaurantCollection: RestaurantCollection.find({}).fetch(),
+    ready: subscription.ready() && subscription1.ready(),
   };
 })(Map);
