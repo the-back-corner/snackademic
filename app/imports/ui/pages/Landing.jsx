@@ -1,22 +1,24 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Image, Header } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
     return (
-        <Grid verticalAlign='middle' textAlign='center' container>
+        <div className="landingPage">
+            <Grid verticalAlign='middle' textAlign='center' container>
 
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/meteor-logo.png"/>
-          </Grid.Column>
+              <Grid.Column className="leftGrid" textAlign='left' width={8}>
+                  <Header className="firstHeader" as='h1'>SNACKADEMIC</Header>
+                  <Header className="secondHeader" as='h2'>A SITE TO SATIATE</Header>
+                  <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header>
+              </Grid.Column>
 
-          <Grid.Column width={8}>
-            <h1>Welcome to this template</h1>
-            <p>Now get to work and modify this app!</p>
-          </Grid.Column>
+              <Grid.Column width={8}>
+              </Grid.Column>
 
-        </Grid>
+            </Grid>
+        </div>
     );
   }
 }
