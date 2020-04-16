@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
+import {LocationCollection } from '../../api/location/LocationCollection';
 import RestaurantLocationItem from '../components/RestaurantLocationItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
