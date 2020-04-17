@@ -6,12 +6,15 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
+import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
     const restaurantCollection = RestaurantCollection.find().fetch();
-    restaurantCollection.map((restaurant) => console.log(restaurant.name));
+    const foodTrucksCollection = FoodTrucksCollection.find().fetch();
+    // restaurantCollection.map((restaurant) => console.log(restaurant.name));
+    // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
     const menuStyle = { marginBottom: '10px' };
     return (
       <Menu color="blue" style={menuStyle} attached="top" borderless inverted>
@@ -21,16 +24,20 @@ class NavBar extends React.Component {
         <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/map">
           <Header inverted as='h3'>LOCATIONS</Header>
         </Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h3'>FOOD TRUCKS</Header>
+        <Menu.Item>
+          <Dropdown text="FOODTRUCKS" as="h3">
+            <Dropdown.Menu>
+              { foodTrucksCollection.map((foodTruck) => (
+                  <Dropdown.Item key={foodTruck._id} text={foodTruck.name}/>))
+              }
+            </Dropdown.Menu>
+          </Dropdown>
         </Menu.Item>
         <Menu.Item>
         <Dropdown text="RESTAURANTS" as="h3">
           <Dropdown.Menu>
-            { restaurantCollection.map((restaurant) => {
-              return (
-                  <Dropdown.Item key={restaurant._id} text={restaurant.name}/>);
-              })
+            { restaurantCollection.map((restaurant) => (
+                  <Dropdown.Item key={restaurant._id} text={restaurant.name}/>))
             }
           </Dropdown.Menu>
         </Dropdown>
@@ -77,9 +84,10 @@ NavBar.propTypes = {
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 const subscription = Meteor.subscribe('RestaurantCollection');
+const subscription1 = Meteor.subscribe('FoodTrucksCollection');
 const NavBarContainer = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
-  ready: subscription.ready(),
+  ready: subscription.ready() && subscription1.ready(),
 }))(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
