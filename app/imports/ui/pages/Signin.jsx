@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Image } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -43,20 +43,20 @@ export default class Signin extends React.Component {
     // Otherwise return the Login form.
     return (
       <Container>
+        <Header as="h2" textAlign="center">
+          Log In to Snackademic
+        </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Login to your account
-            </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Input
-                  label="Email"
+                  label="Username"
                   icon="user"
                   iconPosition="left"
                   name="email"
                   type="email"
-                  placeholder="E-mail address"
+                  placeholder="Enter your email address"
                   onChange={this.handleChange}
                 />
                 <Form.Input
@@ -64,26 +64,33 @@ export default class Signin extends React.Component {
                   icon="lock"
                   iconPosition="left"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Enter your password"
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button content="Log In"/>
               </Segment>
             </Form>
-            <Message>
-              <Link to="/signup">Click here to Register</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
-                error
-                header="Login was not successful"
-                content={this.state.error}
-              />
-            )}
+
           </Grid.Column>
+          <Grid.Column>
+            <Image src='/images/Snackademic_Logo.png' size= 'large' verticalAlign="middle"/>
+          </Grid.Column>
+        </Grid>
+        <Grid textAlign="center" verticalAlign="top" centered columns={2}>
+          <Message>
+            New to Snackademic?
+            <Link to="/signup"> Click here to Register a New Account</Link>
+          </Message>
+          {this.state.error === '' ? (
+              ''
+          ) : (
+              <Message
+                  error
+                  header="Login was not successful"
+                  content={this.state.error}
+              />
+          )}
         </Grid>
       </Container>
     );
