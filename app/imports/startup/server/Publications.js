@@ -54,10 +54,8 @@ Meteor.publish('MenuItemCollection', function publish() {
 });
 
 Meteor.publish('RestaurantCollection', function publish() {
-  if (this.userId) {
-    return RestaurantCollection.find();
-  }
-  return this.ready();
+  return RestaurantCollection.find();
+  // return this.ready();
 });
 
 Meteor.publish('ReviewsCollection', function publish() {
