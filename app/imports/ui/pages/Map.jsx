@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { LocationCollection } from '../../api/location/LocationCollection';
+import { HoursCollection } from '../../api/hours/HoursCollection';
 import RestaurantLocationItem from '../components/RestaurantLocationItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -26,22 +27,34 @@ class Map extends React.Component {
               <Table.Row>
                 <Table.HeaderCell>Restaurant</Table.HeaderCell>
                 <Table.HeaderCell>Location</Table.HeaderCell>
+                <Table.HeaderCell>Hours</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
               {this.props.foodTrucksCollection.map((foodTruck) => {
                 const restaurantLocation = LocationCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
-                // console.log(restaurantLocation);
+                const restaurantHours = HoursCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
+                console.log(restaurantHours);
                 return (
                 <RestaurantLocationItem
-                  key={foodTruck._id} restaurant={foodTruck} restaurantLocation={restaurantLocation}/>);
+                  key={foodTruck._id}
+                  restaurant={foodTruck}
+                  restaurantLocation={restaurantLocation}
+                  restaurantHours={restaurantHours}
+                />);
                 })
               }
               {this.props.restaurantCollection.map((restaurant) => {
                 const restaurantLocation = LocationCollection.find({ restaurantName: restaurant.name }).fetch()[0];
+                const restaurantHours = HoursCollection.find({ restaurantName: restaurant.name }).fetch()[0];
+                console.log(restaurantHours);
                 return (
                     <RestaurantLocationItem
-                        key={restaurant._id} restaurant={restaurant} restaurantLocation={restaurantLocation}/>);
+                        key={restaurant._id}
+                        restaurant={restaurant}
+                        restaurantLocation={restaurantLocation}
+                        restaurantHours={restaurantHours}
+                    />);
                 })
               }
 
@@ -65,9 +78,10 @@ export default withTracker(() => {
   const subscription = Meteor.subscribe('FoodTrucksCollection');
   const subscription1 = Meteor.subscribe('RestaurantCollection');
   const subscription2 = Meteor.subscribe('LocationCollection');
+  const subscription3 = Meteor.subscribe('HoursCollection');
   return {
     foodTrucksCollection: FoodTrucksCollection.find({}).fetch(),
     restaurantCollection: RestaurantCollection.find({}).fetch(),
-    ready: subscription.ready() && subscription1.ready() && subscription2.ready(),
+    ready: subscription.ready() && subscription1.ready() && subscription2.ready() && subscription3.ready(),
   };
 })(Map);

@@ -13,8 +13,8 @@ class RestaurantLocationItem extends React.Component {
     return (
         <Table.Row>
           <Table.Cell>{this.props.restaurant.name}</Table.Cell>
-          <Table.Cell> {this.props.restaurantLocation[dayOfTheWeek]}
-          </Table.Cell>
+          <Table.Cell> {this.props.restaurantLocation[dayOfTheWeek]}</Table.Cell>
+          <Table.Cell>{this.props.restaurantHours[dayOfTheWeek]}</Table.Cell>
         </Table.Row>
     );
   }
@@ -24,6 +24,7 @@ class RestaurantLocationItem extends React.Component {
 RestaurantLocationItem.propTypes = {
   restaurant: PropTypes.object.isRequired,
   restaurantLocation: PropTypes.object.isRequired,
+  restaurantHours: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */
