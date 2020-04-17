@@ -45,6 +45,13 @@ class Signup extends React.Component {
             <Header as="h2" textAlign="center">
               Register your account
             </Header>
+            <Header as="h4" textAlign="center">
+              If you are a student, sign up for an account.
+            </Header>
+            <Header as="h4" textAlign="center">
+            If you are a vendor, you may sign up for an account and
+            send a request to snackademicandco@gmail.com to have your account upgraded.
+            </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Input
@@ -53,7 +60,7 @@ class Signup extends React.Component {
                   iconPosition="left"
                   name="email"
                   type="email"
-                  placeholder="E-mail address"
+                  placeholder="Enter your email address"
                   onChange={this.handleChange}
                 />
                 <Form.Input
@@ -61,11 +68,11 @@ class Signup extends React.Component {
                   icon="lock"
                   iconPosition="left"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Enter your password"
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button content="Sign Up"/>
               </Segment>
             </Form>
             <Message>
