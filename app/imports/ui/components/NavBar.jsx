@@ -24,6 +24,7 @@ class NavBar extends React.Component {
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Header inverted as='h3'>FOOD TRUCKS</Header>
         </Menu.Item>
+        <Menu.Item>
         <Dropdown text="RESTAURANTS" as="h3">
           <Dropdown.Menu>
             { restaurantCollection.map((restaurant) => {
@@ -33,6 +34,7 @@ class NavBar extends React.Component {
             }
           </Dropdown.Menu>
         </Dropdown>
+        </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Header inverted as='h3'>MENUS</Header>
         </Menu.Item>
