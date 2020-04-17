@@ -5,7 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
-import {LocationCollection } from '../../api/location/LocationCollection';
+import { LocationCollection } from '../../api/location/LocationCollection';
 import RestaurantLocationItem from '../components/RestaurantLocationItem';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -29,10 +29,21 @@ class Map extends React.Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.foodTrucksCollection.map((foodTruck) => <RestaurantLocationItem
-                  key={foodTruck._id} restaurant={foodTruck} />)}
-              {this.props.restaurantCollection.map((restaurant) => <RestaurantLocationItem
-                  key={restaurant._id} restaurant={restaurant} />)}
+              {this.props.foodTrucksCollection.map((foodTruck) => {
+                const restaurantLocation = LocationCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
+                // console.log(restaurantLocation);
+                return (
+                <RestaurantLocationItem
+                  key={foodTruck._id} restaurant={foodTruck} restaurantLocation={restaurantLocation}/>);
+                })
+              }
+              {this.props.restaurantCollection.map((restaurant) => {
+                const restaurantLocation = LocationCollection.find({ restaurantName: restaurant.name }).fetch()[0];
+                return (
+                    <RestaurantLocationItem
+                        key={restaurant._id} restaurant={restaurant} restaurantLocation={restaurantLocation}/>);
+                })
+              }
 
             </Table.Body>
           </Table>
@@ -53,9 +64,10 @@ export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('FoodTrucksCollection');
   const subscription1 = Meteor.subscribe('RestaurantCollection');
+  const subscription2 = Meteor.subscribe('LocationCollection');
   return {
     foodTrucksCollection: FoodTrucksCollection.find({}).fetch(),
     restaurantCollection: RestaurantCollection.find({}).fetch(),
-    ready: subscription.ready() && subscription1.ready(),
+    ready: subscription.ready() && subscription1.ready() && subscription2.ready(),
   };
 })(Map);
