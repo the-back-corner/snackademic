@@ -34,7 +34,7 @@ class Map extends React.Component {
               {this.props.foodTrucksCollection.map((foodTruck) => {
                 const restaurantLocation = LocationCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
                 const restaurantHours = HoursCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
-                console.log(restaurantHours);
+                // console.log(restaurantHours);
                 return (
                 <RestaurantLocationItem
                   key={foodTruck._id}
@@ -47,7 +47,7 @@ class Map extends React.Component {
               {this.props.restaurantCollection.map((restaurant) => {
                 const restaurantLocation = LocationCollection.find({ restaurantName: restaurant.name }).fetch()[0];
                 const restaurantHours = HoursCollection.find({ restaurantName: restaurant.name }).fetch()[0];
-                console.log(restaurantHours);
+                // console.log(restaurantHours);
                 return (
                     <RestaurantLocationItem
                         key={restaurant._id}
