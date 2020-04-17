@@ -80,7 +80,7 @@ export default class Signin extends React.Component {
         <Grid textAlign="center" verticalAlign="top" centered columns={2}>
           <Message>
             New to Snackademic?
-            <Link to="/signup"> Click here to Register a New Account</Link>
+            <Link to="/signup"> Click here to register a new account</Link>
           </Message>
           {this.state.error === '' ? (
               ''
