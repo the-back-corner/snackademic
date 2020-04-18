@@ -29,7 +29,7 @@ class NavBar extends React.Component {
             <Dropdown.Menu>
               { foodTrucksCollection.map((foodTruck) => (
                   <Dropdown.Item key={foodTruck._id} text={foodTruck.name}
-                                 as={NavLink} activeClassName="" exact to="/FoodTruck"/>))
+                                 as={NavLink} activeClassName="" exact to={`/FoodTruck/${foodTruck._id}`} />))
               }
             </Dropdown.Menu>
           </Dropdown>
