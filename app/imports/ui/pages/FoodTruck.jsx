@@ -34,6 +34,8 @@ class FoodTruck extends React.Component {
   }
 }
 
+// export default FoodTruck;
+
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 FoodTruck.propTypes = {
     doc: PropTypes.object,
