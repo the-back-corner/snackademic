@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
+import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 
 
 /** A simple static component to render some text for the landing page. */
@@ -21,7 +22,7 @@ class FoodTruck extends React.Component {
 
               <Grid.Column className="leftGrid" textAlign='left' width={8}>
                   <Header className="firstHeader" as='h1'>{this.props.doc.name}</Header>
-                  <Header className="secondHeader" as='h2'>A SITE TO SATIATE</Header>
+                  <Header className="secondHeader" as='h2'>{this.props.doc2.itemName}</Header>
                   <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header>
               </Grid.Column>
 
@@ -39,6 +40,7 @@ class FoodTruck extends React.Component {
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 FoodTruck.propTypes = {
     doc: PropTypes.object,
+    doc2: PropTypes.object,
     model: PropTypes.object,
     ready: PropTypes.bool.isRequired,
 };
@@ -49,8 +51,11 @@ export default withTracker(({ match }) => {
     const documentId = match.params._id;
     // Get access to Stuff documents.
     const subscription = Meteor.subscribe('FoodTrucksCollection');
+    const subscription2 = Meteor.subscribe('MenuItemCollection');
+    const pokeId = 'FBDtC26a2Y2Nz4mvB';
     return {
         doc: FoodTrucksCollection.findOne(documentId),
-        ready: subscription.ready(),
+        doc2: MenuItemCollection.findOne(pokeId),
+        ready: subscription.ready() && subscription2.ready(),
     };
 })(FoodTruck);
