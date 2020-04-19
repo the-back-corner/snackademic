@@ -16,13 +16,22 @@ class FoodTruck extends React.Component {
   }
 
   renderPage() {
+      console.log(this.props.doc2);
     return (
         <div className="landingPage">
             <Grid verticalAlign='middle' textAlign='center' container>
 
               <Grid.Column className="leftGrid" textAlign='left' width={8}>
                   <Header className="firstHeader" as='h1'>{this.props.doc.name}</Header>
-                  <Header className="secondHeader" as='h2'>{this.props.doc2.itemName}</Header>
+                  { this.props.doc2.map((menuItem) => {
+                      if (menuItem.restaurantName === this.props.doc.name){
+                          return (
+                              <Header key={menuItem._id} className="secondHeader" as='h2'>{menuItem.itemName}</Header>
+                           );
+                      }
+                      return (<Header key={menuItem._id}></Header>);
+                    })
+                  }
                   <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header>
               </Grid.Column>
 
@@ -40,7 +49,7 @@ class FoodTruck extends React.Component {
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 FoodTruck.propTypes = {
     doc: PropTypes.object,
-    doc2: PropTypes.object,
+    doc2: PropTypes.array,
     model: PropTypes.object,
     ready: PropTypes.bool.isRequired,
 };
@@ -52,10 +61,9 @@ export default withTracker(({ match }) => {
     // Get access to Stuff documents.
     const subscription = Meteor.subscribe('FoodTrucksCollection');
     const subscription2 = Meteor.subscribe('MenuItemCollection');
-    const pokeId = 'FBDtC26a2Y2Nz4mvB';
     return {
         doc: FoodTrucksCollection.findOne(documentId),
-        doc2: MenuItemCollection.findOne(pokeId),
+        doc2: MenuItemCollection.find().fetch(),
         ready: subscription.ready() && subscription2.ready(),
     };
 })(FoodTruck);
