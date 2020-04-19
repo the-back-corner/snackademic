@@ -17,63 +17,63 @@ class NavBar extends React.Component {
     // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
     const menuStyle = { marginBottom: '10px' };
     return (
-      <Menu color="blue" pointing secondary borderless inverted className="topmenu">
-        <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header className="headertext"inverted as='h1'>SNACKADEMIC</Header>
-        </Menu.Item>
-        <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/map">
-          <Header className="headertext" inverted as='h3'>LOCATIONS</Header>
-        </Menu.Item>
-        <Menu.Item>
-          <Dropdown text="FOODTRUCKS" as="h3">
-            <Dropdown.Menu>
-              { foodTrucksCollection.map((foodTruck) => (
-                  <Dropdown.Item key={foodTruck._id} text={foodTruck.name}
-                                 as={NavLink} activeClassName="" exact to={`/foodtruck/${foodTruck._id}`} />))
-              }
-            </Dropdown.Menu>
-          </Dropdown>
-        </Menu.Item>
-        <Menu.Item>
-        <Dropdown text="RESTAURANTS" as="h3">
-          <Dropdown.Menu>
-            { restaurantCollection.map((restaurant) => (
-                  <Dropdown.Item key={restaurant._id} text={restaurant.name}/>))
-            }
-          </Dropdown.Menu>
-        </Dropdown>
-        </Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header className="headertext" inverted as='h3'>MENUS</Header>
-        </Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header className="headertext" inverted as='h3'>HOURS</Header>
-        </Menu.Item>
-      { /*  {this.props.currentUser ? (
+        <Menu color="blue" pointing secondary borderless inverted className="topmenu">
+          <Menu.Item as={NavLink} activeClassName="" exact to="/">
+            <Header className="headertext" inverted as='h1'>SNACKADEMIC</Header>
+          </Menu.Item>
+          <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/map">
+            <Header className="headertext" inverted as='h3'>LOCATIONS</Header>
+          </Menu.Item>
+          <Menu.Item>
+            <Dropdown text="FOODTRUCKS" as="h3">
+              <Dropdown.Menu>
+                {foodTrucksCollection.map((foodTruck) => (
+                    <Dropdown.Item key={foodTruck._id} text={foodTruck.name}
+                                   as={NavLink} activeClassName="" exact to={`/foodtruck/${foodTruck._id}`}/>))
+                }
+              </Dropdown.Menu>
+            </Dropdown>
+          </Menu.Item>
+          <Menu.Item>
+            <Dropdown text="RESTAURANTS" as="h3">
+              <Dropdown.Menu>
+                {restaurantCollection.map((restaurant) => (
+                    <Dropdown.Item key={restaurant._id} text={restaurant.name}/>))
+                }
+              </Dropdown.Menu>
+            </Dropdown>
+          </Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/">
+            <Header className="headertext" inverted as='h3'>MENUS</Header>
+          </Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/">
+            <Header className="headertext" inverted as='h3'>HOURS</Header>
+          </Menu.Item>
+          { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
       ) : ''} */}
-        {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
-        ) : ''}
-        <Menu.Item>
-          {this.props.currentUser === '' ? (
-            <Dropdown text="SIGN IN" pointing="top right" icon={'user'}>
-              <Dropdown.Menu>
-                <Dropdown.Item icon="user" text="SIGN IN" as={NavLink} exact to="/signin"/>
-                <Dropdown.Item icon="add user" text="SIGN UP" as={NavLink} exact to="/signup"/>
-              </Dropdown.Menu>
-            </Dropdown>
-          ) : (
-            <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
-              <Dropdown.Menu>
-                <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
-                <Dropdown.Item icon="sign out" text="SIGN OUT" as={NavLink} exact to="/signout"/>
-              </Dropdown.Menu>
-            </Dropdown>
-          )}
-        </Menu.Item>
-      </Menu>
+          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+          ) : ''}
+          <Menu.Item>
+            {this.props.currentUser === '' ? (
+                <Dropdown text="SIGN IN" pointing="top right" icon={'user'}>
+                  <Dropdown.Menu>
+                    <Dropdown.Item icon="user" text="SIGN IN" as={NavLink} exact to="/signin"/>
+                    <Dropdown.Item icon="add user" text="SIGN UP" as={NavLink} exact to="/signup"/>
+                  </Dropdown.Menu>
+                </Dropdown>
+            ) : (
+                <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
+                  <Dropdown.Menu>
+                    <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
+                    <Dropdown.Item icon="sign out" text="SIGN OUT" as={NavLink} exact to="/signout"/>
+                  </Dropdown.Menu>
+                </Dropdown>
+            )}
+          </Menu.Item>
+        </Menu>
     );
   }
 }
