@@ -43,9 +43,7 @@ export default class Signin extends React.Component {
     // Otherwise return the Login form.
     return (
       <Container>
-        <Header as="h2" textAlign="center">
-          Log In to Snackademic
-        </Header>
+        <Header as="h2" textAlign="center"> Sign In to Snackademic </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Form onSubmit={this.submit}>
@@ -68,13 +66,13 @@ export default class Signin extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Log In"/>
+                <Form.Button content="Sign In"/>
               </Segment>
             </Form>
 
           </Grid.Column>
           <Grid.Column>
-            <Image src='/images/Snackademic_Logo.png' size= 'large' verticalAlign="middle"/>
+            <Image src='/images/Snackademic_Logo.png' size= 'large' centered/>
           </Grid.Column>
         </Grid>
         <Grid textAlign="center" verticalAlign="top" centered columns={2}>
