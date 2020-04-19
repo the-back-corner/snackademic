@@ -74,7 +74,7 @@ export default class Signin extends React.Component {
 
           </Grid.Column>
           <Grid.Column>
-            <Image src='/images/Snackademic_Logo.png' size= 'large' verticalAlign="middle"/>
+            <Image src='/images/Snackademic_Logo.png' size= 'large' centered/>
           </Grid.Column>
         </Grid>
         <Grid textAlign="center" verticalAlign="top" centered columns={2}>
