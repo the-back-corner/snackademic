@@ -17,12 +17,12 @@ class NavBar extends React.Component {
     // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
     const menuStyle = { marginBottom: '10px' };
     return (
-      <Menu color="blue" style={menuStyle} attached="top" borderless inverted>
+      <Menu color="blue" pointing secondary borderless inverted className="topmenu">
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h1'>SNACKADEMIC</Header>
+          <Header className="headertext"inverted as='h1'>SNACKADEMIC</Header>
         </Menu.Item>
         <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/map">
-          <Header inverted as='h3'>LOCATIONS</Header>
+          <Header className="headertext" inverted as='h3'>LOCATIONS</Header>
         </Menu.Item>
         <Menu.Item>
           <Dropdown text="FOODTRUCKS" as="h3">
@@ -43,10 +43,10 @@ class NavBar extends React.Component {
         </Dropdown>
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h3'>MENUS</Header>
+          <Header className="headertext" inverted as='h3'>MENUS</Header>
         </Menu.Item>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h3'>HOURS</Header>
+          <Header className="headertext" inverted as='h3'>HOURS</Header>
         </Menu.Item>
       { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
@@ -57,7 +57,7 @@ class NavBar extends React.Component {
         ) : ''}
         <Menu.Item>
           {this.props.currentUser === '' ? (
-            <Dropdown text="LOGIN" pointing="top right" icon={'user'}>
+            <Dropdown text="LOGIN" pointing="top right" icon={'user'} as="h3">
               <Dropdown.Menu>
                 <Dropdown.Item icon="user" text="LOGIN" as={NavLink} exact to="/signin"/>
                 <Dropdown.Item icon="add user" text="SIGNUP" as={NavLink} exact to="/signup"/>

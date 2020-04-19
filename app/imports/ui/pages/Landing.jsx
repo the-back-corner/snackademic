@@ -7,7 +7,6 @@ class Landing extends React.Component {
     return (
         <div className="landingPage">
             <Grid verticalAlign='middle' textAlign='center' container>
-
               <Grid.Column className="leftGrid" textAlign='left' width={8}>
                   <Header className="firstHeader" as='h1'>SNACKADEMIC</Header>
                   <Header className="secondHeader" as='h2'>A SITE TO SATIATE</Header>

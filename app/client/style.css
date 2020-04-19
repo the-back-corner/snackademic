@@ -3,7 +3,6 @@
     background-size: cover;
     height: 500px;
 }
-
 .ui.header.firstHeader{
     color: red;
     text-shadow: -2px 2px 3px gray;
@@ -19,3 +18,14 @@
     background-color: blue;
     height: 300px;
 }
+.headertext{
+  text-decoration: none;
+  overflow: hidden;
+}
+.headertext:hover{
+  text-decoration: underline;
+}
+div.text:hover{
+  text-decoration: underline;
+}
+
