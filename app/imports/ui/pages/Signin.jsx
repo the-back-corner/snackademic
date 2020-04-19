@@ -44,7 +44,7 @@ export default class Signin extends React.Component {
     return (
       <Container>
         <Header as="h2" textAlign="center">
-          Log In to Snackademic
+          Sign In to Snackademic
         </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
@@ -68,7 +68,7 @@ export default class Signin extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Log In"/>
+                <Form.Button content="Sign In"/>
               </Segment>
             </Form>
 
