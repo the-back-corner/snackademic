@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 
 /**
@@ -40,18 +40,16 @@ class Signup extends React.Component {
     }
     return (
       <Container>
+        <Header as="h2" textAlign="center"> Register your account </Header>
+        <Header as="h4" textAlign="center">
+          If you are a student, sign up for an account.
+        </Header>
+        <Header as="h4" textAlign="center">
+          If you are a vendor, you may sign up for an account and
+          send a request to snackademicandco@gmail.com to have your account upgraded.
+        </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Register your account
-            </Header>
-            <Header as="h4" textAlign="center">
-              If you are a student, sign up for an account.
-            </Header>
-            <Header as="h4" textAlign="center">
-            If you are a vendor, you may sign up for an account and
-            send a request to snackademicandco@gmail.com to have your account upgraded.
-            </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Input
@@ -75,19 +73,24 @@ class Signup extends React.Component {
                 <Form.Button content="Sign Up"/>
               </Segment>
             </Form>
-            <Message>
-              Already have an account? Sign in <Link to="/signin">here</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
-                error
-                header="Registration was not successful"
-                content={this.state.error}
-              />
-            )}
           </Grid.Column>
+          <Grid.Column>
+            <Image src='/images/Snackademic_Logo.png' size= 'large' centered/>
+          </Grid.Column>
+        </Grid>
+        <Grid textAlign="center" verticalAlign="top" centered columns={2}>
+          <Message>
+            Already have an account? Sign in <Link to="/signin">here</Link>
+          </Message>
+          {this.state.error === '' ? (
+              ''
+          ) : (
+              <Message
+                  error
+                  header="Registration was not successful"
+                  content={this.state.error}
+              />
+          )}
         </Grid>
       </Container>
     );
