@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
+
+.ui.borderless.topmenu.menu{
+  background-color: #66B9CC;
+  box-shadow: none;
+  border:none;
+  font-size: 20px !important;
+}
+
 .landingPage{
     background: url('images/landingBackground.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -14,6 +22,12 @@
 .ui.header.secondHeader{
     color: white;
     text-shadow: -2px 2px 3px gray;
+}
+
+.ui.header.thirdHeader{
+  color: white;
+  font-family: 'Comfortaa';
+  alignment: center;
 }
 
 .ui.grid.column.leftGrid{

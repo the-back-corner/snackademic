@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Image } from 'semantic-ui-react';
+import { Grid, Header, Image, Button } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -7,11 +7,17 @@ class Landing extends React.Component {
     return (
         <div className="landingPage">
             <Grid verticalAlign='middle' textAlign='center' container>
-              <Grid.Column className="leftGrid" textAlign='left' width={8}>
-                  <Image src="/images/Snackademic_Landing_Logo_V2.png" image size = "large"/>
-                  {/* <Header className="firstHeader" as='h1'>SNACKADEMIC</Header> */}
+              <Image src="/images/Snackademic_Landing_Logo_V2.png" size = "large" verticalAlign='middle'/>
+              <Grid.Column className="leftGrid" textAlign='center' width={8}>
+                   <Header className="thirdHeader" as='h1'>To get started please register <br />
+                     or sign in here:</Header>
                   {/* <Header className="secondHeader" as='h2'>A SITE TO SATIATE</Header> */}
                   {/* <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header> */}
+                <Button.Group size='huge'>
+                  <Button color='yellow'>Register</Button>
+                  <Button.Or />
+                  <Button color='teal'>Sign In</Button>
+                </Button.Group>
               </Grid.Column>
 
               <Grid.Column width={8}>

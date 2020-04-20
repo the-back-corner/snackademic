@@ -15,9 +15,10 @@ class NavBar extends React.Component {
     const foodTrucksCollection = FoodTrucksCollection.find().fetch();
     // restaurantCollection.map((restaurant) => console.log(restaurant.name));
     // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
-    const menuStyle = { marginBottom: '10px' };
+    const menuStyle = { marginBottom: '5px' };
     return (
-        <Menu color="blue" pointing secondary borderless inverted className="topmenu">
+        // <Menu pointing secondary borderless inverted className="topmenu">
+        <Menu inverted borderless className="topmenu">
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h1'>SNACKADEMIC</Header>
           </Menu.Item>
@@ -52,7 +53,7 @@ class NavBar extends React.Component {
           { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
-      ) : ''} */}
+            ) : ''} */ }
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
           ) : ''}
@@ -61,7 +62,7 @@ class NavBar extends React.Component {
                 <Dropdown text="SIGN IN" pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
                     <Dropdown.Item icon="user" text="SIGN IN" as={NavLink} exact to="/signin"/>
-                    <Dropdown.Item icon="add user" text="SIGN UP" as={NavLink} exact to="/signup"/>
+                    <Dropdown.Item icon="add user" text="REGISTER" as={NavLink} exact to="/signup"/>
                   </Dropdown.Menu>
                 </Dropdown>
             ) : (
@@ -74,6 +75,7 @@ class NavBar extends React.Component {
             )}
           </Menu.Item>
         </Menu>
+
     );
   }
 }
