@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 .landingPage{
     background: url('images/landingBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 500px;
+    height: 600px;
 }
 .ui.header.firstHeader{
     color: red;
@@ -27,4 +29,12 @@
 }
 div.text:hover{
   text-decoration: underline;
+}
+
+.footer-background {
+  font-family: 'Comfortaa';
+  background-color: #A8C987;
+  font-size: smaller;
+  color: white;
+  alignment: center;
 }

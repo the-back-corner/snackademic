@@ -3,15 +3,15 @@ import React from 'react';
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const divStyle = { paddingTop: '15px' };
+    const divStyle = { paddingTop: '15px', paddingBottom: '15px' };
     return (
         <footer>
+          <div className="footer-background" >
           <div style={divStyle} className="ui center aligned container">
-            <hr />
-              Department of Information and Computer Sciences <br />
-              University of Hawaii<br />
-              Honolulu, HI 96822 <br />
-            <a href="http://ics-software-engineering.github.io/meteor-application-template-react">Template Home Page</a>
+              Designed by <a href="https://github.com/the-back-corner">The Back Corner</a> <br />
+              Team Members:  Clark Whitehead | David Harris | Jasmine Singleton | Ramit Islam<br />
+              University of Hawaii | Honolulu, HI 96822 <br />
+          </div>
           </div>
         </footer>
     );
