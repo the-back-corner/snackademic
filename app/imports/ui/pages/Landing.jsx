@@ -9,12 +9,12 @@ class Landing extends React.Component {
             <Grid verticalAlign='middle' textAlign='center' container>
               <Image src="/images/Snackademic_Landing_Logo_V2.png" size = "large" verticalAlign='middle'/>
               <Grid.Column className="leftGrid" textAlign='center' width={8}>
-                   <Header className="thirdHeader" as='h1'>To get started please register <br />
+                   <Header className="thirdHeader" as='h1'>To get started, please register <br />
                      or sign in here:</Header>
                   {/* <Header className="secondHeader" as='h2'>A SITE TO SATIATE</Header> */}
                   {/* <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header> */}
-                <Button.Group size='huge'>
-                  <Button color='yellow'>Register</Button>
+                <Button.Group size='huge' font-family='Comfortaa'>
+                  <Button color='yellow' font-family='Comfortaa'>Register</Button>
                   <Button.Or />
                   <Button color='teal'>Sign In</Button>
                 </Button.Group>

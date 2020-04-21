@@ -52,3 +52,11 @@ div.text:hover{
   color: white;
   alignment: center;
 }
+
+.buttons-style{
+  font-family: 'Comfortaa';
+  background-color: #A8C987;
+  font-size: large;
+  color: white;
+  alignment: center;
+}
