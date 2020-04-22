@@ -24,13 +24,7 @@ class NavBar extends React.Component {
             <Header className="headertext" inverted as='h1'>SNACKADEMIC</Header>
           </Menu.Item>
 
-          {/* First right menu tab */}
-          <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/favorites">
-            <Header className="headertext" inverted as='h3'>FAVORITES</Header>
-          </Menu.Item>
-
-
-          <Menu.Item>
+          <Menu.Item position="right" >
             <Dropdown text="FOODTRUCKS" as="h3">
               <Dropdown.Menu>
                 {foodTrucksCollection.map((foodTruck) => (
@@ -58,6 +52,13 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h3'>HOURS</Header>
           </Menu.Item>
+
+
+          {this.props.currentUser ? (
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/favorites" key='favorite'>
+                <Header className="headertext" inverted as='h3'>FAVORITES</Header>
+              </Menu.Item>
+          ) : ''}
           { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
