@@ -10,6 +10,7 @@ import Landing from '../pages/Landing';
 import FavoritesPage from '../pages/FavoritesPage';
 import UserProfilePage from '../pages/UserProfilePage';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
+import AllAccountsPage from '../pages/AllAccountsPage';
 import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
@@ -36,7 +37,7 @@ class App extends React.Component {
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+              <AdminProtectedRoute path="/allaccounts" component={AllAccountsPage}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <ProtectedRoute path="/userprofile" component={UserProfilePage}/>
               <Route component={NotFound}/>

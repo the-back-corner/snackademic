@@ -66,7 +66,9 @@ class NavBar extends React.Component {
 
           {/* ADMIN EXCLUSIVE TABS ON NAV BAR */}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>ADMIN</Menu.Item>
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/allaccounts" key='allaccounts'>
+                <Header className="headertext" inverted as='h3'>ALL ACCOUNTS</Header>
+              </Menu.Item>
           ) : ''}
 
 
