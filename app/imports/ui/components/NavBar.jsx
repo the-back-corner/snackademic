@@ -19,12 +19,17 @@ class NavBar extends React.Component {
     return (
         // <Menu pointing secondary borderless inverted className="topmenu">
         <Menu inverted borderless className="topmenu">
+
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h1'>SNACKADEMIC</Header>
           </Menu.Item>
-          <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/map">
-            <Header className="headertext" inverted as='h3'>LOCATIONS</Header>
+
+          {/* First right menu tab */}
+          <Menu.Item position="right" as={NavLink} activeClassName="" exact to="/favorites">
+            <Header className="headertext" inverted as='h3'>FAVORITES</Header>
           </Menu.Item>
+
+
           <Menu.Item>
             <Dropdown text="FOODTRUCKS" as="h3">
               <Dropdown.Menu>
@@ -35,6 +40,7 @@ class NavBar extends React.Component {
               </Dropdown.Menu>
             </Dropdown>
           </Menu.Item>
+
           <Menu.Item>
             <Dropdown text="RESTAURANTS" as="h3">
               <Dropdown.Menu>
@@ -44,20 +50,27 @@ class NavBar extends React.Component {
               </Dropdown.Menu>
             </Dropdown>
           </Menu.Item>
+
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h3'>MENUS</Header>
           </Menu.Item>
+
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h3'>HOURS</Header>
           </Menu.Item>
           { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
-            ) : ''} */ }
+            ) : ''} */}
+
+          {/* ADMIN EXCLUSIVE TABS ON NAV BAR */}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>ADMIN</Menu.Item>
           ) : ''}
+
+
           <Menu.Item>
+            {/* If user isnt signed in display "sign in" and "register" in navbar */}
             {this.props.currentUser === '' ? (
                 <Dropdown text="SIGN IN" pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
@@ -65,7 +78,7 @@ class NavBar extends React.Component {
                     <Dropdown.Item icon="add user" text="REGISTER" as={NavLink} exact to="/signup"/>
                   </Dropdown.Menu>
                 </Dropdown>
-            ) : (
+            ) : ( // if there is a user signed in, display "ACCOUNT" and "SIGN OUT" in navbar
                 <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
                     <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
