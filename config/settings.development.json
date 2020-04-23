@@ -39,18 +39,34 @@
   ],
   "defaultFoodTrucks": [
     {
-      "name": "Poke"
+      "name": "Poke",
+      "vendorIcon": "images/vendoricons/ono-icon.png",
+      "typeOfCuisine": "Seafood",
+      "Description": "This is a poke food truck",
+      "takesMeals": 0
     },
     {
-      "name": "Shave Ice"
+      "name": "Shave Ice",
+      "vendorIcon": "images/vendoricons/justicewht-icon.png",
+      "typeOfCuisine": "Desert",
+      "Description": "This is a Shave Ice food truck",
+      "takesMeals": 0
     }
   ],
   "defaultRestaurant": [
     {
-      "name": "Sistahs"
+      "name": "Sistahs",
+      "vendorIcon": "images/vendoricons/thesistah-icon.png",
+      "typeOfCuisine": "Chinese",
+      "Description": "This is a Eastern meets western style food truck",
+      "takesMeals": 0
     },
     {
-      "name": "Tacos"
+      "name": "Tacos",
+      "vendorIcon": "images/vendoricons/hottacos-icon.png",
+      "typeOfCuisine": "Mexican",
+      "Description": "This is a Mexican food truck",
+      "takesMeals": 0
     }
   ],
   "defaultHours": [
