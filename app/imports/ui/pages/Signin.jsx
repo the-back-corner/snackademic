@@ -40,68 +40,82 @@ export default class Signin extends React.Component {
     const { homePage } = this.props.location.state || { homePage: { pathname: '/' } };
     // create a variable to hold the user landing page path
     const { userLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
+    // variable to hold admin landing page path
+    const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
 
-    // if correct authentication, redirect to userLandingPage instead of login screen
+    // variables to determine what role signed in
+    const isLogged = Meteor.userId() !== null;
+    const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
+    // const isUser = Roles.userIsInRole(Meteor.userId(), 'user'); // use this later
+    // const isVendor = Roles.userIsInRole(Meteor.userId(), 'vendor'); // use this later
+
+    // if there are no errors
     if (this.state.redirectToReferer) { // if redirectToReferrer is false
-      return <Redirect to={ userLandingPage }/>;
+      if (isLogged && isAdmin) {
+        return <Redirect to={adminLandingPage}/>;
+      } else {
+        return <Redirect to={userLandingPage}/>;
+      }
     }
 
-    // Otherwise return the Login form.
-    return (
-      <Container>
-        <Header as="h2" textAlign="center"> Sign In to Snackademic </Header>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Form.Input
-                  label="Username"
-                  icon="user"
-                  iconPosition="left"
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email address"
-                  onChange={this.handleChange}
-                />
-                <Form.Input
-                  label="Password"
-                  icon="lock"
-                  iconPosition="left"
-                  name="password"
-                  placeholder="Enter your password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-                <Form.Button content="Sign In"/>
-              </Segment>
-            </Form>
+      // Otherwise return the Login form.
+      return (
+          <Container>
+            <Header as="h2" textAlign="center"> Sign In to Snackademic </Header>
+            <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+              <Grid.Column>
+                <Form onSubmit={this.submit}>
+                  <Segment stacked>
+                    <Form.Input
+                        label="Username"
+                        icon="user"
+                        iconPosition="left"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email address"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        label="Password"
+                        icon="lock"
+                        iconPosition="left"
+                        name="password"
+                        placeholder="Enter your password"
+                        type="password"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Button content="Sign In"/>
+                  </Segment>
+                </Form>
 
-          </Grid.Column>
-          <Grid.Column>
-            <Image src='/images/Snackademic_Logo.png' size= 'large' centered/>
-          </Grid.Column>
-        </Grid>
-        <Grid textAlign="center" verticalAlign="top" centered columns={2}>
-          <Message>
-            New to Snackademic?
-            <Link to="/signup"> Click here to register a new account</Link>
-          </Message>
-          {this.state.error === '' ? (
-              ''
-          ) : (
-              <Message
-                  error
-                  header="Login was not successful"
-                  content={this.state.error}
-              />
-          )}
-        </Grid>
-      </Container>
-    );
+              </Grid.Column>
+              <Grid.Column>
+                <Image src='/images/Snackademic_Logo.png' size='large' centered/>
+              </Grid.Column>
+            </Grid>
+            <Grid textAlign="center" verticalAlign="top" centered columns={2}>
+              <Message>
+                New to Snackademic?
+                <Link to="/signup"> Click here to register a new account</Link>
+              </Message>
+              {this.state.error === '' ? (
+                  ''
+              ) : (
+                  <Message
+                      error
+                      header="Login was not successful"
+                      content={this.state.error}
+                  />
+              )}
+            </Grid>
+          </Container>
+      );
+    }
   }
-}
 
-/** Ensure that the React Router location object is available in case we need to redirect. */
-Signin.propTypes = {
-  location: PropTypes.object,
-};
+  /** Ensure that the React Router location object is available in case we need to redirect. */
+  Signin
+.
+  propTypes = {
+    location: PropTypes.object,
+  };
