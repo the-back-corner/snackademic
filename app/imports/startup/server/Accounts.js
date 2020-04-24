@@ -9,13 +9,17 @@ function createUser(email, password, role) {
   const userID = Accounts.createUser({
     username: email,
     email: email,
+    role: role,
     password: password,
   });
   if (role === 'admin') {
     Roles.addUsersToRoles(userID, 'admin');
   }
-  if (role === 'user') {
-    Roles.addUsersToRoles(userID, 'user');
+  else if (role === 'eater') {
+    Roles.addUsersToRoles(userID, 'eater');
+  }
+  else if (role === 'vendor') {
+    Roles.addUsersToRoles(userID, 'vendor');
   }
 }
 
