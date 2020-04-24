@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import FavoritesPage from '../pages/FavoritesPage';
 import UserProfilePage from '../pages/UserProfilePage';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
+// import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AllAccountsPage from '../pages/AllAccountsPage';
 import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';

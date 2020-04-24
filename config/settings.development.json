@@ -9,6 +9,11 @@
       "email": "john@foo.com",
       "password": "changeme",
       "role": "user"
+    },
+    {
+      "email": "vendor@foo.com",
+      "password": "changeme",
+      "role": "vendor"
     }
   ],
   "defaultData": [
