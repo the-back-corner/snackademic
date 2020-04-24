@@ -11,8 +11,23 @@
 .landingPage{
     background: url('images/landingBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    height: 650px;
 }
+
+.signupPage{
+  background: url('images/avacadobackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 650px;
+}
+
+.signinPage{
+  background: url('images/sushibackground.jpg') no-repeat center center fixed;
+  font-family: 'Comfortaa', sans-serif;
+  background-size: contain;
+  height: 600px;
+}
+
 .ui.header.firstHeader{
     color: red;
     text-shadow: -2px 2px 3px gray;
@@ -26,7 +41,7 @@
 
 .ui.header.thirdHeader{
   color: white;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   alignment: center;
 }
 
@@ -46,7 +61,7 @@ div.text:hover{
 }
 
 .footer-background {
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   background-color: #A8C987;
   font-size: smaller;
   color: white;

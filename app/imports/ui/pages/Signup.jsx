@@ -42,7 +42,7 @@ class Signup extends React.Component {
       return <Redirect to={from}/>;
     }
     return (
-      <Container>
+        <Container>
         <Header as="h2" textAlign="center"> Register your account </Header>
         <Header as="h4" textAlign="center">
           If you are a student, sign up for an account.
@@ -113,7 +113,8 @@ class Signup extends React.Component {
               />
           )}
         </Grid>
-      </Container>
+       </Container>
+
     );
   }
 }

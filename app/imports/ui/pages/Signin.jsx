@@ -63,8 +63,9 @@ export default class Signin extends React.Component {
 
       // Otherwise return the Login form.
       return (
+          <div className="signinPage">
           <Container>
-            <Header as="h2" textAlign="center"> Sign In to Snackademic </Header>
+            <Header as="h1" textAlign="center" inverted fontfamily="Comfortaa"> Sign In to Snackademic </Header>
             <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
               <Grid.Column>
                 <Form onSubmit={this.submit}>
@@ -112,6 +113,7 @@ export default class Signin extends React.Component {
               )}
             </Grid>
           </Container>
+          </div>
       );
     }
   }
