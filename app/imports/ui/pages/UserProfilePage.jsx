@@ -20,8 +20,8 @@ class UserProfilePage extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">MY ACCOUNT</Header>
-          <Header as="h4" textAlign="center"> Idk what to put here.... but this is here if we want it lmao</Header>
-          <Image src='https://i.redd.it/7bmh29ww5kt41.jpg' size= 'large' horizontalAlign="middle"/>
+          <Header as="h4" textAlign="center"> Idk what to put here.... but this is here if we want it </Header>
+          <Image src='https://i.redd.it/7bmh29ww5kt41.jpg' size= 'large'/>
         </Container>
     );
   }

@@ -15,10 +15,10 @@ function createUser(email, password, role) {
   if (role === 'admin') {
     Roles.addUsersToRoles(userID, 'admin');
   }
-  if (role === 'user') {
-    Roles.addUsersToRoles(userID, 'user');
+  else if (role === 'eater') {
+    Roles.addUsersToRoles(userID, 'eater');
   }
-  if (role === 'vendor') {
+  else if (role === 'vendor') {
     Roles.addUsersToRoles(userID, 'vendor');
   }
 }

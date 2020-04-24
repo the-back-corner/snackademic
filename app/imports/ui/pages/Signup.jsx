@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Container, Form, Grid, Header, Image, Message, Segment, Radio } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Roles } from 'meteor/alanning:roles';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -11,7 +12,7 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    this.state = { email: '', password: '', role: '', error: '', redirectToReferer: false };
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -19,23 +20,23 @@ class Signup extends React.Component {
     this.setState({ [name]: value });
   }
 
-  handleRadioChange = (e, { value }) => this.setState({ value })
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password } = this.state;
-    Accounts.createUser({ email, username: email, password }, (err) => {
+    const { email, password, role } = this.state;
+    const userID = Accounts.createUser({ email, username: email, password, role }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
-  }
+    Roles.addUsersToRoles(userID, this.state.role);
+  };
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
+    const { from } = this.props.location.state || { from: { pathname: '/' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;
@@ -57,19 +58,19 @@ class Signup extends React.Component {
                 <Form.Field>
                   <Radio
                       label='Select this if you are a user'
-                      name='radioGroup'
-                      value='user'
-                      checked={this.state.value === 'user'}
-                      onChange={this.handleRadioChange}
+                      name='role'
+                      value='eater'
+                      checked={this.state.role === 'eater'}
+                      onChange={this.handleChange}
                   />
                 </Form.Field>
                 <Form.Field>
                   <Radio
                       label='Select this if you are a vendor'
-                      name='radioGroup'
+                      name='role'
                       value='vendor'
-                      checked={this.state.value === 'vendor'}
-                      onChange={this.handleRadioChange}
+                      checked={this.state.role === 'vendor'}
+                      onChange={this.handleChange}
                   />
                 </Form.Field>
                 <Form.Input
