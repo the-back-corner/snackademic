@@ -3,12 +3,12 @@ import {Grid, Header, Image, Loader} from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
+import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 
 
 /** A simple static component to render some text for the landing page. */
-class FoodTruck extends React.Component {
+class Restaurant extends React.Component {
 
     /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -25,7 +25,7 @@ class FoodTruck extends React.Component {
                   <Image src={this.props.doc.vendorIcon} size = "medium" verticalAlign='middle'/>
                   <Header className="firstHeader" as='h1'>Menu Items</Header>
                   { this.props.doc2.map((menuItem) => {
-                      if (menuItem.restaurantName === this.props.doc.name){
+                      if (menuItem.restaurantName === this.props.doc.name) {
                           return (
                               <Header key={menuItem._id} className="secondHeader" as='h2'>{menuItem.itemName} -
                                   ${menuItem.price}</Header>
@@ -34,7 +34,6 @@ class FoodTruck extends React.Component {
                       return (<Header key={menuItem._id}></Header>);
                     })
                   }
-                  <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header>
               </Grid.Column>
               <Grid.Column className="rightGrid" width={8}>
                   <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
@@ -56,7 +55,7 @@ class FoodTruck extends React.Component {
 // export default FoodTruck;
 
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
-FoodTruck.propTypes = {
+Restaurant.propTypes = {
     doc: PropTypes.object,
     doc2: PropTypes.array,
     model: PropTypes.object,
@@ -68,11 +67,11 @@ export default withTracker(({ match }) => {
     // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
     const documentId = match.params._id;
     // Get access to Stuff documents.
-    const subscription = Meteor.subscribe('FoodTrucksCollection');
+    const subscription = Meteor.subscribe('RestaurantCollection');
     const subscription2 = Meteor.subscribe('MenuItemCollection');
     return {
-        doc: FoodTrucksCollection.findOne(documentId),
+        doc: RestaurantCollection.findOne(documentId),
         doc2: MenuItemCollection.find().fetch(),
         ready: subscription.ready() && subscription2.ready(),
     };
-})(FoodTruck);
+})(Restaurant);

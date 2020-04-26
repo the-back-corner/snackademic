@@ -19,6 +19,7 @@ import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import Map from '../pages/Map';
 import FoodTruck from '../pages/FoodTruck';
+import Restaurant from '../pages/Restaurant';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -32,6 +33,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/foodtruck/:_id" component={FoodTruck}/>
+              <Route path="/restaurant/:_id" component={Restaurant}/>
               <ProtectedRoute path="/favorites" component={FavoritesPage}/>
               <ProtectedRoute path="/map" component={Map}/>
               <ProtectedRoute path="/add" component={AddStuff}/>

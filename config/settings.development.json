@@ -161,23 +161,23 @@
   "defaultMenuItem": [
     {
       "restaurantName": "Sistahs",
-      "itemName": "Test11",
-      "price": "11"
+      "itemName": "Egg Rolls",
+      "price": "11.95"
     },
     {
       "restaurantName": "Sistahs",
-      "itemName": "Test12",
-      "price": "12"
+      "itemName": "Lemon Chicken",
+      "price": "12.99"
     },
     {
       "restaurantName": "Tacos",
-      "itemName": "Test21",
-      "price": "21"
+      "itemName": "Beef Taco Plate",
+      "price": "9.75"
     },
     {
       "restaurantName": "Tacos",
-      "itemName": "Test22",
-      "price": "22"
+      "itemName": "Chicken Enchilladas",
+      "price": "22.95"
     },
     {
       "restaurantName": "Poke",
