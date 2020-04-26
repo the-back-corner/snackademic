@@ -34,6 +34,12 @@
     font-size: 50px;
 }
 
+.ui.header.cuisine{
+    color: white;
+    text-shadow: -4px 4px 6px #66B9CC;
+    font-size: 50px;
+}
+
 .ui.header.secondHeader{
     color: white;
     text-shadow: -2px 2px 3px gray;

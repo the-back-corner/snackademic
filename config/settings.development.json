@@ -45,7 +45,7 @@
   "defaultFoodTrucks": [
     {
       "name": "Poke",
-      "vendorIcon": "images/vendoricons/ono-icon.png",
+      "vendorIcon": "/images/vendoricons/ono-icon.png",
       "typeOfCuisine": "Seafood",
       "Description": "This is a poke food truck",
       "takesMeals": 0
@@ -55,7 +55,7 @@
       "vendorIcon": "images/vendoricons/justicewht-icon.png",
       "typeOfCuisine": "Desert",
       "Description": "This is a Shave Ice food truck",
-      "takesMeals": 0
+      "takesMeals": 1
     }
   ],
   "defaultRestaurant": [
@@ -181,23 +181,23 @@
     },
     {
       "restaurantName": "Poke",
-      "itemName": "Test31",
-      "price": "31"
+      "itemName": "Ginger Salmon",
+      "price": "3.10"
     },
     {
       "restaurantName": "Poke",
-      "itemName": "Test32",
-      "price": "32"
+      "itemName": "Shoyu Poke Bowl",
+      "price": "4.99"
     },
     {
       "restaurantName": "Shave Ice",
-      "itemName": "Test41",
-      "price": "41"
+      "itemName": "Cherry Storm",
+      "price": "2.99"
     },
     {
       "restaurantName": "Shave Ice",
-      "itemName": "Test42",
-      "price": "42"
+      "itemName": "Coca Cola Snow Blast",
+      "price": "4.29"
     }
   ],
   "defaultReview": [

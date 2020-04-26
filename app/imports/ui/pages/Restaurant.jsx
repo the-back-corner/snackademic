@@ -34,6 +34,7 @@ class FoodTruck extends React.Component {
                       return (<Header key={menuItem._id}></Header>);
                     })
                   }
+                  <Header className="secondHeader" as='h2'>YOUR MANOA MUNCHIES</Header>
               </Grid.Column>
               <Grid.Column className="rightGrid" width={8}>
                   <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
