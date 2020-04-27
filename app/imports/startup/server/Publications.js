@@ -26,41 +26,25 @@ Meteor.publish('StuffAdmin', function publish() {
 });
 
 Meteor.publish('FoodTrucksCollection', function publish() {
-  if (this.userId) {
     return FoodTrucksCollection.find();
-  }
-  return this.ready();
 });
 
 Meteor.publish('HoursCollection', function publish() {
-  if (this.userId) {
     return HoursCollection.find();
-  }
-  return this.ready();
 });
 
 Meteor.publish('LocationCollection', function publish() {
-  if (this.userId) {
     return LocationCollection.find();
-  }
-  return this.ready();
 });
 
 Meteor.publish('MenuItemCollection', function publish() {
-  if (this.userId) {
     return MenuItemCollection.find();
-  }
-  return this.ready();
 });
 
 Meteor.publish('RestaurantCollection', function publish() {
   return RestaurantCollection.find();
-  // return this.ready();
 });
 
 Meteor.publish('ReviewsCollection', function publish() {
-  if (this.userId) {
     return ReviewsCollection.find();
-  }
-  return this.ready();
 });
