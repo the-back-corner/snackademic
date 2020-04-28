@@ -1454,6 +1454,61 @@
       "restaurantName": "Holo Holo Grill",
       "itemName": "Smoothies and Milk Teas",
       "price": "2.75"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Cheese Pizza",
+      "price": "4.79"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Italian Sausage Pizza",
+      "price": "5.79"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Pepperoni Pizza",
+      "price": "5.79"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Supreme Pizza",
+      "price": "6.39"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Meaty Marinara Pasta",
+      "price": "5.49"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Chicken Alfredo Pasta",
+      "price": "5.49"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Breadsticks",
+      "price": "3.19"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Dipping Sauce",
+      "price": "0.49"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Baked Chicken Wings (6 Pieces)",
+      "price": "5.79"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Fountain Drink",
+      "price": "1.49"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "itemName": "Bottled Water",
+      "price": "1.79"
     }
   ],
   "defaultReview": [
