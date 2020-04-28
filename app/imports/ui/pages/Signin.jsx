@@ -31,7 +31,7 @@ export default class Signin extends React.Component {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
-  }
+  };
 
   /** Render the signin form. */
   render() {
@@ -46,7 +46,7 @@ export default class Signin extends React.Component {
     // variables to determine what role signed in
     const isLogged = Meteor.userId() !== null;
     const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
-    const isUser = Roles.userIsInRole(Meteor.userId(), 'eater'); // use this later
+    const isBuyer = Roles.userIsInRole(Meteor.userId(), 'buyer'); // use this later
     const isVendor = Roles.userIsInRole(Meteor.userId(), 'vendor'); // use this later
 
     // if there are no errors
@@ -56,7 +56,7 @@ export default class Signin extends React.Component {
       }
       else if (isLogged && isVendor){
         return <Redirect to={homePage}/>;
-      } else if (isLogged && isUser) {
+      } else if (isLogged && isBuyer) {
         return <Redirect to={userLandingPage}/>;
       }
     }

@@ -8,7 +8,7 @@
     {
       "email": "john@foo.com",
       "password": "changeme",
-      "role": "eater"
+      "role": "buyer"
     },
     {
       "email": "vendor@foo.com",

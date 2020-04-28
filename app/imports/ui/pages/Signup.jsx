@@ -24,22 +24,54 @@ class Signup extends React.Component {
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
     const { email, password, role } = this.state;
-    const userID = Accounts.createUser({ email, username: email, password, role }, (err) => {
+    if (role === 'vendor'){
+      try {
+        Meteor.call('add.new.vendor', email, password);
+      } catch(err) {
+        this.setState({ error: err.reason });
+      }
+    } else {
+      try {
+      Meteor.call('add.new.buyer', email, password);
+      } catch(err) {
+        this.setState({ error: err.reason });
+      }
+    }
+
+    Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
-    Roles.addUsersToRoles(userID, this.state.role);
   };
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
-    const { from } = this.props.location.state || { from: { pathname: '/' } };
-    // if correct authentication, redirect to from: page instead of signup screen
-    if (this.state.redirectToReferer) {
-      return <Redirect to={from}/>;
+    // create a variable to hold homepage path
+    const { homePage } = this.props.location.state || { homePage: { pathname: '/' } };
+    // create a variable to hold the user landing page path
+    const { userLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
+    // variable to hold admin landing page path
+    const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
+
+    // variables to determine what role signed in
+    const isLogged = Meteor.userId() !== null;
+    const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
+    const isUser = Roles.userIsInRole(Meteor.userId(), 'buyer'); // use this later
+    const isVendor = Roles.userIsInRole(Meteor.userId(), 'vendor'); // use this later
+
+    // if there are no errors
+    if (this.state.redirectToReferer) { // if redirectToReferrer is false
+      if (isLogged && isAdmin) {
+        return <Redirect to={adminLandingPage}/>;
+      }
+      else if (isLogged && isVendor){
+        return <Redirect to={homePage}/>;
+      } else if (isLogged && isUser) {
+        return <Redirect to={userLandingPage}/>;
+      }
     }
     return (
         <Container>
@@ -59,8 +91,8 @@ class Signup extends React.Component {
                   <Radio
                       label='Select this if you are a user'
                       name='role'
-                      value='eater'
-                      checked={this.state.role === 'eater'}
+                      value='buyer'
+                      checked={this.state.role === 'buyer'}
                       onChange={this.handleChange}
                   />
                 </Form.Field>
