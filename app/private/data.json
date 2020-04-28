@@ -1179,6 +1179,76 @@
       "restaurantName": "Dunkin Donuts",
       "itemName": "Lunch Sandwiches",
       "price": "8.75"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Mini Plate",
+      "price": "12.75"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Full Plate",
+      "price": "15.95"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Halawa",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Mung Bean Soup",
+      "price": "5.55"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Brown Rice",
+      "price": "3.99"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Salad",
+      "price": "7.95"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Daily Special Entrée",
+      "price": "11.99"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Khichri",
+      "price": "3.45"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Sweetened with certified organic/evaporated sugar",
+      "price": "3.75"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Ginger Mint Lemonade",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Kabocha Coconut Curry",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Cauliflower Pea Curry",
+      "price": "9.25"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Strawberry Halava",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Govindas",
+      "itemName": "Kofta Cabbage Coconut Curry",
+      "price": "5.55"
     }
   ],
   "defaultReview": [
