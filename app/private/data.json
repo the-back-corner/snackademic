@@ -766,16 +766,6 @@
       "price": "12.99"
     },
     {
-      "restaurantName": "Hot Tacos",
-      "itemName": "Beef Taco Plate",
-      "price": "9.75"
-    },
-    {
-      "restaurantName": "Hot Tacos",
-      "itemName": "Chicken Enchilladas",
-      "price": "22.95"
-    },
-    {
       "restaurantName": "Jamba Juice",
       "itemName": "Small Orange Dream Smoothie",
       "price": "6.00"
@@ -1249,6 +1239,31 @@
       "restaurantName": "Govindas",
       "itemName": "Kofta Cabbage Coconut Curry",
       "price": "5.55"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "itemName": "Corn Tacos",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "itemName": "12 Inch Burrito",
+      "price": "1.99"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "itemName": "Quesadilla",
+      "price": "43.95"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "itemName": "Tamales",
+      "price": "8.72"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "itemName": "Chile Rellenos",
+      "price": "102.19"
     }
   ],
   "defaultReview": [
