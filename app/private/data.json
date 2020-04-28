@@ -777,13 +777,88 @@
     },
     {
       "restaurantName": "Ono Seafood",
-      "itemName": "Ginger Salmon",
-      "price": "3.10"
+      "itemName": "Regular Shoyu Ahi Bowl",
+      "price": "10"
     },
     {
       "restaurantName": "Ono Seafood",
-      "itemName": "Shoyu Poke Bowl",
-      "price": "4.99"
+      "itemName": "Large Shoyu Ahi Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Shoyu Tako Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Shoyu Tako Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Hawaiian Style Ahi Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Hawaiian Style Ahi Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Hawaiian Style Tako Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Hawaiian Style Tako Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Miso Ahi Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Miso Ahi Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Spicy Ahi Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Spicy Ahi Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Regular Wasabi Ahi Bowl",
+      "price": "10"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Large Wasabi Ahi Bowl",
+      "price": "12"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "Sashimi Tray",
+      "price": "13"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "1 Pound Ahi Poke",
+      "price": "20"
+    },
+    {
+      "restaurantName": "Ono Seafood",
+      "itemName": "1 Pound Tako Poke",
+      "price": "17"
     },
     {
       "restaurantName": "Just Ice",
