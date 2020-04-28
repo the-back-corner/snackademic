@@ -58,7 +58,6 @@ class FoodTruck extends React.Component {
 FoodTruck.propTypes = {
     doc: PropTypes.object,
     doc2: PropTypes.array,
-    model: PropTypes.object,
     ready: PropTypes.bool.isRequired,
 };
 
@@ -67,11 +66,12 @@ export default withTracker(({ match }) => {
     // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
     const documentId = match.params._id;
     // Get access to Stuff documents.
-    const subscription = Meteor.subscribe('FoodTrucksCollection');
-    const subscription2 = Meteor.subscribe('MenuItemCollection');
+    const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
+    const subscriptionMenu = Meteor.subscribe('MenuItemCollection');
+    const subscriptionReviews = Meteor.subscribe('ReviewsCollection');
     return {
         doc: FoodTrucksCollection.findOne(documentId),
         doc2: MenuItemCollection.find().fetch(),
-        ready: subscription.ready() && subscription2.ready(),
+        ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
     };
 })(FoodTruck);
