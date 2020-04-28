@@ -1264,6 +1264,36 @@
       "restaurantName": "Hot Tacos",
       "itemName": "Chile Rellenos",
       "price": "102.19"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "Panda Bowl",
+      "price": "6.80"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "2 Entrees + 1 Side",
+      "price": "8.80"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "3 Entrees + 1 Side",
+      "price": "10.80"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "A La Carte - Side Dish",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "A La Carte - Entree",
+      "price": "12.45"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "itemName": "Family Feast",
+      "price": "30.00"
     }
   ],
   "defaultReview": [
