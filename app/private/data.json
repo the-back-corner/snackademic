@@ -757,13 +757,88 @@
   "defaultMenuItem": [
     {
       "restaurantName": "Sistahs",
-      "itemName": "Egg Rolls",
-      "price": "11.95"
+      "itemName": "Teriyaki Gyoza",
+      "price": "6.95"
     },
     {
       "restaurantName": "Sistahs",
-      "itemName": "Lemon Chicken",
-      "price": "12.99"
+      "itemName": "French Fries",
+      "price": "4.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Garlic Strongutter Fries",
+      "price": "6.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Homemade Kimchi",
+      "price": "5.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Steak Plate",
+      "price": "10.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Wagyu LocoMoco Plate",
+      "price": "12.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Chicken Katsu Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Shoyu Chicken Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Fish Jun Plate",
+      "price": "10.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Spicy Pork Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Daily Special",
+      "price": "12.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Kalbi Bibimbap Bowl",
+      "price": "12.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Bibimbap Bowl",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Teriyaki Gyoza Bowl",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Fried Rice Bowl",
+      "price": "6.95"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Water",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "itemName": "Soda",
+      "price": "1.00"
     },
     {
       "restaurantName": "Jamba Juice",
