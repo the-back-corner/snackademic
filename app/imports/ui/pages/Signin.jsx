@@ -37,9 +37,9 @@ export default class Signin extends React.Component {
   render() {
 
     // create a variable to hold homepage path
-    const { homePage } = this.props.location.state || { homePage: { pathname: '/' } };
+    const { vendorLandingPage } = this.props.location.state || { vendorLandingPage: { pathname: '/myeatery' } };
     // create a variable to hold the user landing page path
-    const { userLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
+    const { buyerLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
     // variable to hold admin landing page path
     const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
 
@@ -53,11 +53,10 @@ export default class Signin extends React.Component {
     if (this.state.redirectToReferer) { // if redirectToReferrer is false
       if (isLogged && isAdmin) {
         return <Redirect to={adminLandingPage}/>;
-      }
-      else if (isLogged && isVendor){
-        return <Redirect to={homePage}/>;
+      } else if (isLogged && isVendor){
+        return <Redirect to={vendorLandingPage}/>;
       } else if (isLogged && isBuyer) {
-        return <Redirect to={userLandingPage}/>;
+        return <Redirect to={buyerLandingPage}/>;
       }
     }
 

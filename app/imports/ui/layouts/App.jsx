@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import FavoritesPage from '../pages/FavoritesPage';
 import UserProfilePage from '../pages/UserProfilePage';
+import MyEatery from '../pages/MyEatery';
 // import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AllAccountsPage from '../pages/AllAccountsPage';
 import AddStuff from '../pages/AddStuff';
@@ -36,6 +37,7 @@ class App extends React.Component {
               <Route path="/restaurant/:_id" component={Restaurant}/>
               <ProtectedRoute path="/favorites" component={FavoritesPage}/>
               <ProtectedRoute path="/map" component={Map}/>
+              <ProtectedRoute path="/myeatery" component={MyEatery}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>

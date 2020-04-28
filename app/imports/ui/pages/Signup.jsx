@@ -50,16 +50,16 @@ class Signup extends React.Component {
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
     // create a variable to hold homepage path
-    const { homePage } = this.props.location.state || { homePage: { pathname: '/' } };
+    const { vendorLandingPage } = this.props.location.state || { vendorLandingPage: { pathname: '/myeatery' } };
     // create a variable to hold the user landing page path
-    const { userLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
+    const { buyerLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
     // variable to hold admin landing page path
     const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
 
     // variables to determine what role signed in
     const isLogged = Meteor.userId() !== null;
     const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
-    const isUser = Roles.userIsInRole(Meteor.userId(), 'buyer'); // use this later
+    const isBuyer = Roles.userIsInRole(Meteor.userId(), 'buyer'); // use this later
     const isVendor = Roles.userIsInRole(Meteor.userId(), 'vendor'); // use this later
 
     // if there are no errors
@@ -68,9 +68,9 @@ class Signup extends React.Component {
         return <Redirect to={adminLandingPage}/>;
       }
       else if (isLogged && isVendor){
-        return <Redirect to={homePage}/>;
-      } else if (isLogged && isUser) {
-        return <Redirect to={userLandingPage}/>;
+        return <Redirect to={vendorLandingPage}/>;
+      } else if (isLogged && isBuyer) {
+        return <Redirect to={buyerLandingPage}/>;
       }
     }
     return (
