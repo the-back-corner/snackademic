@@ -1369,6 +1369,91 @@
       "restaurantName": "Panda Express",
       "itemName": "Family Feast",
       "price": "30.00"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Assorted Wraps",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Tuna Melt Panini",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Turkey Avacado Bomb Panini",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Chicken Chipotle Panini",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Grilled Cheese Panini",
+      "price": "4.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Hot Taco Bar",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Salad Bar",
+      "price": "8.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Assorted Chips",
+      "price": "2.45"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Assorted Soups",
+      "price": "3.95"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Assorted Fresh Baked Goods & Muffins",
+      "price": "2.45"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Salad of the Day",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Assorted Fresh Fruits",
+      "price": "4.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Fresh Cut Fruit Bowl",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Pasta Salad",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Cup Noodles",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Bottled Water",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "itemName": "Smoothies and Milk Teas",
+      "price": "2.75"
     }
   ],
   "defaultReview": [
