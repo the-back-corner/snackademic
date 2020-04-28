@@ -1509,6 +1509,121 @@
       "restaurantName": "Pizza Hut",
       "itemName": "Bottled Water",
       "price": "1.79"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Hot Coffee, Tea or Cocoa",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Ice Cold Brew Coffee",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Ice Cold Brew Latte",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Black or Green Iced Tea",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Lemonade or Orange Juice",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Coconut Water",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Fruit Infused Water",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Cold Brew Concentrate Refills (per oz)",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Acai Bowl",
+      "price": "9.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Fruit Cup",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Hot Oatmeal w/Fruit",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Cold Cereal w/Fruit",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Caramel Apple",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Peanut Butter Apple",
+      "price": "34.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Mixed Nuts",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Big Cookie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Big Brownie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Ice Cream Cone",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Ice Cream Sundae",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Banana Split",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Self Stir Malt",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "Cold Brew Float",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "itemName": "One Hour Beach Cleanup",
+      "price": "20.00"
     }
   ],
   "defaultReview": [
