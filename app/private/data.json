@@ -776,6 +776,286 @@
       "price": "22.95"
     },
     {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Orange Dream Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Orange Dream Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Orange Dream Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Strawberries Wild Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Strawberries Wild Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Strawberries Wild Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Apple n' Greens Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Apple n' Greens Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Apple n' Greens Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Razzmatazz Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Razzmatazz Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Razzmatazz Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Peanut Butter Moo'd Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Peanut Butter Moo'd Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Peanut Butter Moo'd Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Chocolate Moo'd Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Chocolate Moo'd Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Chocolate Moo'd Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Banana Berry Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Banana Berry Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Banana Berry Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Mango-a-go-go Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Mango-a-go-go Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Mango-a-go-go Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Caribbean Passion Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Caribbean Passion Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Caribbean Passion Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Kaleribbean Breeze Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Kaleribbean Breeze Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Kaleribbean Breeze Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Orange C-Booster Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Orange C-Booster Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Orange C-Booster Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Peach Perfection Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Peach Perfection Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Peach Perfection Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Acai Super-Antioxidant Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Acai Super-Antioxidant Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Acai Super-Antioxidant Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Strawberry Dragon Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Strawberry Dragon Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Strawberry Dragon Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Mega Mango Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Mega Mango Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Mega Mango Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Small Gotta Guava Smoothie",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Medium Gotta Guava Smoothie",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Large Gotta Guava Smoothie",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Acai Primo Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Nutty Almond Butter Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Chunky Strawberry Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Mango Medley Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Chocolate Strawberry Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Loaded Hawaiian Acai Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Pitaya Primo Bowl",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "itemName": "Protein Berry Bowl",
+      "price": "8.75"
+    },
+    {
       "restaurantName": "Ono Seafood",
       "itemName": "Regular Shoyu Ahi Bowl",
       "price": "10"
