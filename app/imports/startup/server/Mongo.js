@@ -56,14 +56,17 @@ function addReview(data) {
 
 if ((Meteor.settings.loadAssetsFile) && (RestaurantCollection.find().count() === 0)) {
   const assetsFileName = 'data.json';
+  const reviewAssetsFileName = 'reviewData.json';
   console.log(`Loading data from private/${assetsFileName}`);
+  console.log(`Loading review data from private/${reviewAssetsFileName}`);
+  const reviewJsonData = JSON.parse(Assets.getText(reviewAssetsFileName));
   const jsonData = JSON.parse(Assets.getText(assetsFileName));
   jsonData.defaultFoodTrucks.map(data => addFoodTruck(data));
   jsonData.defaultHours.map(data => addHours(data));
   jsonData.defaultLocation.map(data => addLocation(data));
   jsonData.defaultMenuItem.map(data => addMenuItem(data));
   jsonData.defaultRestaurant.map(data => addRestaurant(data));
-  jsonData.defaultReview.map(data => addReview(data));
+  reviewJsonData.defaultReview.map(data => addReview(data));
 
 }
 
