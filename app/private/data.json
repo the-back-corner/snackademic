@@ -2449,6 +2449,101 @@
       "restaurantName": "Rocket Coffee",
       "itemName": "One Hour Beach Cleanup",
       "price": "20.00"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Spicy Ahi Poke Bowl",
+      "price": "9.69"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Shoyu Ahi Poke Bowl",
+      "price": "9.69"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Combo Poke Bowl",
+      "price": "12.29"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "California Poke Bowl",
+      "price": "9.69"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Tofu Poke Bowl",
+      "price": "9.29"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Limu Poke Bowl",
+      "price": "9.69"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Beef Stir-Fry Bowl",
+      "price": "10.29"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Tofu Stir-Fry Bowl",
+      "price": "9.29"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Veggie Stir-Fry Bowl",
+      "price": "8.25"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Chicken Stir-Fry Bowl",
+      "price": "9.49"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Vegan Sausage Stir-Fry Bowl",
+      "price": "10.29"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Fresh Fruit Salad",
+      "price": "4.99"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Saimin Combo #1",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Saimin Combo #2",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Saimin Combo #3",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Saimin",
+      "price": "6.99"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Fountain Drink",
+      "price": "2.19"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Cappuccino",
+      "price": "1.39"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "itemName": "Oolong Tea",
+      "price": "2.99"
     }
   ],
   "defaultReview": [
