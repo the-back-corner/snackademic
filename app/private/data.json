@@ -841,6 +841,756 @@
       "price": "1.00"
     },
     {
+      "restaurantName": "Da Spot",
+      "itemName": "Coconut Lemon Herb Combo",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Thai Vegetable Curry Combo",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Egyptian roasted Lamb Shanks Combo",
+      "price": "13.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Sauted Red Fire Chicken Combo",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Morrocan Roasted Chicken Combo",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Egyptian Chicken Curry Combo",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Coconut Gamsala Lamb Combo",
+      "price": "13.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Tofu Salad",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Avocado Salad",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Spring Greens Salad",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Grilled Chicken Fillet Sandwich",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Herb Crusted Chicken Sandwich",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Seasoned Beef Patty Sandwich",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Grilled Cheese Steak & Onion Sandwich",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Sundried Tomato Turkey Sandwich",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Garlic Seared Ahi Sandwich",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Falafel",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Hummus",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Boca Burger",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Lamb Gyro",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Beef Gyro",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Chicken Gyro",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Fish Gyro",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Acai Bowl",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Zabadi Bowl",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Lassi Bowl",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Green Twister Bowl",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Sweet Crunch Bowl",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Baklava",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Freshly Baked Baklava",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Chocolate Fudge Brownie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Haupia Craze",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Chocolate Haupia Baklava",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Fresh Carrot Juice",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Fresh Orange Juice",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Rose or Orange Blossom Water",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Carcaday Drink",
+      "price": "2.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Fresh Brewed Coffee or Tea",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Chai tea",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Strawberry Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Strawberry Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Strawberry Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Da Kine Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Da Kine Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Da Kine Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Strawberry Potion Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Strawberry Potion Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Strawberry Potion Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Sweet Dream Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Sweet Dream Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Sweet Dream Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Very Berry Good Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Very Berry Good Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Very Berry Good Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Very Berry Good Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Very Berry Good Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Very Berry Good Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Aloha Berry Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Aloha Berry Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Aloha Berry Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Home Grown Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Home Grown Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Home Grown Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Loco Style Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Loco Style Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Loco Style Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Sweet Express Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Sweet Express Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Sweet Express Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Green Peace Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Green Peace Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Green Peace Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Kiwi Freeze Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Kiwi Freeze Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Kiwi Freeze Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Waikikiwi Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Waikikiwi Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Waikikiwi Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Mango Tango Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Mango Tango Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Mango Tango Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Mangolicious Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Mangolicious Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Mangolicious Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Da Mango Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Da Mango Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Da Mango Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Loco Coco Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Loco Coco Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Loco Coco Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Coco Ono Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Coco Ono Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Coco Ono Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Coco Nut Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Coco Nut Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Coco Nut Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Pineapple Paradise Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Pineapple Paradise Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Pineapple Paradise Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Pinaco Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Pinaco Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Pinaco Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Pineapple Craze Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Pineapple Craze Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Pineapple Craze Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Sunny Sunrise Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Sunny Sunrise Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Sunny Sunrise Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Liquid Sunshine Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Liquid Sunshine Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Liquid Sunshine Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Orange Sunset Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Orange Sunset Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Orange Sunset Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Amazon Wave Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Amazon Wave Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Amazon Wave Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Purple Rain Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Purple Rain Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Purple Rain Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Tropical Jungle Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Tropical Jungle Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Tropical Jungle Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Island Fever Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Island Fever Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Island Fever Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Chili Blaster Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Chili Blaster Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Chili Blaster Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Chocolatta Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Chocolatta Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Chocolatta Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Chocolate Factory Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Chocolate Factory Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Chocolate Factory Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Peanut Butta Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Peanut Butta Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Peanut Butta Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Coco Butta Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Coco Butta Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Coco Butta Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Mocha Aina Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Mocha Aina Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Mocha Aina Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Sleep Fighta Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Sleep Fighta Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Sleep Fighta Smoothie",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Small Any Kine Smoothie",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Medium Any Kine Smoothie",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "itemName": "Large Any Kine Smoothie",
+      "price": "4.00"
+    },
+    {
       "restaurantName": "Jamba Juice",
       "itemName": "Small Orange Dream Smoothie",
       "price": "6.00"
