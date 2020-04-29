@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Image, Loader } from 'semantic-ui-react';
+import { Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Stuffs } from '../../api/stuff/Stuff';
@@ -20,8 +20,6 @@ class UserProfilePage extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">MY ACCOUNT</Header>
-          <Header as="h4" textAlign="center"> Idk what to put here.... but this is here if we want it </Header>
-          <Image src='https://i.redd.it/7bmh29ww5kt41.jpg' size= 'large'/>
         </Container>
     );
   }
