@@ -17,7 +17,7 @@ class Restaurant extends React.Component {
   renderPage() {
     console.log(this.props.doc2);
     return (
-        <div className="landingPage">
+        <div className="signinPage">
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
@@ -31,8 +31,8 @@ class Restaurant extends React.Component {
             <Grid.Column className="rightGrid" width={8}>
               <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
               <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
-              {this.props.doc.takesMeals === 1 ? (<Header className="secondHeader" as='h2'>Does Take Out</Header>)
-                  : (<Header className="secondHeader" as='h2'>Doesnt do Take Out</Header>)}
+              {this.props.doc.takesMeals === 1 ? (<Header className="secondHeader" as='h3'>Takes Meal Points</Header>)
+                  : (<Header className="secondHeader" as='h3'>Does Not Take Meal Points</Header>)}
 
             </Grid.Column>
           </Grid>
