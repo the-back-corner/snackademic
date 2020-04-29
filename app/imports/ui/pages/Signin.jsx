@@ -39,7 +39,7 @@ export default class Signin extends React.Component {
     // create a variable to hold homepage path
     const { vendorLandingPage } = this.props.location.state || { vendorLandingPage: { pathname: '/myeatery' } };
     // create a variable to hold the user landing page path
-    const { buyerLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
+    const { buyerLandingPage } = this.props.location.state || { buyerLandingPage: { pathname: '/favorites' } };
     // variable to hold admin landing page path
     const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
 
