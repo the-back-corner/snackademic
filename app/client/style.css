@@ -19,21 +19,27 @@
   background: url('images/avacadobackground.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
-  height: 650px;
+  height: 700px;
 }
 
 .signinPage{
   background: url('images/sushibackground.jpg') no-repeat center center fixed;
   font-family: 'Comfortaa', sans-serif;
-  background-size: contain;
-  height: 600px;
+  background-size: cover;
+  height: 700px;
 }
 
 .ui.header.firstHeader{
-    color: red;
-    text-shadow: -2px 2px 3px gray;
+    color: palevioletred;
+    text-shadow: -2px 2px 3px whitesmoke;
     font-size: 50px;
 }
+
+/*.ui.header.firstHeader{*/
+/*  color: red;*/
+/*  text-shadow: -2px 2px 3px gray;*/
+/*  font-size: 50px;*/
+/*}*/
 
 .ui.header.cuisine{
     color: white;
@@ -76,7 +82,7 @@ div.text:hover{
 }
 
 .buttons-style{
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', sans-serif;
   background-color: #A8C987;
   font-size: large;
   color: white;

@@ -18,7 +18,7 @@ class Restaurant extends React.Component {
   renderPage() {
       console.log(this.props.doc2);
     return (
-        <div className="landingPage">
+        <div className="signinPage">
             <Grid verticalAlign='middle' textAlign='center' container>
 
               <Grid.Column className="leftGrid" textAlign='left' width={8}>
@@ -27,7 +27,7 @@ class Restaurant extends React.Component {
                   { this.props.doc2.map((menuItem) => {
                       if (menuItem.restaurantName === this.props.doc.name) {
                           return (
-                              <Header key={menuItem._id} className="secondHeader" as='h2'>{menuItem.itemName} -
+                              <Header key={menuItem._id} className="secondHeader" as='h3'>{menuItem.itemName} -
                                   ${menuItem.price}</Header>
                            );
                       }
@@ -38,8 +38,9 @@ class Restaurant extends React.Component {
               <Grid.Column className="rightGrid" width={8}>
                   <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
                   <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
-                  { this.props.doc.takesMeals === 1 ? (<Header className="secondHeader" as='h2'>Does Take Out</Header>)
-                      : (<Header className="secondHeader" as='h2'>Doesnt do Take Out</Header>)}
+                  { this.props.doc.takesMeals === 1 ?
+                      (<Header className="secondHeader" as='h3'>Takes Meal Points</Header>)
+                      : (<Header className="secondHeader" as='h3'>Does Not Take Meal Points</Header>)}
 
               </Grid.Column>
 
