@@ -841,6 +841,156 @@
       "price": "1.00"
     },
     {
+      "restaurantName": "Bean Counter",
+      "itemName": "Brewed Coffee",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Iced Coffee",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Americano",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cappuccino",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Latte",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Macchiato",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cafe au Lait",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Mocha",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Espresso Shot",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Shot in the Dark",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Hot Chocolate",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Flavored Steamer",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chai Latte",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Hot or Iced Tea",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Tea Misto",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Flavored Tea",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Cream Cheese",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Butter",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Peanut Butter or Nutella",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Club Wrap",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Local Green Salad",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chipotle Corn Salad",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Veggie Wrap",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Strawberry Goat Cheese Salad",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cheese Melt",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cupcakes",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chocolate Peanut Butter Cookies",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Banana",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Apple/Orange",
+      "price": "1.00"
+    },
+    {
       "restaurantName": "Da Spot",
       "itemName": "Coconut Lemon Herb Combo",
       "price": "10.00"
@@ -2451,99 +2601,284 @@
       "price": "20.00"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Spicy Ahi Poke Bowl",
-      "price": "9.69"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Spicy Ahi Poke Bowl",
+    "price": "9.69"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Shoyu Ahi Poke Bowl",
-      "price": "9.69"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Shoyu Ahi Poke Bowl",
+    "price": "9.69"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Combo Poke Bowl",
-      "price": "12.29"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Combo Poke Bowl",
+    "price": "12.29"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "California Poke Bowl",
-      "price": "9.69"
+    "restaurantName": "Stir Fresh",
+    "itemName": "California Poke Bowl",
+    "price": "9.69"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Tofu Poke Bowl",
-      "price": "9.29"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Tofu Poke Bowl",
+    "price": "9.29"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Limu Poke Bowl",
-      "price": "9.69"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Limu Poke Bowl",
+    "price": "9.69"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Beef Stir-Fry Bowl",
-      "price": "10.29"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Beef Stir-Fry Bowl",
+    "price": "10.29"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Tofu Stir-Fry Bowl",
-      "price": "9.29"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Tofu Stir-Fry Bowl",
+    "price": "9.29"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Veggie Stir-Fry Bowl",
-      "price": "8.25"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Veggie Stir-Fry Bowl",
+    "price": "8.25"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Chicken Stir-Fry Bowl",
-      "price": "9.49"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Chicken Stir-Fry Bowl",
+    "price": "9.49"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Vegan Sausage Stir-Fry Bowl",
-      "price": "10.29"
+    "restaurantName": "Stir Fresh",
+    "itemName": "Vegan Sausage Stir-Fry Bowl",
+    "price": "10.29"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Fresh Fruit Salad",
+    "restaurantName": "Stir Fresh",
+    "itemName": "Fresh Fruit Salad",
+    "price": "4.99"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Saimin Combo #1",
+    "price": "9.99"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Saimin Combo #2",
+    "price": "9.99"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Saimin Combo #3",
+    "price": "9.99"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Saimin",
+    "price": "6.99"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Fountain Drink",
+    "price": "2.19"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Cappuccino",
+    "price": "1.39"
+    },
+    {
+    "restaurantName": "Stir Fresh",
+    "itemName": "Oolong Tea",
+    "price": "2.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Cheese Louise Crepe",
+      "price": "5.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Monsieur Moulin Rouge Crepe",
+      "price": "10.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Le Bacon Veggie Crepe",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Pesto Pesto Crepe",
+      "price": "11.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Poulet Legume Crepe",
+      "price": "12.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "L'Italien Crepe",
+      "price": "11.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Tsunami Crepe",
+      "price": "12.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Ono Ono Crepe",
+      "price": "11.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Popeye Crepe",
+      "price": "11.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Nutella Crepe",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Chunky Monkey Crepe",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Nutella Banana Crepe",
+      "price": "10.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Choco Choco Crepe",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Romeo et Juliet Crepe",
+      "price": "10.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Le Parisien Crepe",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Dulce de Leche Crepe",
+      "price": "7.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Gone Bananas Crepe",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Honey Lovers Crepe",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Le Special Crepe",
+      "price": "10.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Signature Salad",
+      "price": "8.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Zeus Salad",
+      "price": "9.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Coffee",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Espresso",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Americano",
+      "price": "2.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "The Turbo",
+      "price": "3.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Macchiato",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Latte",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Hazlenut, Vanilla, Mac Nut, or Caramel Latte",
+      "price": "3.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Mocha",
+      "price": "3.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Honey Mocha",
+      "price": "4.50"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Cafe au Lait",
       "price": "4.99"
     },
     {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Saimin Combo #1",
-      "price": "9.99"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Saimin Combo #2",
-      "price": "9.99"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Saimin Combo #3",
-      "price": "9.99"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Saimin",
-      "price": "6.99"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Fountain Drink",
-      "price": "2.19"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Cappuccino",
-      "price": "1.39"
-    },
-    {
-      "restaurantName": "Stir Fresh",
-      "itemName": "Oolong Tea",
+      "restaurantName": "Le Crepe",
+      "itemName": "Hot Tea",
       "price": "2.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Cappuccino",
+      "price": "2.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Hot or Iced Cocoa",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Orange Juice",
+      "price": "2.99"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Perrier",
+      "price": "3.25"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "itemName": "Bottled Water",
+      "price": "1.99"
     }
   ]
 }

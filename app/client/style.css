@@ -6,6 +6,7 @@
   box-shadow: none;
   border:none;
   font-size: 20px !important;
+  border-radius: 0 !important;
 }
 
 .landingPage{
