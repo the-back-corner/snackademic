@@ -841,6 +841,156 @@
       "price": "1.00"
     },
     {
+      "restaurantName": "Bean Counter",
+      "itemName": "Brewed Coffee",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Iced Coffee",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Americano",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cappuccino",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Latte",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Macchiato",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cafe au Lait",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Mocha",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Espresso Shot",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Shot in the Dark",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Hot Chocolate",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Flavored Steamer",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chai Latte",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Hot or Iced Tea",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Tea Misto",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Flavored Tea",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Cream Cheese",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Butter",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Bagel w/ Peanut Butter or Nutella",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Club Wrap",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Local Green Salad",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chipotle Corn Salad",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Veggie Wrap",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Strawberry Goat Cheese Salad",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cheese Melt",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Cupcakes",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Chocolate Peanut Butter Cookies",
+      "price": "2.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Banana",
+      "price": "1.00"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "itemName": "Apple/Orange",
+      "price": "1.00"
+    },
+    {
       "restaurantName": "Da Spot",
       "itemName": "Coconut Lemon Herb Combo",
       "price": "10.00"
