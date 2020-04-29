@@ -26,7 +26,7 @@ class UserProfilePage extends React.Component {
           <Header as="h2" textAlign="center">MY ACCOUNT</Header>
           <Grid textAlign="center" verticalAlign="top" centered columns={2}>
             <Grid.Column>
-              <Card>
+              <Card centered>
                 <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
                 <Card.Content>
                   <Card.Header>Account Name</Card.Header>
