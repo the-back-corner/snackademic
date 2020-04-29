@@ -1871,6 +1871,91 @@
       "price": "8.75"
     },
     {
+      "restaurantName": "Just Ice",
+      "itemName": "Spicy Poke Bowl",
+      "price": "6.55"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Shoyu Poke Bowl",
+      "price": "6.55"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Poke Nachos",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Combo Poke Nachos",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Acai Bowl",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Sorbet Bowl",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Smoothie",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Small Shave Ice",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Large Shave Ice",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Roast Beef, Peppers, & Havarti Cheese Panini",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Ham, Apples, & French Brie Cheese Panini",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Chicken Cordon Bleu Panini",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Eggplant, Zucchini, Tomatoes & Mozzarella Cheese Panini",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Pepperoni, Pineapple, Pizza Bread with Marinara Sauce Panini",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Chicken, Cheese, & Diced Peppers Quesadilla",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "Roast Beef French Dip with Provolone Cheese",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "itemName": "UH Special of the Day",
+      "price": "5.00"
+    },
+    {
       "restaurantName": "Ono Seafood",
       "itemName": "Regular Shoyu Ahi Bowl",
       "price": "10"
@@ -1954,16 +2039,6 @@
       "restaurantName": "Ono Seafood",
       "itemName": "1 Pound Tako Poke",
       "price": "17"
-    },
-    {
-      "restaurantName": "Just Ice",
-      "itemName": "Cherry Storm",
-      "price": "2.99"
-    },
-    {
-      "restaurantName": "Just Ice",
-      "itemName": "Coca Cola Snow Blast",
-      "price": "4.29"
     },
     {
       "restaurantName": "Dunkin Donuts",
