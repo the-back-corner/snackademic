@@ -1,0 +1,188 @@
+{
+  "defaultFoodTrucks": [
+    {
+      "name": "Ono Seafood",
+      "vendorIcon": "/images/vendoricons/ono-icon.png",
+      "typeOfCuisine": "Seafood",
+      "Description": "Traditional super ono ahi & tako poke; always fresh, premium ahi- never frozen! Made to order poke by the pound & poke bowls.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Just Ice",
+      "vendorIcon": "images/vendoricons/justicewht-icon.png",
+      "typeOfCuisine": "Desert",
+      "Description": "Just Ice Hawaii is bringing a simply nice selection of frozen treats to the campus in style. This food truck is cooling off even the hottest days with tropical island bliss, coming to you in a variety of sweet forms to tantalize your tastebuds. they've got that Hawaiian classic shaved ice in 16 flavors for your enjoyment. Strawberry, pineapple, coconut and passionfruit as well as bubble gum, root beer and piña colada. Also on the menu is poke bowls, poke nachos and a variety of paninis.",
+      "takesMeals": 1
+    },
+    {
+      "name": "Hot Tacos",
+      "vendorIcon": "images/vendoricons/hottacos-icon.png",
+      "typeOfCuisine": "Mexican",
+      "Description": "Hot Tacos offers authentic Mexican food, prepped and cooked daily from scratch offering tacos, burritos, and quesadillas with meat options like steak, chicken, marinated pork, and shredded beef. They offer a la carte options or lunch plates that include beans and Spanish rice and other add on options like Chili Rellenos and Tamales.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Sistahs",
+      "vendorIcon": "images/vendoricons/thesistah-icon.png",
+      "typeOfCuisine": "Korean",
+      "Description": "Sistah Truck serves Korean-inspired local cuisine. Daily menu plate lunches include loco moco, chicken katsu, and Korean-style shoyu chicken. They also serve grab-and-go dishes like bibimbap, gyoza and kimchi bowls. Vegetarian options are available.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Bean Counter",
+      "vendorIcon": "images/vendoricons/beancounter-icon.png",
+      "typeOfCuisine": "Coffee",
+      "Description": "The Bean Counter serves up brewed coffee from the Hawaiian Islands and fulfills your caffeinated desires with a full service espresso bar. Feed your growling stomach with a dizzying array of bagels with homemade spreads, or chow down with our savory wraps, healthy salads and sweet treats.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Da Spot",
+      "vendorIcon": "images/vendoricons/daspot-icon.png",
+      "typeOfCuisine": "Health",
+      "Description": "Da Spot Health Foods & Juices offers diverse, healthy and affordable cuisine with a unique take on tasty dishes from around the world. Da Spot specializes in Mediterranean and North African food with vegan and specialty meat options that can be certified halal or kosher. Offering imaginative cuisine in exotic styles of Egyptian, Greek, French, Italian, Indian, Thai, Malaysian, Ethiopian, American, Hawaiian, Japanese, Chinese, Korean, Pacific Rim and fusion cooking.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Govindas",
+      "vendorIcon": "images/vendoricons/govindas-icon.png",
+      "typeOfCuisine": "Health",
+      "Description": "Want a sustainable selection for lunch? Try Govinda's, which offers a 100% pure vegetarian menu, with items low in cholesterol and mostly organic. They strive to bring you a healthy and delicious meal at the best possible price. Govinda's uses top quality produce and only the finest quality sea salt. All of the rice, grains, beans, tofu, sugar and flour are certified organic. Their menu never contains any meat or meat by-products, fish, eggs, MSG, iodized salt, preservatives, hydrogenated oils, or artificial colors or flavors",
+      "takesMeals": 0
+    },
+    {
+      "name": "Le Crepe",
+      "vendorIcon": "images/vendoricons/lecrepe-icon.png",
+      "typeOfCuisine": "Crepe",
+      "Description": "Le Crêpe Café makes traditional French crêpes, cooked to order in front of customers. They specialize in a flavorsome menu of sweet and savory crêpes and use fresh ingredients, organic when possible. Their utensils are even bio-compostable. Enjoy a crêpe any time of day, as a breakfast, snack, main course, or dessert - close your eyes and you're in Paris! Whether you’re needing a break from the law books or a pick-me-up as you’re headed to or off campus, you’ll also appreciate Le Crêpe Café’s French Roast and espresso drinks. ",
+      "takesMeals": 0
+    },
+    {
+      "name": "Rocket Coffee",
+      "vendorIcon": "images/vendoricons/rocketcoffee-icon.png",
+      "typeOfCuisine": "Coffee",
+      "Description": "Delicous coffee and an adorable Ernie",
+      "takesMeals": 0
+    }
+  ],
+  "defaultRestaurant": [
+    {
+      "name": "Bale",
+      "vendorIcon": "images/vendoricons/bale-icon.png",
+      "typeOfCuisine": "Pho",
+      "Description": "Located inside Hemenway Hall, Ba-Le offers Pho (noodles in either beef or chicken broth, made to order sandwiches on fresh baked breads, a variety of salads, tapioca and pasteries, and iced coffee. A bar is also located in Ba-Le, but is not open until after 12 noon.",
+      "takesMeals": 1
+    },
+    {
+      "name": "Campus Center",
+      "vendorIcon": "images/vendoricons/campuscenterfc-icon.png",
+      "typeOfCuisine": "Assorted",
+      "Description": "The UH Campus Center",
+      "takesMeals": 1
+    },
+    {
+      "name": "Dunkin Donuts",
+      "vendorIcon": "images/vendoricons/dunkindonuts-icon.png",
+      "typeOfCuisine": "Coffee",
+      "Description": "Dunkin’ Donuts in Paradise Palms Cafe will keep Hawaii running with high-quality beverage offerings–including freshly-brewed Hot and Iced Coffees–paired perfectly with delicious donuts, bakery good, sandwiches and more",
+      "takesMeals": 0
+    },
+    {
+      "name": "Gateway Cafe",
+      "vendorIcon": "images/vendoricons/gatewaycafe-icon.png",
+      "typeOfCuisine": "Assorted",
+      "Description": "A quick five minute walk from the heart of UH Manoa, Gateway Cafe offers an all-you-care-to-eat buffet for hungry diners. Gateway Cafe is open Monday through Friday for breakfast, lunch, and dinner. Build-your-own salad at our salad bar, taste a variety of pizzas at our pizza station, or grab a burger hot off the grill station.  Vegan and Vegetarian items are offered here daily, and be sure to visit the protein bar featuring an array of legumes, tofu, and hummus. Also offered at this location is the Simple Servings  station. Foods served at this station are prepared exclusively with ingredients which do not contain the 8 most common allergens: milk, eggs, wheat, soy, shellfish, peanuts, tree nuts, and gluten. Finish your meal off with a sweet treat - choose from fresh fruit, assorted desserts, cereal, or everyone's favorite Ice Cream Bar!",
+      "takesMeals": 1
+    },
+    {
+      "name": "Hale Aloha Cafe",
+      "vendorIcon": "images/vendoricons/halealohacafe-icon.png",
+      "typeOfCuisine": "Assorted",
+      "Description": "Hale Aloha Café is an all-you-care-to-eat dining hall that offers a wide variety of comfort foods and regional cuisine.Located at the center of the Hale Aloha Towers on the lower campus, Hale Aloha Cafe is open for dinner 7 days a week, and on the weekends for brunch.Enjoy the Salad Bar, Grill, Pizza Station, Comfort Food Station, Dessert Bar, and more!This location also offers the Simple Servings station which serves dished that do not contain the 8 most common allergens: milk, eggs, wheat, soy, shellfish, peanuts, tree nuts, and gluten. For more information, During the school year, customers look forward to Premium Night each Thursday. Premium Night offers large portion sizes and the entrees often include steak, local style bento, taco salads, and other rotating offerings.(Premium Night entrees are one per meal swipe and not all-you-care-to-eat, but you can still eat as much sides, salads, pizza, etc. as you want)",
+      "takesMeals": 1
+    },
+    {
+      "name": "Holo Holo Grill",
+      "vendorIcon": "images/vendoricons/holohologrill-icon.png",
+      "typeOfCuisine": "Health",
+      "Description": "Holoholo Grill features healthy, locally grown salads, sandwiches, and grab-and-go items at affordable prices. They are committed to using the freshest island-grown ingredients sourced directly from farmers and fishermen. Grab-and-go, breakfast items, or catering for any sized group are also available!",
+      "takesMeals": 0
+    },
+    {
+      "name": "Jamba Juice",
+      "vendorIcon": "images/vendoricons/jamba-icon.png",
+      "typeOfCuisine": "Health",
+      "Description": "Visit Jamba for refreshing fruit smoothie blends, delicious and nutritious energy bowls, fresh juices, healthy baked goods and savory grab-and-go food items. Jamba blends real fruit and whole ingredients into each delicious fresh juice, smoothie, or energy bowl you order and contains no artificial colors, preservatives, or flavors.",
+      "takesMeals": 1
+    },
+    {
+      "name": "Kamitoku Ramen",
+      "vendorIcon": "images/vendoricons/kamitokuramen-icon.png",
+      "typeOfCuisine": "Ramen",
+      "Description": "Kamitoku Ramen specializes in a Tottori-style beef bone ramen.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Lasoon",
+      "vendorIcon": "images/vendoricons/lasoon-icon.png",
+      "typeOfCuisine": "Indian",
+      "Description": "Lasoon offers something for everyone with their signature exotic South Indian and Malaysian cuisine. Daily specials include chicken curry, lamb masala, garlic shrimp, seafood curry, spinach tofu, spicy eggplant, curried potatoes, coconut cabbage & over 10 different vegetarian entrees to choose from. Spiciness ranges from mild to very hot.",
+      "takesMeals": 0
+    },
+    {
+      "name": "L and L Barbecue",
+      "vendorIcon": "images/vendoricons/llbbq-icon.png",
+      "typeOfCuisine": "Asian-American",
+      "Description": "Delicious local and Asian-American fusion cuisine served in big portions at reasonable prices! Try delicious L&L favorites like the Hawaiian Barbecue beef, chicken, or short ribs! Enjoy L&L's famous fried chicken katsu, the best in town! Grab-and-go, breakfast items and party packs for groups also available.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Panda Express",
+      "vendorIcon": "images/vendoricons/panda-icon.png",
+      "typeOfCuisine": "Chinese",
+      "Description": "Panda Express serves gourmet Chinese food made with only the freshest ingredients. Famous for its Orange Chicken, they also offer a number of Wok Smart entrées that contain less than 250 calories per serving, such as Shanghai Angus Steak, Kung Pao Chicken, and Broccoli Beef. Other favorites include Beijing Beef, Sweetfire Chicken Breast, and Honey Walnut Shrimp. Panda Express’ offerings can be enjoyed in Panda Bowls, or two and three item plates. Perfect for lunch, dinner or as a pick-me-up snack between classes.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Paradise Palms",
+      "vendorIcon": "images/vendoricons/paradisepalms-icon.png",
+      "typeOfCuisine": "N/A",
+      "Description": "Hub for lots of food places",
+      "takesMeals": 0
+    },
+    {
+      "name": "Pizza Hut",
+      "vendorIcon": "images/vendoricons/pizzahut-icon.png",
+      "typeOfCuisine": "Pizza",
+      "Description": "You can always count on pizza to satisfy your hunger. Our Pizza Hut Express location offers all of your favorite Pizza Hut items for you to grab and go. Enjoy our daily Pizza Hut pan pizza specials, breadsticks, and popular Wingstreet items!",
+      "takesMeals": 1
+    },
+    {
+      "name": "Simply To Go",
+      "vendorIcon": "images/vendoricons/simplytogo-icon.png",
+      "typeOfCuisine": "Coffee",
+      "Description": "Simply To Go is just as the name says... simple items purchased to go! A great place to get a quick bite between classes, you can purchase coffee, breakfast items, pastries, bottled beverages, and desserts while you're on the go. We proudly serve Starbucks Coffee. Simply To Go carries a variety of health food brands, such as Kashi, Kopali Organics and Bare Fruit Snacks.Cool off on a hot day with a Dole Whip!",
+      "takesMeals": 1
+    },
+    {
+      "name": "Starbucks",
+      "vendorIcon": "images/vendoricons/starbucks-icon.png",
+      "typeOfCuisine": "Coffee",
+      "Description": "With a full menu, as well as seasonal and specialty items, coffee fanatics are sure to be pleased. Also available are pastries, fruit cups, and bottled beverages for your purchase. Our location strives to give you the very same experience found at any other Starbucks across the nation. If you didn't already know, Starbucks is one of the few retail locations open later in the evening -- perfect for hanging out with some friends or studying! ",
+      "takesMeals": 1
+    },
+    {
+      "name": "Stir Fresh",
+      "vendorIcon": "images/vendoricons/stirfresh-icon.png",
+      "typeOfCuisine": "Seafood",
+      "Description": "Located on the first floor of Campus Center across from the ATMs, Stir-Fresh serves up fresh and healthy Poke Bowls and Stir Frys. Come down today and build your own stir fry - First choose your protein, next choose your sauce, then choose rice or noodles, last fill up your bowl with the vegetables of your choice. After you've made your selections your lunch will be tossed by our expert chefs. Want to eat what the locals eat? Try one of our signature poke bowls. Aloha Friday specials are also offered every week. Stop by today and enjoy the Stir-Fresh experience!",
+      "takesMeals": 1
+    },
+    {
+      "name": "The Market",
+      "vendorIcon": "images/vendoricons/themarket-icon.png",
+      "typeOfCuisine": "Assorted",
+      "Description": "Located on the lower campus at student housing, The Market at Hale Noelani is your on-campus convenience store which offers all your favorite items and basic necessities.Open 7 days a week, you can stock up on snacks, cup noodle, bottled water, toilet paper, bath soap, laundry detergent, and much more at The Market!The Market also offers hot food in a hurry - Pizzas, Hot Dogs, and Mac & Cheese are a few of the quick bites your can enjoy from this location.Our fresh produce section and natural foods section are very popular with our customers. Whether you're looking to put together a meal, or just grab an afternoon snack, The Market has a great set of options to satisfy dorm and apartment residents! ",
+      "takesMeals": 1
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "defaultHours": [
+    {
+      "restaurantName": "Ono Seafood",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Govindas",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Bale",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Campus Center",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Dunkin Donuts",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "L and L Barbecue",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Paradise Palms",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    },
+    {
+      "restaurantName": "The Market",
+      "sunday": "2-3",
+      "monday": "3-4",
+      "tuesday": "4-5",
+      "wednesday": "5-6",
+      "thursday": "6-7",
+      "friday": "7-8",
+      "saturday": "8-9"
+    }
+  ]
+}

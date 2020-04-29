@@ -55,17 +55,30 @@ function addReview(data) {
 }
 
 if ((Meteor.settings.loadAssetsFile) && (RestaurantCollection.find().count() === 0)) {
-  const assetsFileName = 'data.json';
+  // const assetsFileName = 'data.json';
+  const hoursAssetsFileName = 'hoursData.json';
+  const locationsAssetsFileName = 'locationsData.json';
+  const menuItemsAssetsFileName = 'menuItemsData.json';
+  const restaurantsAssetsFileName = 'restaurantsData.json';
   const reviewAssetsFileName = 'reviewData.json';
-  console.log(`Loading data from private/${assetsFileName}`);
+
+  // console.log(`Loading data from private/${assetsFileName}`);
+  console.log(`Loading hours data from private/${hoursAssetsFileName}`);
+  console.log(`Loading locations data from private/${locationsAssetsFileName}`);
+  console.log(`Loading menu items data from private/${menuItemsAssetsFileName}`);
+  console.log(`Loading restaurants data from private/${restaurantsAssetsFileName}`);
   console.log(`Loading review data from private/${reviewAssetsFileName}`);
+  const hoursJsonData = JSON.parse(Assets.getText(hoursAssetsFileName));
+  const locationsJsonData = JSON.parse(Assets.getText(locationsAssetsFileName));
+  const menuItemsJsonData = JSON.parse(Assets.getText(menuItemsAssetsFileName));
+  const restaurantsJsonData = JSON.parse(Assets.getText(restaurantsAssetsFileName));
   const reviewJsonData = JSON.parse(Assets.getText(reviewAssetsFileName));
-  const jsonData = JSON.parse(Assets.getText(assetsFileName));
-  jsonData.defaultFoodTrucks.map(data => addFoodTruck(data));
-  jsonData.defaultHours.map(data => addHours(data));
-  jsonData.defaultLocation.map(data => addLocation(data));
-  jsonData.defaultMenuItem.map(data => addMenuItem(data));
-  jsonData.defaultRestaurant.map(data => addRestaurant(data));
+  // const jsonData = JSON.parse(Assets.getText(assetsFileName));
+  restaurantsJsonData.defaultFoodTrucks.map(data => addFoodTruck(data));
+  hoursJsonData.defaultHours.map(data => addHours(data));
+  locationsJsonData.defaultLocation.map(data => addLocation(data));
+  menuItemsJsonData.defaultMenuItem.map(data => addMenuItem(data));
+  restaurantsJsonData.defaultRestaurant.map(data => addRestaurant(data));
   reviewJsonData.defaultReview.map(data => addReview(data));
 
 }

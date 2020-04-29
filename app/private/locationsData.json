@@ -1,0 +1,264 @@
+{
+  "defaultLocation": [
+    {
+      "restaurantName": "Ono Seafood",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Just Ice",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "POST",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Hot Tacos",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Campus Centre",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Bean Counter",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Da Spot",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy Theatre",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Govindas",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Le Crepe",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Rocket Coffee",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Bale",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Campus Center",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Dunkin Donuts",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Holo Holo Grill",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Jamba Juice",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "L and L Barbecue",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Panda Express",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Paradise Palms",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "Stir Fresh",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    },
+    {
+      "restaurantName": "The Market",
+      "sunday": "CLOSED",
+      "monday": "POST",
+      "tuesday": "Circle",
+      "wednesday": "Maile",
+      "thursday": "Maile",
+      "friday": "Kennedy",
+      "saturday": "CLOSED"
+    }
+  ]
+}
