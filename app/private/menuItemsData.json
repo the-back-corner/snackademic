@@ -2324,6 +2324,232 @@
       "restaurantName": "Bale",
       "itemName": "Mozzarella Sticks",
       "price": "6.25"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Chicken Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Chicken Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Chicken Katsu Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Chicken Curry Katsu Plate",
+      "price": "10.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Cold Ginger Chicken Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Spicy Chicken Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Mochiko Chicken Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Garlic Chicken Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Fried Noodle Plate",
+      "price": "7.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Loco Moco Plate",
+      "price": "10.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Hamburger Steak Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Teriyaku Steak Plate",
+      "price": "10.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Short Rib Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Beef Stew Plate",
+      "price": "11.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Steak Special Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Teriyaki Pork Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Pork Katsu Plate",
+      "price": "9.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Breaded Pork Chop Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Kalua Pork Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Laulau Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Shrimp Curry Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Fried Shrimp Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Fried Mahimahi Plate",
+      "price": "11.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Grilled Garlic Ahi Plate",
+      "price": "12.95"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Seafood Saimin",
+      "price": "7.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Skinless BBQ Chicken Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Salmon Patty Plate",
+      "price": "11.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Garlic Mahi Plate",
+      "price": "11.95"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Vegan Patty Plate",
+      "price": "8.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Garlic Shrimp Plate",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Hamburger",
+      "price": "2.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Cheeseburger",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Double Cheeseburger",
+      "price": "4.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Hamburger",
+      "price": "3.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Cheeseburger",
+      "price": "3.75"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Double BBQ Cheeseburger",
+      "price": "5.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "BBQ Chicken Sandwich",
+      "price": "3.55"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Teriyaki Steak Sandwich",
+      "price": "4.65"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Mahi Burger",
+      "price": "4.95"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Shrimp Burger",
+      "price": "4.75"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Saimin Burger",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Covfefe Hamberder",
+      "price": "1200.00"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "French Fries",
+      "price": "3.75"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Bottled Soda",
+      "price": "2.05"
+    },
+    {
+      "restaurantName": "L & L Barbecue",
+      "itemName": "Bottled Water",
+      "price": "2.55"
     }
+
   ]
 }
