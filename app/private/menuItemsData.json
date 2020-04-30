@@ -2549,6 +2549,156 @@
       "restaurantName": "L & L Barbecue",
       "itemName": "Bottled Water",
       "price": "2.55"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Egg Masala Plate",
+      "price": "7.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Lamb Masala (mild) Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Lamb Sambal (spicy) Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Fish Curry Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Fish Sambal (spicy) Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Chicken Curry (med spice) Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Chicken Korma (mild) Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Chicken Sambal (spicy) Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Shrimp Curry Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Shrimp Sambal (spicy) Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Calamari Curry Plate",
+      "price": "9.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Vegetable Sambal Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Tofu Sambal Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Spinach Tofu Korma Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Cauliflower Karl Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Vegetable Masala Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Potato Masala Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Coconut Cabbage Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Spicy Malaysain Noodles Plate",
+      "price": "9.45"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Chana Masala Plate",
+      "price": "7.45"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Okra Vegetable Curry Plate",
+      "price": "7.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Roti Paratha",
+      "price": "0.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Samosa",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Egg Masala Plate",
+      "price": "8.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Idli",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Papadum",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Jasmine Rice",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Fresh Watermelon Juice",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Hot Chai Tea",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "Lasoon",
+      "itemName": "Bottled Drinks",
+      "price": "2.00"
     }
 
   ]
