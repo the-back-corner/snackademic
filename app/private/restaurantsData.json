@@ -36,6 +36,13 @@
       "takesMeals": 1
     },
     {
+      "name": "Kamitoku Ramen",
+      "vendorIcon": "images/vendoricons/kamitokuramen-icon.png",
+      "typeOfCuisine": "Ramen",
+      "Description": "Kamitoku Ramen specializes in a Tottori-style beef bone ramen.",
+      "takesMeals": 0
+    },
+    {
       "name": "Le Crepe",
       "vendorIcon": "images/vendoricons/lecrepe-icon.png",
       "typeOfCuisine": "Crepe",
@@ -113,13 +120,6 @@
       "typeOfCuisine": "Health",
       "Description": "Visit Jamba for refreshing fruit smoothie blends, delicious and nutritious energy bowls, fresh juices, healthy baked goods and savory grab-and-go food items. Jamba blends real fruit and whole ingredients into each delicious fresh juice, smoothie, or energy bowl you order and contains no artificial colors, preservatives, or flavors.",
       "takesMeals": 1
-    },
-    {
-      "name": "Kamitoku Ramen",
-      "vendorIcon": "images/vendoricons/kamitokuramen-icon.png",
-      "typeOfCuisine": "Ramen",
-      "Description": "Kamitoku Ramen specializes in a Tottori-style beef bone ramen.",
-      "takesMeals": 0
     },
     {
       "name": "Lasoon",

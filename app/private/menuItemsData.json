@@ -2699,6 +2699,41 @@
       "restaurantName": "Lasoon",
       "itemName": "Bottled Drinks",
       "price": "2.00"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Beefy Wild Ramen",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Beefy Lite Ramen",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Beefy Shoyu Ramen",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Beefy Miso Ramen",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Pork Gyoza",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Extra Toppings: Menma, Green Onion, Tamago, Moyashi, Beef Chuck",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Kamitoku Ramen",
+      "itemName": "Soda & Water",
+      "price": "1.50"
     }
 
   ]
