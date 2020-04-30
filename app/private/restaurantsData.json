@@ -1,34 +1,6 @@
 {
   "defaultFoodTrucks": [
     {
-      "name": "Ono Seafood",
-      "vendorIcon": "/images/vendoricons/ono-icon.png",
-      "typeOfCuisine": "Seafood",
-      "Description": "Traditional super ono ahi & tako poke; always fresh, premium ahi- never frozen! Made to order poke by the pound & poke bowls.",
-      "takesMeals": 0
-    },
-    {
-      "name": "Just Ice",
-      "vendorIcon": "images/vendoricons/justicewht-icon.png",
-      "typeOfCuisine": "Desert",
-      "Description": "Just Ice Hawaii is bringing a simply nice selection of frozen treats to the campus in style. This food truck is cooling off even the hottest days with tropical island bliss, coming to you in a variety of sweet forms to tantalize your tastebuds. they've got that Hawaiian classic shaved ice in 16 flavors for your enjoyment. Strawberry, pineapple, coconut and passionfruit as well as bubble gum, root beer and piña colada. Also on the menu is poke bowls, poke nachos and a variety of paninis.",
-      "takesMeals": 1
-    },
-    {
-      "name": "Hot Tacos",
-      "vendorIcon": "images/vendoricons/hottacos-icon.png",
-      "typeOfCuisine": "Mexican",
-      "Description": "Hot Tacos offers authentic Mexican food, prepped and cooked daily from scratch offering tacos, burritos, and quesadillas with meat options like steak, chicken, marinated pork, and shredded beef. They offer a la carte options or lunch plates that include beans and Spanish rice and other add on options like Chili Rellenos and Tamales.",
-      "takesMeals": 0
-    },
-    {
-      "name": "Sistahs",
-      "vendorIcon": "images/vendoricons/thesistah-icon.png",
-      "typeOfCuisine": "Korean",
-      "Description": "Sistah Truck serves Korean-inspired local cuisine. Daily menu plate lunches include loco moco, chicken katsu, and Korean-style shoyu chicken. They also serve grab-and-go dishes like bibimbap, gyoza and kimchi bowls. Vegetarian options are available.",
-      "takesMeals": 0
-    },
-    {
       "name": "Bean Counter",
       "vendorIcon": "images/vendoricons/beancounter-icon.png",
       "typeOfCuisine": "Coffee",
@@ -50,6 +22,20 @@
       "takesMeals": 0
     },
     {
+      "name": "Hot Tacos",
+      "vendorIcon": "images/vendoricons/hottacos-icon.png",
+      "typeOfCuisine": "Mexican",
+      "Description": "Hot Tacos offers authentic Mexican food, prepped and cooked daily from scratch offering tacos, burritos, and quesadillas with meat options like steak, chicken, marinated pork, and shredded beef. They offer a la carte options or lunch plates that include beans and Spanish rice and other add on options like Chili Rellenos and Tamales.",
+      "takesMeals": 0
+    },
+    {
+      "name": "Just Ice",
+      "vendorIcon": "images/vendoricons/justicewht-icon.png",
+      "typeOfCuisine": "Desert",
+      "Description": "Just Ice Hawaii is bringing a simply nice selection of frozen treats to the campus in style. This food truck is cooling off even the hottest days with tropical island bliss, coming to you in a variety of sweet forms to tantalize your tastebuds. they've got that Hawaiian classic shaved ice in 16 flavors for your enjoyment. Strawberry, pineapple, coconut and passionfruit as well as bubble gum, root beer and piña colada. Also on the menu is poke bowls, poke nachos and a variety of paninis.",
+      "takesMeals": 1
+    },
+    {
       "name": "Le Crepe",
       "vendorIcon": "images/vendoricons/lecrepe-icon.png",
       "typeOfCuisine": "Crepe",
@@ -57,10 +43,24 @@
       "takesMeals": 0
     },
     {
+      "name": "Ono Seafood",
+      "vendorIcon": "/images/vendoricons/ono-icon.png",
+      "typeOfCuisine": "Seafood",
+      "Description": "Traditional super ono ahi & tako poke; always fresh, premium ahi- never frozen! Made to order poke by the pound & poke bowls.",
+      "takesMeals": 0
+    },
+    {
       "name": "Rocket Coffee",
       "vendorIcon": "images/vendoricons/rocketcoffee-icon.png",
       "typeOfCuisine": "Coffee",
       "Description": "Delicous coffee and an adorable Ernie",
+      "takesMeals": 0
+    },
+    {
+      "name": "Sistahs",
+      "vendorIcon": "images/vendoricons/thesistah-icon.png",
+      "typeOfCuisine": "Korean",
+      "Description": "Sistah Truck serves Korean-inspired local cuisine. Daily menu plate lunches include loco moco, chicken katsu, and Korean-style shoyu chicken. They also serve grab-and-go dishes like bibimbap, gyoza and kimchi bowls. Vegetarian options are available.",
       "takesMeals": 0
     }
   ],
@@ -129,7 +129,7 @@
       "takesMeals": 0
     },
     {
-      "name": "L and L Barbecue",
+      "name": "L & L Barbecue",
       "vendorIcon": "images/vendoricons/llbbq-icon.png",
       "typeOfCuisine": "Asian-American",
       "Description": "Delicious local and Asian-American fusion cuisine served in big portions at reasonable prices! Try delicious L&L favorites like the Hawaiian Barbecue beef, chicken, or short ribs! Enjoy L&L's famous fried chicken katsu, the best in town! Grab-and-go, breakfast items and party packs for groups also available.",
@@ -146,7 +146,7 @@
       "name": "Paradise Palms",
       "vendorIcon": "images/vendoricons/paradisepalms-icon.png",
       "typeOfCuisine": "N/A",
-      "Description": "Hub for lots of food places",
+      "Description": "A hub for a variety of restaurants",
       "takesMeals": 0
     },
     {

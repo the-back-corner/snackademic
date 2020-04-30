@@ -2124,6 +2124,206 @@
       "restaurantName": "Le Crepe",
       "itemName": "Bottled Water",
       "price": "1.99"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Rare Beef, Meatball & Brisket Pho",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Shredded Chicken Pho",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Turkey Banh Mi",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Ham Banh Mi",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Tofu Banh Mi",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Tuna Banh Mi",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Banh Mi",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Pastrami Banh Mi",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Ham & Pate Banh Mi",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Lemongrass Chicken Banh Mi",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Turmeric Chicken Banh Mi",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Roast Beef Banh Mi",
+      "price": "5.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Meatball Banh Mi",
+      "price": "5.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Kalua Pork Banh Mi",
+      "price": "5.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Vegetarian Banh Mi",
+      "price": "4.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Thit Khia Banh Mi",
+      "price": "8.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Pesto Panini Sandwich",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Turkey Sundried Tomato Panini Sandwich",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Grilled Vegetable Panini Sandwich",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Eggplant Parmesan Sandwich",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Croque Monseieur Sandwich",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Pho-ggie Sandwich",
+      "price": "10.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Curry Plate",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Tofu Eggplant Curry Plate",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Pad Thai Plate (Large)",
+      "price": "7.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Pad Thai Plate (Small)",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "French Bread Cheese Pizza",
+      "price": "4.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "French Bread Pepperoni Pizza",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Spring Roll",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Pommes Frites",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Garlic Pommes Frites",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Onion Rings",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Fish & Frites",
+      "price": "9.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Chicken Tenders & Frites",
+      "price": "7.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Crab & Cheese Won Tons",
+      "price": "4.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Asian Spicy Buffalo Wings",
+      "price": "6.75"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Fried Chicken Wings",
+      "price": "6.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Adobo Fried Chicken Wings",
+      "price": "8.00"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Mac & Cheese",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Bale",
+      "itemName": "Mozzarella Sticks",
+      "price": "6.25"
     }
   ]
 }
