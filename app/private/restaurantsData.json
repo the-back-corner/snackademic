@@ -176,13 +176,6 @@
       "typeOfCuisine": "Seafood",
       "Description": "Located on the first floor of Campus Center across from the ATMs, Stir-Fresh serves up fresh and healthy Poke Bowls and Stir Frys. Come down today and build your own stir fry - First choose your protein, next choose your sauce, then choose rice or noodles, last fill up your bowl with the vegetables of your choice. After you've made your selections your lunch will be tossed by our expert chefs. Want to eat what the locals eat? Try one of our signature poke bowls. Aloha Friday specials are also offered every week. Stop by today and enjoy the Stir-Fresh experience!",
       "takesMeals": 1
-    },
-    {
-      "name": "The Market",
-      "vendorIcon": "images/vendoricons/themarket-icon.png",
-      "typeOfCuisine": "Assorted",
-      "Description": "Located on the lower campus at student housing, The Market at Hale Noelani is your on-campus convenience store which offers all your favorite items and basic necessities.Open 7 days a week, you can stock up on snacks, cup noodle, bottled water, toilet paper, bath soap, laundry detergent, and much more at The Market!The Market also offers hot food in a hurry - Pizzas, Hot Dogs, and Mac & Cheese are a few of the quick bites your can enjoy from this location.Our fresh produce section and natural foods section are very popular with our customers. Whether you're looking to put together a meal, or just grab an afternoon snack, The Market has a great set of options to satisfy dorm and apartment residents! ",
-      "takesMeals": 1
     }
   ]
 }
