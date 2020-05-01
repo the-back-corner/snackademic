@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom';
 class RestaurantLocationItem extends React.Component {
   render() {
     const dayOfTheWeek = moment().format('dddd').toLowerCase();
-    // console.log(this.props.restaurantLocation);
+    console.log(this.props.restaurantLocation);
     // console.log(this.props.restaurantLocation[dayOfTheWeek]);
     return (
         <Table.Row>

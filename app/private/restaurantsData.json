@@ -136,13 +136,6 @@
       "takesMeals": 0
     },
     {
-      "name": "Paradise Palms",
-      "vendorIcon": "images/vendoricons/paradisepalms-icon.png",
-      "typeOfCuisine": "N/A",
-      "Description": "A hub for a variety of restaurants",
-      "takesMeals": 0
-    },
-    {
       "name": "Pizza Hut",
       "vendorIcon": "images/vendoricons/pizzahut-icon.png",
       "typeOfCuisine": "Pizza",
