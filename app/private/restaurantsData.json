@@ -80,13 +80,6 @@
       "takesMeals": 1
     },
     {
-      "name": "Campus Center",
-      "vendorIcon": "images/vendoricons/campuscenterfc-icon.png",
-      "typeOfCuisine": "Assorted",
-      "Description": "The UH Campus Center",
-      "takesMeals": 1
-    },
-    {
       "name": "Dunkin Donuts",
       "vendorIcon": "images/vendoricons/dunkindonuts-icon.png",
       "typeOfCuisine": "Coffee",
