@@ -1,16 +1,22 @@
 {
   "defaultAccounts": [
     {
+      "first": "admin",
+      "last": "account",
       "email": "admin@foo.com",
       "password": "changeme",
       "role": "admin"
     },
     {
+      "first": "john",
+      "last": "doe",
       "email": "john@foo.com",
       "password": "changeme",
       "role": "buyer"
     },
     {
+      "first": "vendor",
+      "last": "account",
       "email": "vendor@foo.com",
       "password": "changeme",
       "role": "vendor"

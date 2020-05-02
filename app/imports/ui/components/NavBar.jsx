@@ -13,6 +13,7 @@ class NavBar extends React.Component {
   render() {
     const restaurantCollection = RestaurantCollection.find().fetch();
     const foodTrucksCollection = FoodTrucksCollection.find().fetch();
+    const fullName = `${this.props.currentFirstName}   ${this.props.currentLastName}`;
     // restaurantCollection.map((restaurant) => console.log(restaurant.name));
     // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
     const menuStyle = { marginBottom: '5px' };
@@ -83,7 +84,7 @@ class NavBar extends React.Component {
                   </Dropdown.Menu>
                 </Dropdown>
             ) : ( // if there is a user signed in, display "ACCOUNT" and "SIGN OUT" in navbar
-                <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
+                <Dropdown text={fullName} as='h3' pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
                     <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
                     {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (
@@ -99,10 +100,12 @@ class NavBar extends React.Component {
     );
   }
 }
-
+console.log(Meteor.user());
 /** Declare the types of all properties. */
 NavBar.propTypes = {
   currentUser: PropTypes.string,
+  currentFirstName: PropTypes.string,
+  currentLastName: PropTypes.string,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -110,7 +113,9 @@ NavBar.propTypes = {
 const subscription = Meteor.subscribe('RestaurantCollection');
 const subscription1 = Meteor.subscribe('FoodTrucksCollection');
 const NavBarContainer = withTracker(() => ({
-  currentUser: Meteor.user() ? Meteor.user().username : '',
+  currentUser: Meteor.user() ? Meteor.user().username: '',
+  currentFirstName: Meteor.user() ? Meteor.user().profile.name.first: '',
+  currentLastName: Meteor.user() ? Meteor.user().profile.name.last: '',
   ready: subscription.ready() && subscription1.ready(),
 }))(NavBar);
 
