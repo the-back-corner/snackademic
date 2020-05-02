@@ -23,6 +23,8 @@ class Restaurant extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
             </Grid.Column>
           </Grid>
+
+
           <Grid verticalAlign='middle' textAlign='center' container>
             <Grid.Column className="leftGrid" textAlign='left' width={8}>
               <Image src={this.props.doc.vendorIcon} size="medium" verticalAlign='middle'/>
@@ -36,8 +38,7 @@ class Restaurant extends React.Component {
 
             </Grid.Column>
           </Grid>
-          <Grid.Column width={8}>
-          </Grid.Column>
+
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Header className="firstHeader" as='h1'>Menu Items</Header>

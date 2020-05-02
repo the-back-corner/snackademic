@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Header, Image, Loader} from 'semantic-ui-react';
+import { Card, Grid, Header, Image, Loader } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -19,22 +19,30 @@ class FoodTruck extends React.Component {
       console.log(this.props.doc2);
     return (
         <div className="signupPage">
-            <Grid verticalAlign='middle' textAlign='center' container>
+          <Grid verticalAlign='middle' textAlign='center'>
+            <Grid.Column>
+              <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
+            </Grid.Column>
+          </Grid>
 
-              <Grid.Column className="leftGrid" textAlign='left' width={8}>
+
+          <Grid verticalAlign='middle' textAlign='center' container>
+            <Grid.Column className="leftGrid" textAlign='left' width={8}>
                   <Image src={this.props.doc.vendorIcon} size = "medium" verticalAlign='middle'/>
-                  <Header className="firstHeader" as='h1'>Menu Items</Header>
-                  { this.props.doc2.map((menuItem) => {
-                      if (menuItem.restaurantName === this.props.doc.name){
-                          return (
-                              <Header key={menuItem._id} className="secondHeader" as='h3'>{menuItem.itemName} -
-                                  ${menuItem.price}</Header>
-                           );
-                      }
-                      return (<Header key={menuItem._id}></Header>);
-                    })
-                  }
-              </Grid.Column>
+            </Grid.Column>
+
+                  {/*<Header className="firstHeader" as='h1'>Menu Items</Header>*/}
+                  {/*{ this.props.doc2.map((menuItem) => {*/}
+                  {/*    if (menuItem.restaurantName === this.props.doc.name){*/}
+                  {/*        return (*/}
+                  {/*            <Header key={menuItem._id} className="secondHeader" as='h3'>{menuItem.itemName} -*/}
+                  {/*                ${menuItem.price}</Header>*/}
+                  {/*         );*/}
+                  {/*    }*/}
+                  {/*    return (<Header key={menuItem._id}></Header>);*/}
+                  {/*  })*/}
+                  {/*}*/}
+              {/*</Grid.Column>*/}
               <Grid.Column className="rightGrid" width={8}>
                   <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
                   <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
@@ -44,10 +52,35 @@ class FoodTruck extends React.Component {
 
               </Grid.Column>
 
+
+
               <Grid.Column width={8}>
               </Grid.Column>
 
             </Grid>
+          <Grid verticalAlign='middle' textAlign='center'>
+            <Grid.Column>
+              <Header className="firstHeader" as='h1'>Menu Items</Header>
+              <Card.Group centered>
+                {this.props.doc2.map((menuItem) => {
+                  if (menuItem.restaurantName === this.props.doc.name) {
+                    return (
+                        <Card key={menuItem._id} className="secondHeader">
+                          <Card.Content>
+                            <Card.Header>
+                              {menuItem.itemName} -
+                              ${menuItem.price}
+                            </Card.Header>
+                          </Card.Content>
+                        </Card>
+                    );
+                  }
+                  return (<Header key={menuItem._id}></Header>);
+                })
+                }
+              </Card.Group>
+            </Grid.Column>
+          </Grid>
         </div>
     );
   }
