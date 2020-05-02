@@ -19,7 +19,7 @@ export default class Signin extends React.Component {
   /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
   /** Handle Signin submission using Meteor's account mechanism. */
   submit = () => {
@@ -118,8 +118,6 @@ export default class Signin extends React.Component {
   }
 
   /** Ensure that the React Router location object is available in case we need to redirect. */
-  Signin
-.
-  propTypes = {
+  Signin.propTypes = {
     location: PropTypes.object,
   };

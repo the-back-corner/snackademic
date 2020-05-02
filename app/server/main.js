@@ -3,22 +3,16 @@ import '/imports/startup/server/Publications';
 import '/imports/startup/server/Mongo';
 
 Meteor.methods({
-  'add.new.vendor'(email, password) {
+  'add.new.account'(data) {
     // Optionally, check email and password are strings
     const userID = Accounts.createUser({
-      username: email,
-      email: email,
-      password: password,
+      profile: {
+        name: { first: data.firstName, last: data.lastName },
+      },
+      username: data.email,
+      email: data.email,
+      password: data.password,
     });
-    Roles.addUsersToRoles(userID, 'vendor');
-  },
-  'add.new.buyer'(email, password) {
-    // Optionally, check email and password are strings
-    const userID = Accounts.createUser({
-      username: email,
-      email: email,
-      password: password,
-    });
-    Roles.addUsersToRoles(userID, 'buyer');
-  },
+    Roles.addUsersToRoles(userID, data.role);
+  }
 });

@@ -12,37 +12,40 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', role: '', error: '', redirectToReferer: false };
+    this.state = { firstName: '', lastName: '', email: '', password: '', role: 'buyer', error: '', redirectToReferer: false };
   }
 
   /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password, role } = this.state;
-    if (role === 'vendor'){
+    const { firstName, lastName, email, password, role } = this.state;
+    let data = {
+      firstName,
+      lastName,
+      email,
+      password,
+      role,
+    };
       try {
-        Meteor.call('add.new.vendor', email, password);
+        Meteor.call('add.new.account', data);
+        console.log("account created successfully");
       } catch(err) {
+        console.log("there was a create account error");
         this.setState({ error: err.reason });
       }
-    } else {
-      try {
-      Meteor.call('add.new.buyer', email, password);
-      } catch(err) {
-        this.setState({ error: err.reason });
-      }
-    }
 
     Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         this.setState({ error: err.reason });
+        console.log("there was a log in error");
       } else {
         this.setState({ error: '', redirectToReferer: true });
+        console.log("log in successful");
       }
     });
   };
@@ -52,44 +55,34 @@ class Signup extends React.Component {
     // create a variable to hold homepage path
     const { vendorLandingPage } = this.props.location.state || { vendorLandingPage: { pathname: '/myeatery' } };
     // create a variable to hold the user landing page path
-    const { buyerLandingPage } = this.props.location.state || { userLandingPage: { pathname: '/favorites' } };
-    // variable to hold admin landing page path
-    const { adminLandingPage } = this.props.location.state || { adminLandingPage: { pathname: '/allaccounts' } };
+    const { buyerLandingPage } = this.props.location.state || { buyerLandingPage: { pathname: '/favorites' } };
 
     // variables to determine what role signed in
     const isLogged = Meteor.userId() !== null;
-    const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
     const isBuyer = Roles.userIsInRole(Meteor.userId(), 'buyer'); // use this later
     const isVendor = Roles.userIsInRole(Meteor.userId(), 'vendor'); // use this later
 
     // if there are no errors
-    if (this.state.redirectToReferer) { // if redirectToReferrer is false
-      if (isLogged && isAdmin) {
-        return <Redirect to={adminLandingPage}/>;
-      }
-      else if (isLogged && isVendor){
+    if (this.state.redirectToReferer) {
+      if (isLogged && isVendor){
+        console.log("rerouting to vendors page");
         return <Redirect to={vendorLandingPage}/>;
       } else if (isLogged && isBuyer) {
+        console.log("rerouting to buyers page");
         return <Redirect to={buyerLandingPage}/>;
       }
+      console.log('did not work')
     }
     return (
         <Container>
         <Header as="h2" textAlign="center"> Register your account </Header>
-        <Header as="h4" textAlign="center">
-          If you are a student, sign up for an account.
-        </Header>
-        <Header as="h4" textAlign="center">
-          If you are a vendor, you may sign up for an account and
-          send a request to snackademicandco@gmail.com to have your account upgraded.
-        </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Form onSubmit={this.submit}>
               <Segment stacked>
                 <Form.Field>
                   <Radio
-                      label='Select this if you are a user'
+                      label='Select this if you are a buyer'
                       name='role'
                       value='buyer'
                       checked={this.state.role === 'buyer'}
@@ -105,21 +98,30 @@ class Signup extends React.Component {
                       onChange={this.handleChange}
                   />
                 </Form.Field>
+                <Form.Group>
+                  <Form.Input
+                      name="firstName"
+                      focus placeholder="First Name"
+                      onChange={this.handleChange}
+                  /><Form.Input
+                    name="lastName"
+                    focus placeholder="Last Name"
+                    onChange={this.handleChange}
+                />
+                </Form.Group>
                 <Form.Input
-                  label="Email"
                   icon="user"
                   iconPosition="left"
                   name="email"
                   type="email"
-                  placeholder="Enter your email address"
+                  focus placeholder="Email Address"
                   onChange={this.handleChange}
                 />
                 <Form.Input
-                  label="Password"
                   icon="lock"
                   iconPosition="left"
                   name="password"
-                  placeholder="Enter your password"
+                  focus placeholder="Create a Password"
                   type="password"
                   onChange={this.handleChange}
                 />
