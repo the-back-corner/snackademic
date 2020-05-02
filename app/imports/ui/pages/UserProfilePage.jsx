@@ -4,6 +4,8 @@ import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed } f
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Stuffs } from '../../api/stuff/Stuff';
+import ProfileComponent from '../components/ProfileCard';
+import StuffItem from '../components/StuffItem';
 
 /** THIS IS A COPY OF ListStuff.jsx **/
 
@@ -24,26 +26,12 @@ class UserProfilePage extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">MY ACCOUNT</Header>
-          <Grid textAlign="center" verticalAlign="top" centered columns={2}>
-            <Grid.Column>
-              <Card centered>
-                <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-                <Card.Content>
-                  <Card.Header>Account Name</Card.Header>
-                </Card.Content>
-                <Card.Content>
-                    Email Address
-                </Card.Content>
-                <Card.Content>
-                  Account Type
-                </Card.Content>
-                <Card.Content extra>
-                  <Button> Edit Account </Button>
-                </Card.Content>
-              </Card>
+          <Grid verticalAlign="top" columns={2}>
+            <Grid.Column width={6}>
+              <ProfileComponent/>
 
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column width={10}>
               <Card fluid>
                 <Card.Content>
                   <Card.Header>Reviews</Card.Header>

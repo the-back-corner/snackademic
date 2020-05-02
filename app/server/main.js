@@ -16,3 +16,16 @@ Meteor.methods({
     Roles.addUsersToRoles(userID, data.role);
   }
 });
+
+Meteor.methods({
+  'change.user.password'(oldPassword, newPassword) {
+    // Optionally, check email and password are strings
+    Accounts.changePassword(oldPassword, newPassword, function (err) {
+      if (!err) {
+        console.log('Changing the password was a success!')
+      } else {
+        console.log(err);
+      }
+    })
+  }
+});
