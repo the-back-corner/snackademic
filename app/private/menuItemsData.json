@@ -2734,7 +2734,111 @@
       "restaurantName": "Kamitoku Ramen",
       "itemName": "Soda & Water",
       "price": "1.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Latte Hot",
+      "price": "4.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Latte Iced",
+      "price": "5.00"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Cappuccino",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Flat White",
+      "price": "4.00"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Americano",
+      "price": "4.75"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Espresso",
+      "price": "3.00"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Macchiato",
+      "price": "3.85"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Nitro Cold Brew",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Matcha Latte Tea",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Chai Latte",
+      "price": "5.25"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Hot Tea",
+      "price": "2.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Banana Bread",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Chocolate Chip Cookie",
+      "price": "2.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Donuts (assorted)",
+      "price": "2.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Pastrami Sandwich",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Veggie Sandwhich",
+      "price": "5.75"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Tuna Melt",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Turkey Sandwich",
+      "price": "6.25"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Special of the Day",
+      "price": "7.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Bottled Water",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Soda",
+      "price": "2.50"
     }
-
   ]
 }
