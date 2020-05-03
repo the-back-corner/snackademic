@@ -57,7 +57,7 @@ class FoodTruck extends React.Component {
             <Grid.Column className="rightGrid" width={8}>
               <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
               <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
-              {this.props.doc.takesMeals === 1 ?
+              {this.props.doc.takesMeals ?
                   (<Header className="secondHeader" as='h3'>Takes Meal Points</Header>)
                   : (<Header className="secondHeader" as='h3'>Does Not Take Meal Points</Header>)}
 

@@ -56,7 +56,7 @@ class Restaurant extends React.Component {
             <Grid.Column className="rightGrid" width={8}>
               <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
               <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
-              {this.props.doc.takesMeals === 1 ? (<Header className="secondHeader" as='h3'><Icon name='money bill alternate outline'/>Takes Meal Points</Header>)
+              {this.props.doc.takesMeals ? (<Header className="secondHeader" as='h3'><Icon name='money bill alternate outline'/>Takes Meal Points</Header>)
                   : (<Header className="secondHeader" as='h3'> <Icon name='money bill alternate outline'/> Does Not Take Meal Points</Header>)}
 
             </Grid.Column>
