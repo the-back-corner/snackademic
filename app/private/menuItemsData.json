@@ -2839,6 +2839,181 @@
       "restaurantName": "Simply To Go",
       "itemName": "Soda",
       "price": "2.50"
+    },
+    {
+      "restaurantName": "Simply To Go",
+      "itemName": "Soda",
+      "price": "2.50"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Mocha Cookie Crumble Frappuccino",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Mocha Cocnut Frappuccino",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Caramel Frappuccino",
+      "price": "3.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Java Chip Frappuccino",
+      "price": "3.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Coffee Frappuccino",
+      "price": "3.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Mocha Lite Frappuccino",
+      "price": "3.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Vanilla Bean Frappuccino",
+      "price": "3.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Strawberries & Creme Frappuccino",
+      "price": "3.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Strawberry or Orange Mango Smoothie",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Caramel Macchiato",
+      "price": "3.65"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "White Chocolate Mocha",
+      "price": "3.65"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Caffe Latte",
+      "price": "2.85"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Cafe Mocha",
+      "price": "3.35"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Iced Cafe Mocha",
+      "price": "3.35"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Vanilla Latte",
+      "price": "3.35"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Cafe Americano",
+      "price": "2.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Cappuccino",
+      "price": "2.85"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Espresso",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Hot Chocolate",
+      "price": "3.65"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Cool Lime Refresher",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Very Berry Hibiscus Refresher",
+      "price": "2.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Iced Coffee (with or without milk)",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Shaken Iced Tazor Tea",
+      "price": "1.65"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Iced Tea Lemonade",
+      "price": "2.55"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Fresh Coffee",
+      "price": "1.75"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Caffe Misto",
+      "price": "2.35"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Tazo Chai Tea Latte",
+      "price": "3.35"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Full-Leaf Brewed Tazo Tea",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Bottled Water",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Bottled Juices",
+      "price": "3.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Assorted Donuts",
+      "price": "2.25"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Assorted Pastries",
+      "price": "2.85"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Assorted Sandwiches",
+      "price": "5.95"
+    },
+    {
+      "restaurantName": "Starbucks",
+      "itemName": "Assorted Salads",
+      "price": "8.95"
     }
   ]
 }
