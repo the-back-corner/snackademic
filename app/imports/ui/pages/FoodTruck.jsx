@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
-import { ReviewsCollection } from '../../api/reviews/Reviews';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 
 /** A simple static component to render some text for the landing page. */
 class FoodTruck extends React.Component {
