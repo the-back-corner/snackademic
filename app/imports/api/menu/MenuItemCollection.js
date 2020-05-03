@@ -8,7 +8,7 @@ const MenuItemCollection = new Mongo.Collection('MenuItemCollection');
 /** Define a schema to specify the structure of each document in the collection. */
 const MenuItemCollectionSchema = new SimpleSchema({
   itemName: String,
-  price: Number,
+  price: String,
   restaurantName: String, // like the owner tag, this is what links it to whichever restaurant it is
 }, { tracker: Tracker });
 

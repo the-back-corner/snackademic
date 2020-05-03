@@ -3014,6 +3014,27 @@
       "restaurantName": "Starbucks",
       "itemName": "Assorted Salads",
       "price": "8.95"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "itemName": "Take Out",
+      "price": "500"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "itemName": "Buffet (with meal card)",
+      "price": "1 meal point"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "itemName": "Buffet (cash)",
+      "price": "12.50"
+    },
+    {
+      "restaurantName": "Hale Aloha Cafe",
+      "itemName": "Buffet (takeout container)",
+      "price": "0.50"
     }
+
   ]
 }
