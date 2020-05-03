@@ -112,8 +112,13 @@ class FoodTruck extends React.Component {
                             <Card key={review._id} className="secondHeader">
                               <Card.Content>
                                 <Card.Header>
-                                  {review.dateOfReview} -
-                                  {review.image}
+                                  {review.rating}
+                                  <br/>
+                                  {review.dateOfReview}
+                                  <br/>
+                                  {review.writeUp}
+                                  <br/>
+                                  <Image src={review.image}/>
                                 </Card.Header>
                               </Card.Content>
                             </Card>
