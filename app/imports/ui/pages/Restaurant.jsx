@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Image, Loader, Card, Button, Icon, Accordion } from 'semantic-ui-react';
+import { Grid, Header, Image, Loader, Card, Button, Icon, Accordion, Rating } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -115,7 +115,7 @@ class Restaurant extends React.Component {
                             <Card key={review._id} className="secondHeader">
                               <Card.Content>
                                 <Card.Header>
-                                  {review.rating}
+                                  <Rating icon='star' defaultRating={review.rating} maxRating={5} />
                                   <br/>
                                   {review.dateOfReview}
                                   <br/>

@@ -2,7 +2,23 @@
   "defaultReview": [
     {
       "restaurantName": "Sistahs",
-      "rating": "5",
+      "rating": "3",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "images/sushibackground.jpg"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "rating": "2",
+      "dateOfReview": "2020-02-20",
+      "dateOfVisit": "2020-02-20",
+      "writeUp": "this is a test write up and contains nothing of substance",
+      "image": "images/sushibackground.jpg"
+    },
+    {
+      "restaurantName": "Sistahs",
+      "rating": "1",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -18,7 +34,7 @@
     },
     {
       "restaurantName": "Sistahs",
-      "rating": "5",
+      "rating": "4",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -26,7 +42,7 @@
     },
     {
       "restaurantName": "Sistahs",
-      "rating": "5",
+      "rating": "1",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -34,23 +50,7 @@
     },
     {
       "restaurantName": "Sistahs",
-      "rating": "5",
-      "dateOfReview": "2020-02-20",
-      "dateOfVisit": "2020-02-20",
-      "writeUp": "this is a test write up and contains nothing of substance",
-      "image": "images/sushibackground.jpg"
-    },
-    {
-      "restaurantName": "Sistahs",
-      "rating": "5",
-      "dateOfReview": "2020-02-20",
-      "dateOfVisit": "2020-02-20",
-      "writeUp": "this is a test write up and contains nothing of substance",
-      "image": "images/sushibackground.jpg"
-    },
-    {
-      "restaurantName": "Sistahs",
-      "rating": "5",
+      "rating": "2",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -1922,7 +1922,7 @@
     },
     {
       "restaurantName": "Bale",
-      "rating": "5",
+      "rating": "1",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -1930,7 +1930,7 @@
     },
     {
       "restaurantName": "Ono Seafood",
-      "rating": "5",
+      "rating": "2",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
@@ -1938,7 +1938,7 @@
     },
     {
       "restaurantName": "Just Ice",
-      "rating": "5",
+      "rating": "3",
       "dateOfReview": "2020-02-20",
       "dateOfVisit": "2020-02-20",
       "writeUp": "this is a test write up and contains nothing of substance",
