@@ -5,6 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 
 /** A simple static component to render some text for the landing page. */
 class Restaurant extends React.Component {
@@ -17,6 +18,7 @@ class Restaurant extends React.Component {
 
     this.setState({ activeIndex: newIndex });
   };
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -32,10 +34,11 @@ class Restaurant extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button basic>
-                  <Button.Content visible as='h3'><Icon name='heart outline' color='blue'/>Add to Favorites</Button.Content>
+                  <Button.Content visible as='h3'><Icon name='heart outline' color='blue'/>
+                  Add to Favorites</Button.Content>
                   {/*  If user is logged in button will add the restaurant to their favorites on click
                     if it is already in their favorites, button will save remove from favorites
-                     if user is not logged in button links to sign up page*/}
+                     if user is not logged in button links to sign up page */}
                 </Button>
                 <Button basic>
                   <Button.Content as='h3'><Icon name='star outline' color='blue'/> Write A Review</Button.Content>
@@ -56,8 +59,10 @@ class Restaurant extends React.Component {
             <Grid.Column className="rightGrid" width={8}>
               <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
               <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
-              {this.props.doc.takesMeals ? (<Header className="secondHeader" as='h3'><Icon name='money bill alternate outline'/>Takes Meal Points</Header>)
-                  : (<Header className="secondHeader" as='h3'> <Icon name='money bill alternate outline'/> Does Not Take Meal Points</Header>)}
+              {this.props.doc.takesMeals ? (<Header className="secondHeader" as='h3'>
+                    <Icon name='money bill alternate outline'/>Takes Meal Points</Header>)
+                  : (<Header className="secondHeader" as='h3'> <Icon name='money bill alternate outline'/>
+                  Does Not Take Meal Points</Header>)}
 
             </Grid.Column>
           </Grid>
@@ -94,6 +99,40 @@ class Restaurant extends React.Component {
                   </Card.Group>
                 </Accordion.Content>
               </Accordion>
+              <Accordion fluid styled>
+                <Accordion.Title
+                    active={activeIndex === 2}
+                    index={2}
+                    onClick={this.handleClick}
+                >
+                  <Header className="firstHeader"><Icon name='dropdown' />Reviews</Header>
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 2}>
+                  <Card.Group centered>
+                    {this.props.docReviews.map((review) => {
+                      if (review.restaurantName === this.props.doc.name) {
+                        return (
+                            <Card key={review._id} className="secondHeader">
+                              <Card.Content>
+                                <Card.Header>
+                                  {review.rating}
+                                  <br/>
+                                  {review.dateOfReview}
+                                  <br/>
+                                  {review.writeUp}
+                                  <br/>
+                                  <Image src={review.image}/>
+                                </Card.Header>
+                              </Card.Content>
+                            </Card>
+                        );
+                      }
+                      return (<Header key={review._id}></Header>);
+                    })
+                    }
+                  </Card.Group>
+                </Accordion.Content>
+              </Accordion>
             </Grid.Column>
           </Grid>
         </div>
@@ -107,7 +146,7 @@ class Restaurant extends React.Component {
 Restaurant.propTypes = {
   doc: PropTypes.object,
   doc2: PropTypes.array,
-  model: PropTypes.object,
+  docReviews: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -116,11 +155,13 @@ export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('RestaurantCollection');
-  const subscription2 = Meteor.subscribe('MenuItemCollection');
+  const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
+  const subscriptionMenu = Meteor.subscribe('MenuItemCollection');
+  const subscriptionReviews = Meteor.subscribe('ReviewsCollection');
   return {
     doc: RestaurantCollection.findOne(documentId),
     doc2: MenuItemCollection.find().fetch(),
-    ready: subscription.ready() && subscription2.ready(),
+    docReviews: ReviewsCollection.find().fetch(),
+    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
   };
 })(Restaurant);
