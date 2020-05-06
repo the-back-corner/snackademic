@@ -9,8 +9,8 @@ const ReviewsCollection = new Mongo.Collection('ReviewsCollection');
 const ReviewsCollectionSchema = new SimpleSchema({
   restaurantName: String, // like the owner tag, this is what links it to whichever restaurant it is
   rating: Number,
-  dateOfReview: Date,
-  dateOfVisit: Date,
+  dateOfReview: String,
+  dateOfVisit: String,
   writeUp: String, // Need a new name for this variable
   image: String,
 }, { tracker: Tracker });

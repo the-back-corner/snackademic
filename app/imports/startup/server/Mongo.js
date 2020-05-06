@@ -5,7 +5,7 @@ import { HoursCollection } from '../../api/hours/HoursCollection';
 import { LocationCollection } from '../../api/location/LocationCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
-import { ReviewsCollection } from '../../api/reviews/Reviews';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 /* eslint-disable no-console */
 
 /** Initialize the database with a default data document. */

@@ -6,7 +6,7 @@ import { HoursCollection } from '../../api/hours/HoursCollection';
 import { LocationCollection } from '../../api/location/LocationCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
-import { ReviewsCollection } from '../../api/reviews/Reviews';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 
 /** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Stuff', function publish() {

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Grid, Header, Image, Loader, Card, Button, Icon, Accordion } from 'semantic-ui-react';
+import { Grid, Header, Image, Loader, Card, Button, Icon, Accordion, Rating } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 
 /** A simple static component to render some text for the landing page. */
 class Restaurant extends React.Component {
@@ -99,6 +100,40 @@ class Restaurant extends React.Component {
                   </Card.Group>
                 </Accordion.Content>
               </Accordion>
+              <Accordion fluid styled>
+                <Accordion.Title
+                    active={activeIndex === 2}
+                    index={2}
+                    onClick={this.handleClick}
+                >
+                  <Header className="firstHeader"><Icon name='dropdown' />Reviews</Header>
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 2}>
+                  <Card.Group centered>
+                    {this.props.docReviews.map((review) => {
+                      if (review.restaurantName === this.props.doc.name) {
+                        return (
+                            <Card key={review._id} className="secondHeader">
+                              <Card.Content>
+                                <Card.Header>
+                                  <Rating icon='star' defaultRating={review.rating} maxRating={5} />
+                                  <br/>
+                                  {review.dateOfReview}
+                                  <br/>
+                                  {review.writeUp}
+                                  <br/>
+                                  <Image src={review.image}/>
+                                </Card.Header>
+                              </Card.Content>
+                            </Card>
+                        );
+                      }
+                      return (<Header key={review._id}></Header>);
+                    })
+                    }
+                  </Card.Group>
+                </Accordion.Content>
+              </Accordion>
             </Grid.Column>
           </Grid>
         </div>
@@ -112,7 +147,7 @@ class Restaurant extends React.Component {
 Restaurant.propTypes = {
   doc: PropTypes.object,
   doc2: PropTypes.array,
-  model: PropTypes.object,
+  docReviews: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -121,11 +156,13 @@ export default withTracker(({ match }) => {
   // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
   const documentId = match.params._id;
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('RestaurantCollection');
-  const subscription2 = Meteor.subscribe('MenuItemCollection');
+  const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
+  const subscriptionMenu = Meteor.subscribe('MenuItemCollection');
+  const subscriptionReviews = Meteor.subscribe('ReviewsCollection');
   return {
     doc: RestaurantCollection.findOne(documentId),
     doc2: MenuItemCollection.find().fetch(),
-    ready: subscription.ready() && subscription2.ready(),
+    docReviews: ReviewsCollection.find().fetch(),
+    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
   };
 })(Restaurant);

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Accordion, Button, Card, Grid, Header, Icon, Image, Loader } from 'semantic-ui-react';
+import { Accordion, Button, Card, Grid, Header, Icon, Image, Loader, Rating } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
+import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
 
 /** A simple static component to render some text for the landing page. */
 class FoodTruck extends React.Component {
@@ -25,7 +26,6 @@ class FoodTruck extends React.Component {
 
   renderPage() {
     const { activeIndex } = this.state;
-    console.log(this.props.doc2);
     return (
         <div className="signupPage">
           {/* First grid at top of page, holds food truck name and buttons */}
@@ -68,29 +68,63 @@ class FoodTruck extends React.Component {
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Accordion fluid styled>
+              <Accordion.Title
+                  active={activeIndex === 1}
+                  index={1}
+                  onClick={this.handleClick}
+              >
+                <Header className="firstHeader"><Icon name='dropdown' />Menu Items</Header>
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 1}>
+                <Card.Group centered>
+                  {this.props.doc2.map((menuItem) => {
+                    if (menuItem.restaurantName === this.props.doc.name) {
+                      return (
+                          <Card key={menuItem._id} className="secondHeader">
+                            <Card.Content>
+                              <Card.Header>
+                                {menuItem.itemName} -
+                                ${menuItem.price}
+                              </Card.Header>
+                            </Card.Content>
+                          </Card>
+                      );
+                    }
+                    return (<Header key={menuItem._id}></Header>);
+                  })
+                  }
+                </Card.Group>
+              </Accordion.Content>
+            </Accordion>
+              <Accordion fluid styled>
                 <Accordion.Title
-                    active={activeIndex === 1}
-                    index={1}
+                    active={activeIndex === 2}
+                    index={2}
                     onClick={this.handleClick}
                 >
-                  <Header className="firstHeader"><Icon name='dropdown' />Menu Items</Header>
+                  <Header className="firstHeader"><Icon name='dropdown' />Reviews</Header>
                 </Accordion.Title>
-                <Accordion.Content active={activeIndex === 1}>
+                <Accordion.Content active={activeIndex === 2}>
                   <Card.Group centered>
-                    {this.props.doc2.map((menuItem) => {
-                      if (menuItem.restaurantName === this.props.doc.name) {
+                    {this.props.docReviews.map((review) => {
+                      if (review.restaurantName === this.props.doc.name) {
                         return (
-                            <Card key={menuItem._id} className="secondHeader">
+                            <Card key={review._id} className="secondHeader">
                               <Card.Content>
                                 <Card.Header>
-                                  {menuItem.itemName} -
-                                  ${menuItem.price}
+                                  <Rating icon='star' defaultRating={review.rating} maxRating={5} />
+                                  <br/>
+                                  {review.dateOfReview}
+                                  <br/>
+                                  {review.writeUp}
+                                  <br/>
+                                  <Image src={review.image}/>
                                 </Card.Header>
                               </Card.Content>
                             </Card>
                         );
                       }
-                      return (<Header key={menuItem._id}></Header>);
+                      return (<Header key={review._id}></Header>);
                     })
                     }
                   </Card.Group>
@@ -109,6 +143,7 @@ class FoodTruck extends React.Component {
 FoodTruck.propTypes = {
   doc: PropTypes.object,
   doc2: PropTypes.array,
+  docReviews: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -123,6 +158,7 @@ export default withTracker(({ match }) => {
   return {
     doc: FoodTrucksCollection.findOne(documentId),
     doc2: MenuItemCollection.find().fetch(),
+    docReviews: ReviewsCollection.find().fetch(),
     ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
   };
 })(FoodTruck);
