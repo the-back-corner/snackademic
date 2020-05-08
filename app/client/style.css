@@ -12,7 +12,7 @@
 .landingPage{
     background: url('images/landingBackground.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 650px;
+    height: 675px;
 }
 
 .signupPage{
@@ -55,20 +55,24 @@
 .ui.header.thirdHeader{
   color: white;
   font-family: 'Comfortaa', sans-serif;
-  alignment: center;
+  font-size: 28px;
+  text-align: justify;
 }
 
 .ui.grid.column.leftGrid{
     background-color: blue;
     height: 300px;
 }
+
 .headertext{
   text-decoration: none;
   overflow: hidden;
 }
+
 .headertext:hover{
   text-decoration: underline;
 }
+
 div.text:hover{
   text-decoration: underline;
 }
@@ -76,7 +80,9 @@ div.text:hover{
 .footer-background {
   font-family: 'Comfortaa', sans-serif;
   background-color: #A8C987;
-  font-size: smaller;
+  font-size: medium;
+  letter-spacing: normal;
+  line-height: 1.5em;
   color: white;
   alignment: center;
 }
@@ -87,4 +93,20 @@ div.text:hover{
   font-size: large;
   color: white;
   alignment: center;
+}
+
+.ui.yellow.button {
+  background-color: #F3C347 !important;
+  font-family: 'Comfortaa', sans-serif;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.teal.button {
+  background-color: #A8C987 !important;
+  font-family: 'Comfortaa', sans-serif;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
 }
