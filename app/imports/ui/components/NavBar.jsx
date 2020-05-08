@@ -7,6 +7,7 @@ import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
+import ModalProfile from './ModalProfile';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -86,7 +87,7 @@ class NavBar extends React.Component {
             ) : ( // if there is a user signed in, display "ACCOUNT" and "SIGN OUT" in navbar
                 <Dropdown text={fullName} as='h3' pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
-                    <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
+                    <Dropdown.Item icon="user"> <ModalProfile/> </Dropdown.Item>
                     {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (
                         <Dropdown.Item icon="coffee" text="MY EATERY" as={NavLink} exact to="/myeatery"/>
                         ) : ''}
