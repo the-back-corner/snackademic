@@ -1,13 +1,15 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Image } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { moment } from 'meteor/momentjs:moment';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { LocationCollection } from '../../api/location/LocationCollection';
 import { HoursCollection } from '../../api/hours/HoursCollection';
 import RestaurantLocationItem from '../components/RestaurantLocationItem';
+
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Map extends React.Component {
@@ -19,9 +21,34 @@ class Map extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const dayOfTheWeek = moment().format('dddd').toLowerCase();
+    let src = '';
+    // just the location
+    // the location and the rotation (for the pin)
+    switch (dayOfTheWeek) {
+      case 'monday':
+        src = 'images/maps/snackademic-map-mon.jpg';
+        break;
+      case 'tuesday':
+        src = 'images/maps/snackademic-map-tue.jpg';
+        break;
+      case 'wednesday':
+        src = 'images/maps/snackademic-map-wed.jpg';
+        break;
+      case 'thursday':
+        src = 'images/maps/snackademic-map-thu.jpg';
+        break;
+      case 'friday':
+        src = 'images/maps/snackademic-map-fri.jpg';
+        break;
+      default:
+        src = '';
+        break;
+    }
     return (
         <Container>
           <Header as="h2" textAlign="center">Map</Header>
+          <Image centered src={src} rounded size='massive'/>
           <Table celled>
             <Table.Header>
               <Table.Row>

@@ -3034,6 +3034,121 @@
       "restaurantName": "Hale Aloha Cafe",
       "itemName": "Buffet (takeout container)",
       "price": "0.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Glazed Cinnamon Roll",
+      "price": "1.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Assorted Donuts",
+      "price": "12.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Bacon Fried Rice",
+      "price": "2.75"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Scrambled Eggs",
+      "price": "99.75"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Two Buttermilk Pancakes",
+      "price": "6.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "O'brien Potatoes",
+      "price": "4.25"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "One Pork Sausage Patty",
+      "price": "1.75"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Steel Cut Oatmeal",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Pepperoni Pizza",
+      "price": "29.95"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Cheese Pizza",
+      "price": "23.95"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Hot Italian Sausage Pizza",
+      "price": "25.95"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Sticky Rice",
+      "price": "3.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Steamed Brown Rice",
+      "price": "5.50"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "6 White Corn Table Tortillas",
+      "price": "6.66"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Shredded Napa Cabbage",
+      "price": "1.95"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Chipotle Chicken",
+      "price": "7.95"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Pico De Gallo",
+      "price": "10.99"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Bacon New England Clam Chowder",
+      "price": "5.55"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Grilled Ham and Cheese",
+      "price": "4.45"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "French Fries",
+      "price": "6.35"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Cheeseburger",
+      "price": "9.75"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Tofu and Vegetable Fajita",
+      "price": "12.55"
+    },
+    {
+      "restaurantName": "Gateway Cafe",
+      "itemName": "Primavera Penne Florentine",
+      "price": "8.65"
     }
 
   ]
