@@ -8,8 +8,8 @@ import { Roles } from 'meteor/alanning:roles';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 
-/** The NavBar appears at the top of every page. Rendered by the App Layout component. */
-class NavBar extends React.Component {
+/** The NavBar2 appears at the top of every page. Rendered by the App Layout component. */
+class NavBar2 extends React.Component {
   render() {
     const restaurantCollection = RestaurantCollection.find().fetch();
     const foodTrucksCollection = FoodTrucksCollection.find().fetch();
@@ -25,7 +25,8 @@ class NavBar extends React.Component {
           </Menu.Item>
 
           <Menu.Item position="right">
-            <Dropdown text="FOODTRUCKS" as="h3">
+            <Dropdown text="FOODTRUCKS">
+              {/* <Dropdown text="FOODTRUCKS" as="h3"> */}
               <Dropdown.Menu>
                 {foodTrucksCollection.map((foodTruck) => (
                     <Dropdown.Item key={foodTruck._id} text={foodTruck.name}
@@ -36,7 +37,8 @@ class NavBar extends React.Component {
           </Menu.Item>
 
           <Menu.Item>
-            <Dropdown text="RESTAURANTS" as="h3">
+            <Dropdown text="RESTAURANTS">
+              {/* <Dropdown text="RESTAURANTS" as="h3"> */}
               <Dropdown.Menu>
                 {restaurantCollection.map((restaurant) => (
                     <Dropdown.Item key={restaurant._id} text={restaurant.name}
@@ -46,18 +48,21 @@ class NavBar extends React.Component {
             </Dropdown>
           </Menu.Item>
 
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header className="headertext" inverted as='h3'>MENUS</Header>
-          </Menu.Item>
+          {/* <Menu.Item> */}
+          {/*  MENUS */}
+          {/* <Menu.Item> */}
+           <Menu.Item as={NavLink} activeClassName="" exact to="/"> MENUS
+          {/*  <Header className="headertext" inverted as='h3'>MENUS</Header> */}
+           </Menu.Item>
 
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header className="headertext" inverted as='h3'>HOURS</Header>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/"> HOURS
+            {/* <Header className="headertext" inverted as='h3'>HOURS</Header> */}
           </Menu.Item>
 
 
           {this.props.currentUser ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/favorites" key='favorite'>
-                <Header className="headertext" inverted as='h3'>FAVORITES</Header>
+              <Menu.Item as={NavLink} activeClassName="" exact to="/favorites" key='favorite'>FAVORITES
+                {/* <Header className="headertext" inverted as='h3'>FAVORITES</Header> */}
               </Menu.Item>
           ) : ''}
           { /*  {this.props.currentUser ? (
@@ -67,8 +72,8 @@ class NavBar extends React.Component {
 
           {/* ADMIN EXCLUSIVE TABS ON NAV BAR */}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/allaccounts" key='allaccounts'>
-                <Header className="headertext" inverted as='h3'>ALL ACCOUNTS</Header>
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/allaccounts" key='allaccounts'>ALL ACCOUNTS
+                {/* <Header className="headertext" inverted as='h3'>ALL ACCOUNTS</Header> */}
               </Menu.Item>
           ) : ''}
 
@@ -101,7 +106,7 @@ class NavBar extends React.Component {
 }
 console.log(Meteor.user());
 /** Declare the types of all properties. */
-NavBar.propTypes = {
+NavBar2.propTypes = {
   currentUser: PropTypes.string,
   currentFirstName: PropTypes.string,
   currentLastName: PropTypes.string,
@@ -116,7 +121,7 @@ const NavBarContainer = withTracker(() => ({
   currentFirstName: Meteor.user() ? Meteor.user().profile.name.first: '',
   currentLastName: Meteor.user() ? Meteor.user().profile.name.last: '',
   ready: subscription.ready() && subscription1.ready(),
-}))(NavBar);
+}))(NavBar2);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
 export default withRouter(NavBarContainer);

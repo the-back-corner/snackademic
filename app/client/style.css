@@ -5,6 +5,7 @@
   background-color: #66B9CC;
   box-shadow: none;
   border:none;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 20px !important;
   border-radius: 0 !important;
 }
@@ -26,7 +27,7 @@
   background: url('images/sushibackground.jpg') no-repeat center center fixed;
   font-family: 'Comfortaa', sans-serif;
   background-size: cover;
-  height: 700px;
+  max-height: fit-content;
 }
 
 /*.ui.header.firstHeader{*/
@@ -43,13 +44,13 @@
 
 .ui.header.cuisine{
     color: white;
-    text-shadow: -4px 4px 6px #66B9CC;
+    text-shadow: -3px 1px 2px #66B9CC;
     font-size: 50px;
 }
 
 .ui.header.secondHeader{
     color: white;
-    text-shadow: -2px 2px 3px gray;
+    text-shadow: -4px 2px 3px gray;
 }
 
 .ui.header.thirdHeader{
@@ -85,6 +86,7 @@ div.text:hover{
   line-height: 1.5em;
   color: white;
   alignment: center;
+  bottom: auto;
 }
 
 .buttons-style{

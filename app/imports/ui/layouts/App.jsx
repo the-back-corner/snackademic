@@ -4,7 +4,7 @@ import { Meteor } from 'meteor/meteor';
 import 'semantic-ui-css/semantic.css';
 import { Roles } from 'meteor/alanning:roles';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar2';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import FavoritesPage from '../pages/FavoritesPage';
