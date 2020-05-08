@@ -110,3 +110,6 @@ div.text:hover{
   text-shadow: none;
   background-image: none;
 }
+#mapBackground {
+  background: url(images/maps/snackademic-map-no-rotating-trucks.jpg);
+}

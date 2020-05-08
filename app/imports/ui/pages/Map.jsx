@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Image } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
@@ -19,18 +19,12 @@ class Map extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+     const src = 'images/maps/snackademic-map-no-rotating-trucks.jpg';
     return (
         <Container>
           <Header as="h2" textAlign="center">Map</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Restaurant</Table.HeaderCell>
-                <Table.HeaderCell>Location</Table.HeaderCell>
-                <Table.HeaderCell>Hours</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
+          <div>
+          <Image src={src} rounded size='massive'/>
               {this.props.foodTrucksCollection.map((foodTruck) => {
                 const restaurantLocation = LocationCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
                 const restaurantHours = HoursCollection.find({ restaurantName: foodTruck.name }).fetch()[0];
@@ -57,9 +51,7 @@ class Map extends React.Component {
                     />);
                 })
               }
-
-            </Table.Body>
-          </Table>
+          </div>
         </Container>
     );
   }
