@@ -7,8 +7,8 @@ const FavoritesCollection = new Mongo.Collection('FavoritesCollection');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const FavoritesCollectionSchema = new SimpleSchema({
-  userName: String,
-  restaurantName: String, // like the owner tag, this is what links it to whichever restaurant it is
+  userName: String, // like the owner tag, this is what links it to whichever user it is
+  restaurantName: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

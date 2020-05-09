@@ -3,11 +3,11 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Stuffs } from '../../api/stuff/Stuff';
+import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
 import ProfileComponent from '../components/ProfileCard';
-import StuffItem from '../components/StuffItem';
 
-/** THIS IS A COPY OF ListStuff.jsx **/
+
+/** THIS IS A COPY OF ListStuff.jsx * */
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class UserProfilePage extends React.Component {
@@ -15,7 +15,9 @@ class UserProfilePage extends React.Component {
   state = { open: false };
 
   open = () => this.setState({ open: true });
+
   close = () => this.setState({ open: false });
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -74,6 +76,22 @@ class UserProfilePage extends React.Component {
                   </Feed>
                 </Card.Content>
               </Card>
+              <Card fluid>
+                <Card.Content>
+                  <Card.Header>Favorites</Card.Header>
+                </Card.Content>
+                <Card.Content>
+                  <Feed>
+                    <Feed.Event>
+                      <Feed.Content>
+                        <Feed.Summary>
+                          {this.props.favoritesCollection.restaurantName}
+                        </Feed.Summary>
+                      </Feed.Content>
+                    </Feed.Event>
+                  </Feed>
+                </Card.Content>
+              </Card>
             </Grid.Column>
           </Grid>
           <Grid>
@@ -93,16 +111,16 @@ class UserProfilePage extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 UserProfilePage.propTypes = {
-  stuffs: PropTypes.array.isRequired,
+  FavoritesCollection: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Stuff');
+  const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
   return {
-    stuffs: Stuffs.find({}).fetch(),
-    ready: subscription.ready(),
+    FavoritesCollection: FavoritesCollection.find({}).fetch(),
+    ready: subscriptionFavorites.ready(),
   };
 })(UserProfilePage);
