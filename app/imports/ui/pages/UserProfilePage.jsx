@@ -91,8 +91,8 @@ class UserProfilePage extends React.Component {
                           {/*{this.props.doc2.name}*/}
                           {this.props.doc.map((review) => {
                             return (
-                                <Header>
-                                { review.userName }
+                                <Header key="">
+                                { review.restaurantName }
                                 </Header>
                             );
                           })
@@ -123,7 +123,6 @@ class UserProfilePage extends React.Component {
 /** Require an array of Stuff documents in the props. */
 UserProfilePage.propTypes = {
   doc: PropTypes.array.isRequired,
-  doc2: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -131,10 +130,8 @@ UserProfilePage.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
-  const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
   return {
     doc: FavoritesCollection.find().fetch(),
-    doc2: FoodTrucksCollection.findOne(),
-    ready: subscriptionFavorites.ready() && subscriptionTrucks.ready(),
+    ready: subscriptionFavorites.ready(),
   };
 })(UserProfilePage);

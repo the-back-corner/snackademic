@@ -3,6 +3,10 @@
     {
       "userName": "john@foo.com",
       "restaurantName": "Le Crepe"
+    },
+    {
+      "userName": "john@foo.com",
+      "restaurantName": "Gateway Cafe"
     }
   ]
 }
