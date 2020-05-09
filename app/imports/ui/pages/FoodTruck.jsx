@@ -21,14 +21,14 @@ class FoodTruck extends React.Component {
   };
 
   favoritesClick = () => {
-    const currentUser = Meteor.user().userName;
-    const currentName = this.props.docFavorites.restaurantName;
+    const currentUser = Meteor.user().username;
+    const currentName = (this.props.doc.name);
     console.log("favorite clicked");
     console.log(currentName);
     console.log(currentUser);
     FavoritesCollection.insert({
-      userName: 'john@foo.com',
-      restaurantName: 'testname',
+      userName: currentUser,
+      restaurantName: currentName,
     });
   };
 
