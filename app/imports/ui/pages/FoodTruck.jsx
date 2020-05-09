@@ -40,9 +40,7 @@ class FoodTruck extends React.Component {
 
     console.log("deleteclicked");
     const favoriteRestaurantID = FavoritesCollection.findOne({restaurantName: currentName});
-    favoriteRestaurantID._id;
     FavoritesCollection.remove(favoriteRestaurantID._id);
-    //Messages.remove(this._id);
     console.log(favoriteRestaurantID);
   };
 
@@ -53,6 +51,9 @@ class FoodTruck extends React.Component {
 
   renderPage() {
     const { activeIndex } = this.state;
+    const currentName = (this.props.doc.name);
+    const favoriteRestaurantName = FavoritesCollection.findOne({restaurantName: currentName});
+    console.log('favorite name = ', favoriteRestaurantName);
     return (
         <div className="signupPage">
           {/* First grid at top of page, holds food truck name and buttons */}
@@ -61,14 +62,10 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  {(this.props.docFavorites.restaurantName) === (this.props.doc.name) ? (
-                      <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
-                  ) : ( <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
+                  {(currentName) === (favoriteRestaurantName.restaurantName) ? (
+                      <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
+                  ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
-                  {/*<Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>*/}
-                  {/*  If user is logged in button will add the restaurant to their favorites on click
-                    if it is already in their favorites, button will save remove from favorites
-                     if user is not logged in button links to sign up page */}
                 </Button>
                 <Button inverted>
                   <Button.Content as='h3'><Icon name='star' color='blue'/> Write A Review</Button.Content>

@@ -11,6 +11,10 @@
     {
       "userName": "clark@foo.com",
       "restaurantName": "Starbucks"
+    },
+    {
+      "userName": "john@foo.com",
+      "restaurantName": "Bean Counter"
     }
   ]
 }
