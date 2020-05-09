@@ -6,6 +6,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
+import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
 
 /** A simple static component to render some text for the landing page. */
 class Restaurant extends React.Component {
@@ -19,6 +20,27 @@ class Restaurant extends React.Component {
     this.setState({ activeIndex: newIndex });
   };
 
+  favoritesAdd = () => {
+    const currentUser = Meteor.user().username;
+    const currentName = (this.props.doc.name);
+    const favoritesArray = (this.props.docFavorites);
+    console.log("favorite clicked");
+    console.log(currentName);
+    console.log(currentUser);
+    console.log(favoritesArray);
+    FavoritesCollection.insert({
+      userName: currentUser,
+      restaurantName: currentName,
+    });
+  };
+
+  favoritesDelete = () => {
+    const currentName = (this.props.doc.name);
+    const favoriteRestaurantID = FavoritesCollection.findOne({restaurantName: currentName});
+    FavoritesCollection.remove(favoriteRestaurantID._id);
+    console.log(favoriteRestaurantID);
+  };
+
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -26,7 +48,8 @@ class Restaurant extends React.Component {
 
   renderPage() {
     const { activeIndex } = this.state;
-    console.log(this.props.doc2);
+    const currentName = (this.props.doc.name);
+    let add = true;
     return (
         <div className="signinPage">
           <Grid verticalAlign='middle' textAlign='center'>
@@ -34,11 +57,17 @@ class Restaurant extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  <Button.Content visible as='h3'>
-                    <Icon name='heart outline' color='blue'/>Add to Favorites</Button.Content>
-                  { /*  If user is logged in button will add the restaurant to their favorites on click
-                    if it is already in their favorites, button will save remove from favorites
-                     if user is not logged in button links to sign up page */ }
+                  {this.props.docFavorites.map((favorite) => {
+                    if (favorite.restaurantName === currentName) {
+                      console.log('poop');
+                      add = false;
+                    }
+                  })
+                  }
+                  { (add) === (false) ? (
+                      <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
+                  ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                  )}
                 </Button>
                 <Button inverted>
                   <Button.Content as='h3'><Icon name='star outline' color='blue'/> Write A Review</Button.Content>
@@ -148,6 +177,7 @@ Restaurant.propTypes = {
   doc: PropTypes.object,
   doc2: PropTypes.array,
   docReviews: PropTypes.array,
+  docFavorites: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -159,10 +189,12 @@ export default withTracker(({ match }) => {
   const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
   const subscriptionMenu = Meteor.subscribe('MenuItemCollection');
   const subscriptionReviews = Meteor.subscribe('ReviewsCollection');
+  const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
   return {
     doc: RestaurantCollection.findOne(documentId),
     doc2: MenuItemCollection.find().fetch(),
     docReviews: ReviewsCollection.find().fetch(),
-    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
+    docFavorites: FavoritesCollection.find().fetch(),
+    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready() && subscriptionFavorites.ready(),
   };
 })(Restaurant);
