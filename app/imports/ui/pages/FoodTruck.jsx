@@ -6,6 +6,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
+import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
 
 /** A simple static component to render some text for the landing page. */
 class FoodTruck extends React.Component {
@@ -17,6 +18,18 @@ class FoodTruck extends React.Component {
     const newIndex = activeIndex === index ? -1 : index;
 
     this.setState({ activeIndex: newIndex });
+  };
+
+  favoritesClick = () => {
+    const currentUser = Meteor.user().userName;
+    const currentName = this.props.docFavorites.restaurantName;
+    console.log("favorite clicked");
+    console.log(currentName);
+    console.log(currentUser);
+    FavoritesCollection.insert({
+      userName: 'john@foo.com',
+      restaurantName: 'testname',
+    });
   };
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -34,7 +47,7 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  <Button.Content as='h3'><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                  <Button.Content as='h3' onClick={this.favoritesClick}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   {/*  If user is logged in button will add the restaurant to their favorites on click
                     if it is already in their favorites, button will save remove from favorites
                      if user is not logged in button links to sign up page */}
@@ -149,6 +162,7 @@ FoodTruck.propTypes = {
   doc2: PropTypes.array,
   docReviews: PropTypes.array,
   ready: PropTypes.bool.isRequired,
+
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -159,10 +173,12 @@ export default withTracker(({ match }) => {
   const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
   const subscriptionMenu = Meteor.subscribe('MenuItemCollection');
   const subscriptionReviews = Meteor.subscribe('ReviewsCollection');
+  const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
   return {
     doc: FoodTrucksCollection.findOne(documentId),
     doc2: MenuItemCollection.find().fetch(),
     docReviews: ReviewsCollection.find().fetch(),
-    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready(),
+    docFavorites: FavoritesCollection.find().fetch(),
+    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready() && subscriptionFavorites.ready(),
   };
 })(FoodTruck);
