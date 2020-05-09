@@ -7,6 +7,7 @@ import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
+import ModalProfile from './ModalProfile';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {

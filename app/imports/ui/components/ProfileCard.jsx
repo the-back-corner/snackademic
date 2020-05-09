@@ -31,7 +31,6 @@ class ProfileCard extends React.Component {
                  <Header>{fullName}</Header>
                </Grid.Column>
               <Grid.Column width={1}>
-                <PortalButton type='changeName'/>
               </Grid.Column>
             </Grid>
           </Card.Content>
@@ -41,7 +40,6 @@ class ProfileCard extends React.Component {
                 {this.props.currentUser}
               </Grid.Column>
               <Grid.Column width={1}>
-                <PortalButton type='changeEmail'/>
               </Grid.Column>
             </Grid>
           </Card.Content>
@@ -51,43 +49,10 @@ class ProfileCard extends React.Component {
                 Account Type: {this.props.currentRole}
               </Grid.Column>
               <Grid.Column width={1}>
-                <PortalButton type='changeRole'/>
               </Grid.Column>
             </Grid>
           </Card.Content>
           <Card.Content extra>
-            {/*<Grid columns={2}>*/}
-            {/*  <Grid.Column>*/}
-            {/*    <Button*/}
-            {/*        content='Open Portal'*/}
-            {/*        disabled={open}*/}
-            {/*        positive*/}
-            {/*        onClick={this.handleOpen}*/}
-            {/*    />*/}
-
-            {/*    <Portal onClose={this.handleClose} open={open}>*/}
-            {/*      <Segment*/}
-            {/*          style={{*/}
-            {/*            left: '40%',*/}
-            {/*            position: 'fixed',*/}
-            {/*            top: '50%',*/}
-            {/*            zIndex: 1000,*/}
-            {/*          }}*/}
-            {/*      >*/}
-            {/*        <Header>This is a controlled portal</Header>*/}
-            {/*        <p>Portals have tons of great callback functions to hook into.</p>*/}
-            {/*        <p>To close, simply click the close button or click away</p>*/}
-
-            {/*        <Button*/}
-            {/*            content='Close Portal'*/}
-            {/*            negative*/}
-            {/*            onClick={this.handleClose}*/}
-            {/*        />*/}
-            {/*      </Segment>*/}
-            {/*    </Portal>*/}
-            {/*  </Grid.Column>*/}
-            {/*</Grid>*/}
-
             <PortalButton type='changePassword'/>
           </Card.Content>
         </Card>
@@ -104,7 +69,7 @@ ProfileCard.propTypes = {
 };
 
 const profileContainer = withTracker(() => ({
-  currentUser: Meteor.user() ? Meteor.user().username: '',
+  currentUser: Meteor.user() ? Meteor.user().emails[0].address: '',
   currentFirstName: Meteor.user() ? Meteor.user().profile.name.first: '',
   currentLastName: Meteor.user() ? Meteor.user().profile.name.last: '',
   currentRole: Meteor.user() ? Meteor.user().roles: '',
