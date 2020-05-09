@@ -4,6 +4,7 @@ import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed } f
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
+import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import ProfileComponent from '../components/ProfileCard';
 
 
@@ -25,6 +26,7 @@ class UserProfilePage extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    console.log(`${this.props.doc.restaurantName}`);
     return (
         <Container>
           <Header as="h2" textAlign="center">MY ACCOUNT</Header>
@@ -85,7 +87,7 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {this.props.doc.restaurantName}
+                          {this.props.doc2.name}
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
@@ -112,6 +114,7 @@ class UserProfilePage extends React.Component {
 /** Require an array of Stuff documents in the props. */
 UserProfilePage.propTypes = {
   doc: PropTypes.array.isRequired,
+  doc2: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -119,8 +122,10 @@ UserProfilePage.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
+  const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
   return {
-    doc: FavoritesCollection.find({}).fetch(),
-    ready: subscriptionFavorites.ready(),
+    doc: FavoritesCollection.findOne(),
+    doc2: FoodTrucksCollection.findOne(),
+    ready: subscriptionFavorites.ready() && subscriptionTrucks.ready(),
   };
 })(UserProfilePage);
