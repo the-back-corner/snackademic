@@ -47,20 +47,20 @@ class NavBar extends React.Component {
             </Dropdown>
           </Menu.Item>
 
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header className="headertext" inverted as='h3'>MENUS</Header>
-          </Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/Map" key='map'>
+                <Header className="headertext" inverted as='h3'>MAP</Header>
+            </Menu.Item>
 
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
+          <Menu.Item as={NavLink} activeClassName="active" exact to="/Hours" key='hours'>
             <Header className="headertext" inverted as='h3'>HOURS</Header>
           </Menu.Item>
 
+          { /* {this.props.currentUser ? ( */}
+          { /*    <Menu.Item as={NavLink} activeClassName="active" exact to="/favorites" key='favorite'> */ }
+          { /*      <Header className="headertext" inverted as='h3'>FAVORITES</Header> */ }
+          { /*    </Menu.Item> */ }
+          { /* ) : ''} */ }
 
-          {this.props.currentUser ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/favorites" key='favorite'>
-                <Header className="headertext" inverted as='h3'>FAVORITES</Header>
-              </Menu.Item>
-          ) : ''}
           { /*  {this.props.currentUser ? (
           [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
@@ -113,9 +113,9 @@ NavBar.propTypes = {
 const subscription = Meteor.subscribe('RestaurantCollection');
 const subscription1 = Meteor.subscribe('FoodTrucksCollection');
 const NavBarContainer = withTracker(() => ({
-  currentUser: Meteor.user() ? Meteor.user().username: '',
-  currentFirstName: Meteor.user() ? Meteor.user().profile.name.first: '',
-  currentLastName: Meteor.user() ? Meteor.user().profile.name.last: '',
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+  currentFirstName: Meteor.user() ? Meteor.user().profile.name.first : '',
+  currentLastName: Meteor.user() ? Meteor.user().profile.name.last : '',
   ready: subscription.ready() && subscription1.ready(),
 }))(NavBar);
 
