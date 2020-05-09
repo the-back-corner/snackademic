@@ -25,6 +25,15 @@ Meteor.publish('StuffAdmin', function publish() {
   return this.ready();
 });
 
+/** This subscription publishes only the documents associated with the logged in user */
+Meteor.publish('Eateries', function publish() {
+    if (this.userId) {
+        const username = Meteor.users.findOne(this.userId).username;
+        return Stuffs.find({ owner: username });
+    }
+    return this.ready();
+});
+
 Meteor.publish('FoodTrucksCollection', function publish() {
     return FoodTrucksCollection.find();
 });

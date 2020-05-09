@@ -12,6 +12,7 @@ const RestaurantCollectionSchema = new SimpleSchema({
   typeOfCuisine: String,
   Description: String,
   takesMeals: Boolean,
+  owner: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
