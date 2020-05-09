@@ -87,7 +87,13 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {this.props.doc2.name}
+                          {/*{this.props.doc.restaurantName}*/}
+                          {/*{this.props.doc2.name}*/}
+                          {this.props.doc.map((review) => {
+                            return (
+                                {review.userName}
+                            );
+                          }
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
@@ -124,7 +130,7 @@ export default withTracker(() => {
   const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
   const subscriptionTrucks = Meteor.subscribe('FoodTrucksCollection');
   return {
-    doc: FavoritesCollection.findOne(),
+    doc: FavoritesCollection.find().fetch(),
     doc2: FoodTrucksCollection.findOne(),
     ready: subscriptionFavorites.ready() && subscriptionTrucks.ready(),
   };
