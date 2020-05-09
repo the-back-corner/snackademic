@@ -55,7 +55,7 @@ class Signup extends React.Component {
     // create a variable to hold homepage path
     const { vendorLandingPage } = this.props.location.state || { vendorLandingPage: { pathname: '/myeatery' } };
     // create a variable to hold the user landing page path
-    const { buyerLandingPage } = this.props.location.state || { buyerLandingPage: { pathname: '/favorites' } };
+    const { buyerLandingPage } = this.props.location.state || { buyerLandingPage: { pathname: '/userprofile' } };
 
     // variables to determine what role signed in
     const isLogged = Meteor.userId() !== null;
