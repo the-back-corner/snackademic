@@ -6,6 +6,8 @@ import { LocationCollection } from '../../api/location/LocationCollection';
 import { MenuItemCollection } from '../../api/menu/MenuItemCollection';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { ReviewsCollection } from '../../api/reviews/ReviewsCollection';
+import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
+
 /* eslint-disable no-console */
 
 /** Initialize the database with a default data document. */
@@ -19,6 +21,12 @@ function addData(data) {
 function addFoodTruck(data) {
   console.log(`  Adding: ${data.name}`);
   FoodTrucksCollection.insert(data);
+}
+
+/** Initialize the database with a default data document. */
+function addFavorite(data) {
+  console.log(`  Adding: ${data.restaurantName} to ${data.userName}`);
+  FavoritesCollection.insert(data);
 }
 
 /** Initialize the database with a default data document. */
@@ -61,6 +69,7 @@ if ((Meteor.settings.loadAssetsFile) && (RestaurantCollection.find().count() ===
   const menuItemsAssetsFileName = 'menuItemsData.json';
   const restaurantsAssetsFileName = 'restaurantsData.json';
   const reviewAssetsFileName = 'reviewData.json';
+  const favoriteAssetsFileName = 'favoriteData.json';
 
   // console.log(`Loading data from private/${assetsFileName}`);
   console.log(`Loading hours data from private/${hoursAssetsFileName}`);
@@ -68,11 +77,13 @@ if ((Meteor.settings.loadAssetsFile) && (RestaurantCollection.find().count() ===
   console.log(`Loading menu items data from private/${menuItemsAssetsFileName}`);
   console.log(`Loading restaurants data from private/${restaurantsAssetsFileName}`);
   console.log(`Loading review data from private/${reviewAssetsFileName}`);
+  console.log(`Loading favorite data from private/${favoriteAssetsFileName}`);
   const hoursJsonData = JSON.parse(Assets.getText(hoursAssetsFileName));
   const locationsJsonData = JSON.parse(Assets.getText(locationsAssetsFileName));
   const menuItemsJsonData = JSON.parse(Assets.getText(menuItemsAssetsFileName));
   const restaurantsJsonData = JSON.parse(Assets.getText(restaurantsAssetsFileName));
   const reviewJsonData = JSON.parse(Assets.getText(reviewAssetsFileName));
+  const favoriteJsonData = JSON.parse(Assets.getText(favoriteAssetsFileName));
   // const jsonData = JSON.parse(Assets.getText(assetsFileName));
   restaurantsJsonData.defaultFoodTrucks.map(data => addFoodTruck(data));
   hoursJsonData.defaultHours.map(data => addHours(data));
@@ -80,6 +91,7 @@ if ((Meteor.settings.loadAssetsFile) && (RestaurantCollection.find().count() ===
   menuItemsJsonData.defaultMenuItem.map(data => addMenuItem(data));
   restaurantsJsonData.defaultRestaurant.map(data => addRestaurant(data));
   reviewJsonData.defaultReview.map(data => addReview(data));
+  favoriteJsonData.defaultFavorites.map(data => addFavorite(data));
 
 }
 
@@ -129,6 +141,14 @@ if (FoodTrucksCollection.find().count() === 0) {
   if (Meteor.settings.defaultFoodTrucks) {
     console.log('Creating default Food Truck.');
     Meteor.settings.defaultFoodTrucks.map(data => addFoodTruck(data));
+  }
+}
+
+/** Initialize the collection if empty. */
+if (FavoritesCollection.find().count() === 0) {
+  if (Meteor.settings.defaultFavorites) {
+    console.log('Creating default Favorites.');
+    Meteor.settings.defaultFavorites.map(data => addFavorite(data));
   }
 }
 
