@@ -33,16 +33,16 @@ class FoodTruck extends React.Component {
             <Grid.Column>
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
-                <Button basic>
-                  <Button.Content visible as='h3'><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                <Button inverted>
+                  <Button.Content as='h3'><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   {/*  If user is logged in button will add the restaurant to their favorites on click
                     if it is already in their favorites, button will save remove from favorites
                      if user is not logged in button links to sign up page */}
                 </Button>
-                <Button basic>
+                <Button inverted>
                   <Button.Content as='h3'><Icon name='star' color='blue'/> Write A Review</Button.Content>
                 </Button>
-                <Button basic>
+                <Button inverted>
                   <Button.Content as='h3'><Icon name='fork' color='blue'/> Share </Button.Content>
                 </Button>
               </Button.Group>
@@ -58,8 +58,12 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.typeOfCuisine}</Header>
               <Header className="secondHeader" as='h2'>{this.props.doc.Description}</Header>
               {this.props.doc.takesMeals ?
-                  (<Header className="secondHeader" as='h3'>Takes Meal Points</Header>)
-                  : (<Header className="secondHeader" as='h3'>Does Not Take Meal Points</Header>)}
+                  // (<Header className="secondHeader" as='h3'>Takes Meal Points</Header>)
+                  (<Header className="secondHeader" as='h3'>
+                    <Icon name='money bill alternate outline'/>Takes Meal Points</Header>) :
+                // : (<Header className="secondHeader" as='h3'>Does Not Take Meal Points</Header>)}
+                  (<Header className="secondHeader" as='h3'>
+                    <Icon name='money bill alternate icon'/> Does Not Take Meal Points</Header>)}
 
             </Grid.Column>
           </Grid>
