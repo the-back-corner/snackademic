@@ -42,7 +42,7 @@ class Map extends React.Component {
         src = 'images/maps/snackademic-map-fri.jpg';
         break;
       default:
-        src = '';
+        src = 'images/maps/snackademic-map-no-rotating-trucks.jpg';
         break;
     }
     return (
