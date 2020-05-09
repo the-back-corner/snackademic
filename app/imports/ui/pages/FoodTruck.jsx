@@ -35,10 +35,7 @@ class FoodTruck extends React.Component {
   };
 
   favoritesDelete = () => {
-    const currentUser = Meteor.user().username;
     const currentName = (this.props.doc.name);
-
-    console.log("deleteclicked");
     const favoriteRestaurantID = FavoritesCollection.findOne({restaurantName: currentName});
     FavoritesCollection.remove(favoriteRestaurantID._id);
     console.log(favoriteRestaurantID);
@@ -52,8 +49,7 @@ class FoodTruck extends React.Component {
   renderPage() {
     const { activeIndex } = this.state;
     const currentName = (this.props.doc.name);
-    const favoriteRestaurantName = FavoritesCollection.findOne({restaurantName: currentName});
-    console.log('favorite name = ', favoriteRestaurantName.restaurantName);
+    let add = true;
     return (
         <div className="signupPage">
           {/* First grid at top of page, holds food truck name and buttons */}
@@ -62,10 +58,18 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  { (currentName) === (favoriteRestaurantName.restaurantName) ? (
+                  {this.props.docFavorites.map((favorite) => {
+                    if (favorite.restaurantName === currentName) {
+                      console.log('poop');
+                      add = false;
+                    }
+                  })
+                  }
+                  { (add) === (false) ? (
                       <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
                   ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
+
                 </Button>
                 <Button inverted>
                   <Button.Content as='h3'><Icon name='star' color='blue'/> Write A Review</Button.Content>
