@@ -18,14 +18,12 @@ Meteor.methods({
 });
 
 Meteor.methods({
-  'change.user.password'(oldPassword, newPassword) {
-    // Optionally, check email and password are strings
-    Accounts.changePassword(oldPassword, newPassword, function (err) {
-      if (!err) {
-        console.log('Changing the password was a success!')
-      } else {
-        console.log(err);
-      }
-    })
+  'delete.account'() {
+    try {
+      Meteor.users.remove(this.userId);
+    } catch (e) {
+      // handle this however you want
+      throw new Meteor.Error('Failed to deactivate your account.');
+    }
   }
 });

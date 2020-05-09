@@ -7,7 +7,11 @@ const HoursCollection = new Mongo.Collection('HoursCollection');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const HoursCollectionSchema = new SimpleSchema({
-  restaurantName: String,
+  restaurantName: {
+    type: String,
+    unique: true,
+    index: true,
+  },
   sunday: String,
   monday: String,
   tuesday: String,

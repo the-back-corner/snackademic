@@ -25,8 +25,8 @@ class Landing extends React.Component {
                 </Button.Group>
               </Grid.Column>
 
-              {/*<Grid.Column width={8}>*/}
-              {/*</Grid.Column>*/}
+              {/* <Grid.Column width={8}> */}
+              {/* </Grid.Column> */}
 
             </Grid>
         </div>

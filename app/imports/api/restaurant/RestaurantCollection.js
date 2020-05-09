@@ -7,8 +7,16 @@ const RestaurantCollection = new Mongo.Collection('RestaurantCollection');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const RestaurantCollectionSchema = new SimpleSchema({
-  name: String,
-  vendorIcon: String,
+  name: {
+    type: String,
+    unique: true,
+    index: true,
+  },
+  vendorIcon: {
+    type: String,
+    unique: true,
+    index: true,
+  },
   typeOfCuisine: String,
   Description: String,
   takesMeals: Boolean,
