@@ -18,9 +18,12 @@ Meteor.methods({
 });
 
 Meteor.methods({
-  'change.user.email'(newEmail, userId) {
-      const currentEmail =  Meteor.user().emails[0].address;
-    Meteor.users.update({ _id: userId }, { 'emails.0.address': newEmail,
-      "username": newEmail });
+  'delete.account'() {
+    try {
+      Meteor.users.remove(this.userId);
+    } catch (e) {
+      // handle this however you want
+      throw new Meteor.Error('Failed to deactivate your account.');
+    }
   }
 });

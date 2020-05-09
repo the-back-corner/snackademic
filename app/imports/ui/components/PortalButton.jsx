@@ -8,7 +8,7 @@ import {
   Form,
   Message,
   Container,
-  TransitionablePortal, Confirm
+  TransitionablePortal, Confirm, Icon
 } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import { withRouter, Link, Redirect } from 'react-router-dom';
@@ -37,24 +37,34 @@ class PortalButton extends Component {
     this.setState({ [name]: value });
   };
 
+  isValid() {
+    const { newPassword, confirmPassword, password } = this.state;
+    let valid = false;
 
-  setValues = () => {
-
-            this.setState({ open: !this.state.open });
-
-  };
-  /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
-  submit = (e) => {
-    e.preventDefault();
-    let error = false;
-    const { password, newPassword, passwordError } = this.state;
-    if (password.length < 8) {
-      this.setState({ passwordError: true });
-      error = true;
+    if (newPassword.length > 7 && confirmPassword.length > 7) {
+      if (newPassword.localeCompare(password) !== 0) {
+        if (newPassword.localeCompare(confirmPassword) === 0) {
+          valid = true;
+        } else {
+          this.setState({ error: 'Your passwords do not match' });
+        }
+      } else {
+        this.setState({ error: 'Your new password must not be the same as your current password' });
+      }
     } else {
-      this.setState({ passwordError: false });
+      this.setState({ error: 'Your password must be at least 8 characters long' });
     }
-    if (!passwordError) {
+    return valid;
+  }
+
+  openPortal = () => { this.setState({ open: true }); };
+  closePortal = () => { this.setState({ open: false }); };
+  /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
+  submit = () => {
+
+    const { password, newPassword, passwordError } = this.state;
+
+    if (this.isValid()) {
       Accounts.changePassword(password, newPassword, (err) => {
         if (err) {
           this.setState({ error: err.reason });
@@ -68,17 +78,17 @@ class PortalButton extends Component {
   };
 
   render() {
-    const { open, animation, duration, setIcon } = this.state;
+    const { open, animation, duration } = this.state;
     return (
         <Grid columns={2}>
           <Grid.Column>
+            <Button basic color='blue'
+                                 content={'Change Password'}
+                                 onClick={this.openPortal}
 
-                <Button basic color='blue'
-                        content={open ? 'Cancel' : 'Change Password'}
-                        negative={open}
-                        onClick={this.setValues}
-                />
-            <TransitionablePortal open={open} transition={{ animation, duration }}>
+            />
+
+            <TransitionablePortal open={open} onClose={this.closePortal} transition={{ animation, duration }}>
               <Segment
                   style={{
                     left: '40%',
@@ -88,7 +98,24 @@ class PortalButton extends Component {
                     filter: 'none',
                   }}
               >
-                <Header>Edit your account information.</Header>
+                <Segment clearing vertical>
+                <Header floated='left'>Edit your account information. </Header>
+                    <Button basic icon floated='right' onClick={this.closePortal}
+                            style={{
+                              padding: 0,
+                            }}>
+                      <Icon fluid color='red' name={'window close'}/>
+                    </Button>
+                </Segment>
+                {this.state.error === '' ? (
+                   ''
+                ) : (
+                    <Message
+                        error
+                        header="Password Change Unsuccessful"
+                        content={this.state.error}
+                    />
+                )}
                 <Form onSubmit={this.submit}>
 
                     <Form.Input
@@ -98,7 +125,6 @@ class PortalButton extends Component {
                         iconPosition="left"
                         type="password"
                         onChange={this.handleChange}
-                        error={this.state.passwordError}
                     /><Form.Input
 
                       name="newPassword"
@@ -107,7 +133,6 @@ class PortalButton extends Component {
                       iconPosition="left"
                       type="password"
                       onChange={this.handleChange}
-                      error={this.state.passwordError || this.state.passwordMatchError}
                   /><Form.Input
 
                     name="confirmPassword"
@@ -116,15 +141,14 @@ class PortalButton extends Component {
                     iconPosition="left"
                     type="password"
                     onChange={this.handleChange}
-                    error={this.state.confirmPasswordError || this.state.passwordMatchError}
                 />
-                  <Form.Button
-                      content='Submit'
-                      positive
-                      type='submit'
-                      disabled={!this.state.password
-                       || !this.state.newPassword}
-                  />
+                    <Form.Button
+                        content='Submit'
+                        positive
+                        type='submit'
+                        disabled={!this.state.password
+                        || !this.state.newPassword || !this.state.confirmPassword}
+                    />
                 </Form>
               </Segment>
             </TransitionablePortal>
@@ -137,6 +161,7 @@ class PortalButton extends Component {
 /** Require a document to be passed to this component. */
 PortalButton.propTypes = {
   type: PropTypes.string,
+  closeOnTriggerClick: PropTypes.bool,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

@@ -87,7 +87,7 @@ class NavBar extends React.Component {
             ) : ( // if there is a user signed in, display "ACCOUNT" and "SIGN OUT" in navbar
                 <Dropdown text={fullName} as='h3' pointing="top right" icon={'user'}>
                   <Dropdown.Menu>
-                    <Dropdown.Item icon="user"> <ModalProfile/> </Dropdown.Item>
+                    <Dropdown.Item icon="user" text="ACCOUNT" as={NavLink} exact to="/userprofile"/>
                     {Roles.userIsInRole(Meteor.userId(), 'vendor') ? (
                         <Dropdown.Item icon="coffee" text="MY EATERY" as={NavLink} exact to="/myeatery"/>
                         ) : ''}
