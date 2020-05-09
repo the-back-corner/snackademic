@@ -52,7 +52,10 @@ class FoodTruck extends React.Component {
   renderPage() {
     const { activeIndex } = this.state;
     const currentName = (this.props.doc.name);
-    const favoriteRestaurantName = FavoritesCollection.findOne({restaurantName: currentName});
+    let favoriteRestaurantName = FavoritesCollection.findOne({restaurantName: currentName});
+    if (favoriteRestaurantName === 'undefined'){
+      favoriteRestaurantName = 'cat';
+    }
     console.log('favorite name = ', favoriteRestaurantName);
     return (
         <div className="signupPage">
@@ -62,7 +65,7 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  {(currentName) === (favoriteRestaurantName.restaurantName) ? (
+                  {(currentName) === (favoriteRestaurantName) ? (
                       <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
                   ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
