@@ -37,15 +37,13 @@ class FoodTruck extends React.Component {
   favoritesDelete = () => {
     const currentUser = Meteor.user().username;
     const currentName = (this.props.doc.name);
-    const favoritesArray = (this.props.docFavorites);
-    console.log("favorite clicked");
-    console.log(currentName);
-    console.log(currentUser);
-    console.log(favoritesArray);
-    FavoritesCollection.insert({
-      userName: currentUser,
-      restaurantName: currentName,
-    });
+
+    console.log("deleteclicked");
+    const favoriteRestaurantID = FavoritesCollection.findOne({restaurantName: currentName});
+    favoriteRestaurantID._id;
+    FavoritesCollection.remove(favoriteRestaurantID._id);
+    //Messages.remove(this._id);
+    console.log(favoriteRestaurantID);
   };
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -63,15 +61,14 @@ class FoodTruck extends React.Component {
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
               <Button.Group>
                 <Button inverted>
-                  {this.props.docFavorites.map((restaurantName) => {
-                    if (restaurantName.restaurantName === this.props.doc.name) {
-                      return (
-                          <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
-                      );
-                    }
-                    return (<Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>);
-                  })
-                  }
+                  {(this.props.docFavorites.restaurantName) === (this.props.doc.name) ? (
+                      <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                  ) : ( <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
+                  )}
+                  {/*<Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>*/}
+                  {/*  If user is logged in button will add the restaurant to their favorites on click
+                    if it is already in their favorites, button will save remove from favorites
+                     if user is not logged in button links to sign up page */}
                 </Button>
                 <Button inverted>
                   <Button.Content as='h3'><Icon name='star' color='blue'/> Write A Review</Button.Content>
