@@ -91,8 +91,11 @@ class UserProfilePage extends React.Component {
                           {/*{this.props.doc2.name}*/}
                           {this.props.doc.map((review) => {
                             return (
-                                {review.userName}
+                                <Header>
+                                { review.userName }
+                                </Header>
                             );
+                          })
                           }
                         </Feed.Summary>
                       </Feed.Content>
