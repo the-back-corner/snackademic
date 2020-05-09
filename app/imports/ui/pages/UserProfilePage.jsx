@@ -4,7 +4,6 @@ import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed } f
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
-import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
 import ProfileComponent from '../components/ProfileCard';
 
 
@@ -87,8 +86,6 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {/*{this.props.doc.restaurantName}*/}
-                          {/*{this.props.doc2.name}*/}
                           {this.props.doc.map((review) => {
                             return (
                                 <Header key="">
