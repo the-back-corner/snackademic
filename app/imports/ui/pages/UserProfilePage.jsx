@@ -85,7 +85,7 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {this.props.favoritesCollection.restaurantName}
+                          {this.props.FavoritesCollection.restaurantName}
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
