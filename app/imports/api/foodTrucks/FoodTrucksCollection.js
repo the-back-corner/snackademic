@@ -7,12 +7,22 @@ const FoodTrucksCollection = new Mongo.Collection('FoodTrucksCollection');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const FoodTruckSchema = new SimpleSchema({
-  name: String,
-  vendorIcon: String,
+  name: {
+    type: String,
+    unique: true,
+    index: true,
+  },
+  vendorIcon: {
+    type: String,
+    unique: true,
+    index: true,
+  },
   typeOfCuisine: String,
   Description: String,
   takesMeals: Boolean,
 }, { tracker: Tracker });
+
+// const myValidationContext = myContext.isValid();
 
 /** Attach this schema to the collection. */
 FoodTrucksCollection.attachSchema(FoodTruckSchema);
