@@ -85,7 +85,7 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {this.props.FavoritesCollection.restaurantName}
+                          {this.props.doc.restaurantName}
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
@@ -111,7 +111,7 @@ class UserProfilePage extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 UserProfilePage.propTypes = {
-  FavoritesCollection: PropTypes.array.isRequired,
+  doc: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -120,7 +120,7 @@ export default withTracker(() => {
   // Get access to Stuff documents.
   const subscriptionFavorites = Meteor.subscribe('FavoritesCollection');
   return {
-    FavoritesCollection: FavoritesCollection.find({}).fetch(),
+    doc: FavoritesCollection.find({}).fetch(),
     ready: subscriptionFavorites.ready(),
   };
 })(UserProfilePage);
