@@ -39,7 +39,7 @@ class UserProfilePage extends React.Component {
   renderPage() {
     console.log(`${this.props.doc.restaurantName}`);
     return (
-        <div className="backgroundYellow">
+        <div className="backgroundBlue">
         <Container>
           <br />
           <Header as="h2" textAlign="center" inverted>MY ACCOUNT</Header>

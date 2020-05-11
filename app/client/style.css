@@ -7,7 +7,7 @@
   border:none;
   font-size: 20px !important;
   border-radius: 0 !important;
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .landingPage{
@@ -44,11 +44,19 @@
   max-height: fit-content;
 }
 
+.coffeeBackground{
+  background: url('images/coffeebackground.jpg') no-repeat center center fixed;
+  font-family: 'Comfortaa', sans-serif;
+  background-size: cover;
+  max-height: fit-content;
+}
+
 .backgroundPink{
   background-color: palevioletred;
   background-size: cover;
   font-family: 'Comfortaa', sans-serif;
   margin-top: 0;
+  padding: 0;
 }
 
 .backgroundPurple{

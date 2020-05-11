@@ -51,7 +51,7 @@ class FoodTruck extends React.Component {
     const currentName = (this.props.doc.name);
     let add = true;
     return (
-        <div className="fruitBackground">
+        <div className="coffeeBackground">
           {/* First grid at top of page, holds food truck name and buttons */}
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>

@@ -74,8 +74,10 @@ class Signup extends React.Component {
       console.log('did not work')
     }
     return (
+        <div className="signupPage">
         <Container>
-        <Header as="h2" textAlign="center"> Register your account </Header>
+          <br />
+        <Header as="h2" textAlign="center" inverted> Register your account </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Form onSubmit={this.submit}>
@@ -148,7 +150,7 @@ class Signup extends React.Component {
           )}
         </Grid>
        </Container>
-
+       </div>
     );
   }
 }
