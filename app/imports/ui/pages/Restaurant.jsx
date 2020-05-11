@@ -51,7 +51,7 @@ class Restaurant extends React.Component {
     const currentName = (this.props.doc.name);
     let add = true;
     return (
-        <div className="signinPage">
+        <div className="burgerBackground">
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
@@ -65,8 +65,10 @@ class Restaurant extends React.Component {
                   })
                   }
                   { (add) === (false) ? (
-                      <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
-                  ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                      <Button.Content as='h3' onClick={this.favoritesDelete}>
+                        <Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>) :
+                      (<Button.Content as='h3' onClick={this.favoritesAdd}>
+                        <Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
                 </Button>
                 <Button inverted>

@@ -19,6 +19,7 @@ class Map extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
+
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const dayOfTheWeek = moment().format('dddd').toLowerCase();
@@ -46,8 +47,10 @@ class Map extends React.Component {
         break;
     }
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Map</Header>
+        <div className="backgroundBlue">
+          <Container>
+          <br />
+          <Header as="h2" textAlign="center" inverted> Restaurant Map</Header>
           <Image centered src={src} rounded size='massive'/>
           <Table celled>
             <Table.Header>
@@ -87,9 +90,12 @@ class Map extends React.Component {
 
             </Table.Body>
           </Table>
+          <br />
         </Container>
+        </div>
     );
   }
+
 }
 
 /** Require an array of Stuff documents in the props. */

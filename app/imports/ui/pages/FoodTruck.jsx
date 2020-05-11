@@ -51,7 +51,7 @@ class FoodTruck extends React.Component {
     const currentName = (this.props.doc.name);
     let add = true;
     return (
-        <div className="signupPage">
+        <div className="fruitBackground">
           {/* First grid at top of page, holds food truck name and buttons */}
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
@@ -66,8 +66,10 @@ class FoodTruck extends React.Component {
                   })
                   }
                   { (add) === (false) ? (
-                      <Button.Content as='h3' onClick={this.favoritesDelete}><Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>
-                  ) : ( <Button.Content as='h3' onClick={this.favoritesAdd}><Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
+                      <Button.Content as='h3' onClick={this.favoritesDelete}>
+                        <Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>) :
+                      (<Button.Content as='h3' onClick={this.favoritesAdd}>
+                        <Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
 
                 </Button>

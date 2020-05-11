@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Image, Button } from 'semantic-ui-react';
+import { Grid, Header, Image, Button, Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
 /** A simple static component to render some text for the landing page. */
@@ -7,6 +7,7 @@ class Landing extends React.Component {
   render() {
     return (
         <div className="landingPage">
+          <Container>
             <Grid verticalAlign='middle' textAlign='center' container>
               <Image src="/images/Snackademic_Landing_Logo_V3.png" size = "large" verticalAlign='middle'/>
               <Grid.Column className="leftGrid" textAlign='left' width={8}>
@@ -29,6 +30,7 @@ class Landing extends React.Component {
               {/* </Grid.Column> */}
 
             </Grid>
+          </Container>
         </div>
     );
   }

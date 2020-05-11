@@ -3,11 +3,11 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed, Dropdown } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { NavLink, Redirect } from 'react-router-dom';
 import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
 import ProfileComponent from '../components/ProfileCard';
 
 import StuffItem from '../components/StuffItem';
-import { NavLink, Redirect } from 'react-router-dom';
 
 
 /** THIS IS A COPY OF ListStuff.jsx * */
@@ -25,12 +25,10 @@ class UserProfilePage extends React.Component {
 
 //  confirm= () =>  this.setState({ open: false, redirect: true });
 
-
-
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
-    const { signOutPage} = this.props.location.state || { signOutPage: { pathname: '/signout' } };
-    if(this.state.redirect){
+    const { signOutPage } = this.props.location.state || { signOutPage: { pathname: '/signout' } };
+    if (this.state.redirect) {
       Meteor.call('delete.account');
       return <Redirect to={signOutPage}/>;
     }
@@ -41,8 +39,10 @@ class UserProfilePage extends React.Component {
   renderPage() {
     console.log(`${this.props.doc.restaurantName}`);
     return (
+        <div className="backgroundYellow">
         <Container>
-          <Header as="h2" textAlign="center">MY ACCOUNT</Header>
+          <br />
+          <Header as="h2" textAlign="center" inverted>MY ACCOUNT</Header>
           <Grid verticalAlign="top" columns={2}>
             <Grid.Column width={6}>
               <ProfileComponent/>
@@ -100,13 +100,11 @@ class UserProfilePage extends React.Component {
                     <Feed.Event>
                       <Feed.Content>
                         <Feed.Summary>
-                          {this.props.doc.map((review) => {
-                            return (
+                          {this.props.doc.map((review) => (
                                 <Header key="">
                                 { review.restaurantName }
                                 </Header>
-                            );
-                          })
+                            ))
                           }
                         </Feed.Summary>
                       </Feed.Content>
@@ -128,7 +126,9 @@ class UserProfilePage extends React.Component {
               />
             </Grid.Column>
           </Grid>
+          <br />
         </Container>
+        </div>
     );
   }
 }
@@ -149,6 +149,3 @@ export default withTracker(() => {
     ready: subscriptionFavorites.ready(),
   };
 })(UserProfilePage);
-
-
-

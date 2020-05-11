@@ -17,8 +17,10 @@ class AllAccountsPage extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+        <div className="backgroundPurple">
         <Container>
-          <Header as="h2" textAlign="center">All Registered User Data: </Header>
+          <br />
+          <Header as="h2" textAlign="center" inverted>All Registered User Data: </Header>
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -32,7 +34,9 @@ class AllAccountsPage extends React.Component {
               {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
             </Table.Body>
           </Table>
+        <br />
         </Container>
+        </div>
     );
   }
 }

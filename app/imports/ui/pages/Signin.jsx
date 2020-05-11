@@ -53,7 +53,7 @@ export default class Signin extends React.Component {
     if (this.state.redirectToReferer) { // if redirectToReferrer is false
       if (isLogged && isAdmin) {
         return <Redirect to={adminLandingPage}/>;
-      } else if (isLogged && isVendor){
+      } else if (isLogged && isVendor) {
         return <Redirect to={vendorLandingPage}/>;
       } else if (isLogged && isBuyer) {
         return <Redirect to={buyerLandingPage}/>;
@@ -63,7 +63,7 @@ export default class Signin extends React.Component {
       // Otherwise return the Login form.
       return (
           <div className="signinPage">
-          <Container>
+          <Container >
             <Header as="h1" textAlign="center" inverted fontfamily="Comfortaa"> Sign In to Snackademic </Header>
             <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
               <Grid.Column>

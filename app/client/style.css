@@ -7,6 +7,7 @@
   border:none;
   font-size: 20px !important;
   border-radius: 0 !important;
+  margin-top: 0;
 }
 
 .landingPage{
@@ -29,11 +30,48 @@
   max-height: fit-content;
 }
 
-/*.ui.header.firstHeader{*/
-/*    color: red;*/
-/*    text-shadow: -2px 2px 3px gray;*/
-/*    font-size: 50px;*/
-/*}*/
+.burgerBackground{
+  background: url('images/burgerbackground.jpg') no-repeat center center fixed;
+  font-family: 'Comfortaa', sans-serif;
+  background-size: cover;
+  max-height: fit-content;
+}
+
+.fruitBackground{
+  background: url('images/fruitbackground.jpg') no-repeat center center fixed;
+  font-family: 'Comfortaa', sans-serif;
+  background-size: cover;
+  max-height: fit-content;
+}
+
+.backgroundPink{
+  background-color: palevioletred;
+  background-size: cover;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0;
+}
+
+.backgroundPurple{
+  background-color: #A887C9;
+  background-size: cover;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0;
+}
+
+.backgroundBlue{
+  background-color: #6686CC;
+  background-size: cover;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0;
+}
+
+.backgroundYellow{
+  background-color: #F3C347;
+  background-size: cover;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 0;
+}
+
 
 .ui.header.firstHeader{
   color: palevioletred;
@@ -112,6 +150,7 @@ div.text:hover{
   text-shadow: none;
   background-image: none;
 }
+
 #mapBackground {
   background: url(images/maps/snackademic-map-no-rotating-trucks.jpg);
 }
