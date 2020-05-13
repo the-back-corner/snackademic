@@ -1,13 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Card, Grid, Image, Button, Confirm, Feed, Dropdown } from 'semantic-ui-react';
+import { Container, Header, Loader, Card, Grid, Button, Confirm, Feed } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { NavLink, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { FavoritesCollection } from '../../api/favorites/favoritesCollection';
 import ProfileComponent from '../components/ProfileCard';
-
-import StuffItem from '../components/StuffItem';
 
 
 /** THIS IS A COPY OF ListStuff.jsx * */
@@ -37,7 +35,6 @@ class UserProfilePage extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    console.log(`${this.props.doc.restaurantName}`);
     return (
         <div className="backgroundBlue">
         <Container>
@@ -84,7 +81,7 @@ class UserProfilePage extends React.Component {
                         <Feed.Summary>
                           Great place for big plates of healthy but DELICIOUS food!
                           Honestly, one plate can last for two meals reasonably.
-                          Well-priced for the heaping dishes. Can't wait to go back again!
+                          Well-priced for the heaping dishes. Cant wait to go back again!
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
