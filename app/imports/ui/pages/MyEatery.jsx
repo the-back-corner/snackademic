@@ -19,7 +19,9 @@ class MyEatery extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+        <div className="backgroundBlue">
         <Container>
+          <br />
           <Header className="firstHeader" textAlign="center">My Eatery</Header>
           <Card centered>
             <Card.Content textAlign="center">
@@ -39,7 +41,9 @@ class MyEatery extends React.Component {
               Menu
             </Card.Content>
           </Card>
+        <br />
         </Container>
+        </div>
     );
   }
 }
