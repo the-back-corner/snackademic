@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Image, Message, Segment, Radio } from 'semantic-ui-react';
-import { Accounts } from 'meteor/accounts-base';
+import { Container, Form, Grid, Header, Image, Message, Segment, Radio, Progress, Divider } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /**
@@ -12,7 +12,13 @@ class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { firstName: '', lastName: '', email: '', password: '', role: 'buyer', error: '', redirectToReferer: false };
+    this.state = { firstName: '',
+      lastName: '',
+      email: '',
+      password: '',
+      role: 'buyer',
+      error: '',
+      redirectToReferer: false };
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -24,7 +30,7 @@ class Signup extends React.Component {
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
     const { firstName, lastName, email, password, role } = this.state;
-    let data = {
+    const data = {
       firstName,
       lastName,
       email,
@@ -33,19 +39,19 @@ class Signup extends React.Component {
     };
       try {
         Meteor.call('add.new.account', data);
-        console.log("account created successfully");
-      } catch(err) {
-        console.log("there was a create account error");
+        console.log('account created successfully');
+      } catch (err) {
+        console.log('there was a create account error');
         this.setState({ error: err.reason });
       }
 
     Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         this.setState({ error: err.reason });
-        console.log("there was a log in error");
+        console.log('there was a log in error');
       } else {
         this.setState({ error: '', redirectToReferer: true });
-        console.log("log in successful");
+        console.log('log in successful');
       }
     });
   };
@@ -64,43 +70,51 @@ class Signup extends React.Component {
 
     // if there are no errors
     if (this.state.redirectToReferer) {
-      if (isLogged && isVendor){
-        console.log("rerouting to vendors page");
+      if (isLogged && isVendor) {
+        console.log('rerouting to vendors page');
         return <Redirect to={vendorLandingPage}/>;
-      } else if (isLogged && isBuyer) {
-        console.log("rerouting to buyers page");
+      } if (isLogged && isBuyer) {
+        console.log('rerouting to buyers page');
         return <Redirect to={buyerLandingPage}/>;
       }
-      console.log('did not work')
+      console.log('did not work');
     }
     return (
         <div className="signupPage">
         <Container>
           <br />
-        <Header as="h2" textAlign="center" inverted> Register your account </Header>
+        <Header className="cuisine" textAlign="center"> Register your account </Header>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Form onSubmit={this.submit}>
               <Segment stacked>
-                <Form.Field>
-                  <Radio
-                      label='Select this if you are a buyer'
-                      name='role'
-                      value='buyer'
-                      checked={this.state.role === 'buyer'}
-                      onChange={this.handleChange}
-                  />
-                </Form.Field>
-                <Form.Field>
-                  <Radio
-                      label='Select this if you are a vendor'
-                      name='role'
-                      value='vendor'
-                      checked={this.state.role === 'vendor'}
-                      onChange={this.handleChange}
-                  />
-                </Form.Field>
-                <Form.Group>
+                
+                  <Grid columns={2}>
+                    <Grid.Column>
+                      <Form.Field>
+                        <Radio
+                            label='Select this if you are a buyer'
+                            name='role'
+                            value='buyer'
+                            checked={this.state.role === 'buyer'}
+                            onChange={this.handleChange}
+                        />
+                      </Form.Field>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Form.Field>
+                        <Radio
+                            label='Select this if you are a vendor'
+                            name='role'
+                            value='vendor'
+                            checked={this.state.role === 'vendor'}
+                            onChange={this.handleChange}
+                        />
+                      </Form.Field>
+                    </Grid.Column>
+                  </Grid>
+                <Divider horizontal/>
+                <Form.Group widths='equal'>
                   <Form.Input
                       name="firstName"
                       focus placeholder="First Name"
@@ -127,7 +141,16 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Sign Up"/>
+                {!this.state.password ? (
+                    ''
+                ) : (
+                    <Progress value={this.state.password.length} total='8' progress='ratio' autoSuccess size='small'/>
+                )}
+                <Form.Button content="Sign Up"
+                             disabled={!this.state.firstName
+                             || !this.state.lastName
+                             || !this.state.email
+                             || this.state.password.length < 8}/>
               </Segment>
             </Form>
           </Grid.Column>

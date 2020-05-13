@@ -20,7 +20,8 @@
   background: url('images/avacadobackground.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
-  height: 700px;
+  font-family: 'Comfortaa', sans-serif;
+  /*height: 700px;*/
 }
 
 .signinPage{
