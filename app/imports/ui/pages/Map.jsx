@@ -50,7 +50,7 @@ class Map extends React.Component {
         <div className="backgroundBlue">
           <Container>
           <br />
-          <Header className="cuisine" as="h2" textAlign="center" inverted> Restaurant Map</Header>
+          <Header className="cuisine" as="h2" textAlign="center" inverted> Restaurant & Foodtruck Map</Header>
           <Image centered src={src} rounded size='massive'/>
           <Table celled>
             <Table.Header>
