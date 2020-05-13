@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Button, Modal } from 'semantic-ui-react';
 import ProfileComponent from './ProfileCard';
 
 class ModalProfile extends Component {
   state = { open: false };
 
   show = (dimmer) => () => this.setState({ dimmer, open: true });
+
   close = () => this.setState({ open: false });
 
   render() {
@@ -27,8 +28,8 @@ class ModalProfile extends Component {
             </Modal.Actions>
           </Modal>
         </div>
-    )
+    );
   }
 }
 
-export default ModalProfile
+export default ModalProfile;

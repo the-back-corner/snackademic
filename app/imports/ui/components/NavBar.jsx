@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
+// noinspection ES6CheckImport
 import { Menu, Dropdown, Header } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { RestaurantCollection } from '../../api/restaurant/RestaurantCollection';
 import { FoodTrucksCollection } from '../../api/foodTrucks/FoodTrucksCollection';
-import ModalProfile from './ModalProfile';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -15,13 +15,8 @@ class NavBar extends React.Component {
     const restaurantCollection = RestaurantCollection.find().fetch();
     const foodTrucksCollection = FoodTrucksCollection.find().fetch();
     const fullName = `${this.props.currentFirstName}   ${this.props.currentLastName}`;
-    // restaurantCollection.map((restaurant) => console.log(restaurant.name));
-    // foodTrucksCollection.map((foodTruck) => console.log(foodTruck.name));
-    const menuStyle = { marginBottom: '5px' };
     return (
-        // <Menu pointing secondary borderless inverted className="topmenu">
         <Menu inverted borderless className="topmenu">
-
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header className="headertext" inverted as='h1'>SNACKADEMIC</Header>
           </Menu.Item>
@@ -55,18 +50,6 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="active" exact to="/Hours" key='hours'>
             <Header className="headertext" inverted as='h3'>HOURS</Header>
           </Menu.Item>
-
-          { /* {this.props.currentUser ? ( */}
-          { /*    <Menu.Item as={NavLink} activeClassName="active" exact to="/favorites" key='favorite'> */ }
-          { /*      <Header className="headertext" inverted as='h3'>FAVORITES</Header> */ }
-          { /*    </Menu.Item> */ }
-          { /* ) : ''} */ }
-
-          { /*  {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
-           <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
-            ) : ''} */}
-
           {/* ADMIN EXCLUSIVE TABS ON NAV BAR */}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/allaccounts" key='allaccounts'>
@@ -101,7 +84,7 @@ class NavBar extends React.Component {
     );
   }
 }
-console.log(Meteor.user());
+
 /** Declare the types of all properties. */
 NavBar.propTypes = {
   currentUser: PropTypes.string,

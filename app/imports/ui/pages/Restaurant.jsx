@@ -102,7 +102,7 @@ class Restaurant extends React.Component {
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
 
-              <Accordion fluid styled>
+              <Accordion fluid styled className="accordionClass">
                 <Accordion.Title
                     active={activeIndex === 1}
                     index={1}
@@ -131,7 +131,7 @@ class Restaurant extends React.Component {
                   </Card.Group>
                 </Accordion.Content>
               </Accordion>
-              <Accordion fluid styled>
+              <Accordion fluid styled className="accordionClass">
                 <Accordion.Title
                     active={activeIndex === 2}
                     index={2}

@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   Button,
   Grid,
   Header,
   Segment,
-  Portal,
   Form,
   Message,
-  Container,
-  TransitionablePortal, Confirm, Icon
-} from 'semantic-ui-react'
+  TransitionablePortal,
+  Icon,
+} from 'semantic-ui-react';
+import { Accounts } from 'meteor/accounts-base';
 import PropTypes from 'prop-types';
-import { withRouter, Link, Redirect } from 'react-router-dom';
-
-// import { AutoForm } from 'uniforms-semantic';
 
 class PortalButton extends Component {
   constructor(props) {
@@ -21,15 +18,11 @@ class PortalButton extends Component {
     this.state = {
       password: '',
       newPassword: '',
-      confirmPassword:'',
+      confirmPassword: '',
       error: '',
-      setIcon: '',
       open: false,
       animation: 'fade',
       duration: 500,
-      passwordError: false,
-      passwordMatchError: false,
-      confirmPasswordError: false
     };
   }
 
@@ -58,20 +51,20 @@ class PortalButton extends Component {
   }
 
   openPortal = () => { this.setState({ open: true }); };
+
   closePortal = () => { this.setState({ open: false }); };
+
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
 
-    const { password, newPassword, passwordError } = this.state;
+    const { password, newPassword } = this.state;
 
     if (this.isValid()) {
       Accounts.changePassword(password, newPassword, (err) => {
         if (err) {
           this.setState({ error: err.reason });
-          console.log(error);
         } else {
           this.setState({ error: '', password: '', newPassword: '', open: false });
-          console.log("password change successful");
         }
       });
     }
@@ -154,7 +147,7 @@ class PortalButton extends Component {
             </TransitionablePortal>
           </Grid.Column>
         </Grid>
-    )
+    );
   }
 }
 

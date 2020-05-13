@@ -23,11 +23,6 @@ class FoodTruck extends React.Component {
   favoritesAdd = () => {
     const currentUser = Meteor.user().username;
     const currentName = (this.props.doc.name);
-    const favoritesArray = (this.props.docFavorites);
-    console.log("favorite clicked");
-    console.log(currentName);
-    console.log(currentUser);
-    console.log(favoritesArray);
     FavoritesCollection.insert({
       userName: currentUser,
       restaurantName: currentName,
@@ -36,9 +31,8 @@ class FoodTruck extends React.Component {
 
   favoritesDelete = () => {
     const currentName = (this.props.doc.name);
-    const favoriteRestaurantID = FavoritesCollection.findOne({restaurantName: currentName});
+    const favoriteRestaurantID = FavoritesCollection.findOne({ restaurantName: currentName });
     FavoritesCollection.remove(favoriteRestaurantID._id);
-    console.log(favoriteRestaurantID);
   };
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -56,16 +50,15 @@ class FoodTruck extends React.Component {
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
-              <Button.Group>
                 <Button inverted>
+                  {/* eslint-disable-next-line array-callback-return */}
                   {this.props.docFavorites.map((favorite) => {
                     if (favorite.restaurantName === currentName) {
-                      console.log('poop');
                       add = false;
                     }
                   })
                   }
-                  { (add) === (false) ? (
+                  { (add) === false ? (
                       <Button.Content as='h3' onClick={this.favoritesDelete}>
                         <Icon name='heart' color='blue'/>Remove from Favorites</Button.Content>) :
                       (<Button.Content as='h3' onClick={this.favoritesAdd}>
@@ -74,12 +67,6 @@ class FoodTruck extends React.Component {
 
                 </Button>
                 <Button inverted>
-                  <Button.Content as='h3'><Icon name='star' color='blue'/> Write A Review</Button.Content>
-                </Button>
-                <Button inverted>
-                  <Button.Content as='h3'><Icon name='fork' color='blue'/> Share </Button.Content>
-                </Button>
-              </Button.Group>
             </Grid.Column>
           </Grid>
 
@@ -105,11 +92,12 @@ class FoodTruck extends React.Component {
           { /* third grid holds Menu items */ }
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
-              <Accordion fluid styled>
+              <Accordion fluid styled className="accordionClass">
               <Accordion.Title
                   active={activeIndex === 1}
                   index={1}
                   onClick={this.handleClick}
+                  className="accordionClass"
               >
                 <Header className="firstHeader"><Icon name='dropdown' />Menu Items</Header>
               </Accordion.Title>
@@ -128,17 +116,18 @@ class FoodTruck extends React.Component {
                           </Card>
                       );
                     }
-                    return (<Header key={menuItem._id}></Header>);
+                    return (<Header key={menuItem._id}/>);
                   })
                   }
                 </Card.Group>
               </Accordion.Content>
             </Accordion>
-              <Accordion fluid styled>
+              <Accordion fluid styled className="accordionClass">
                 <Accordion.Title
                     active={activeIndex === 2}
                     index={2}
                     onClick={this.handleClick}
+                    a
                 >
                   <Header className="firstHeader"><Icon name='dropdown' />Reviews</Header>
                 </Accordion.Title>
@@ -162,7 +151,7 @@ class FoodTruck extends React.Component {
                             </Card>
                         );
                       }
-                      return (<Header key={review._id}></Header>);
+                      return (<Header key={review._id}/>);
                     })
                     }
                   </Card.Group>
@@ -201,6 +190,9 @@ export default withTracker(({ match }) => {
     doc2: MenuItemCollection.find().fetch(),
     docReviews: ReviewsCollection.find().fetch(),
     docFavorites: FavoritesCollection.find().fetch(),
-    ready: subscriptionTrucks.ready() && subscriptionMenu.ready() && subscriptionReviews.ready() && subscriptionFavorites.ready(),
+    ready: subscriptionTrucks.ready() &&
+        subscriptionMenu.ready() &&
+        subscriptionReviews.ready() &&
+        subscriptionFavorites.ready(),
   };
 })(FoodTruck);

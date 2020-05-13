@@ -1,14 +1,12 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { withRouter} from 'react-router-dom';
-import { Button, Card, Container, Image, Portal } from 'semantic-ui-react';
+import { withRouter } from 'react-router-dom';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
-import PortalButton from '../components/PortalButton';
-import StuffItem from './StuffItem';
 import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid';
+import PortalButton from '../components/PortalButton';
 
 
 /** Renders a card to use in profile */
@@ -65,16 +63,15 @@ ProfileCard.propTypes = {
   currentUser: PropTypes.string,
   currentFirstName: PropTypes.string,
   currentLastName: PropTypes.string,
-  currentRole:PropTypes.string,
+  currentRole: PropTypes.string,
 };
 
 const profileContainer = withTracker(() => ({
-  currentUser: Meteor.user() ? Meteor.user().emails[0].address: '',
-  currentFirstName: Meteor.user() ? Meteor.user().profile.name.first: '',
-  currentLastName: Meteor.user() ? Meteor.user().profile.name.last: '',
-  currentRole: Meteor.user() ? Meteor.user().roles: '',
+  currentUser: Meteor.user() ? Meteor.user().emails[0].address : '',
+  currentFirstName: Meteor.user() ? Meteor.user().profile.name.first : '',
+  currentLastName: Meteor.user() ? Meteor.user().profile.name.last : '',
+  currentRole: Meteor.user() ? Meteor.user().roles : '',
 }))(ProfileCard);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */
 export default withRouter(profileContainer);
-

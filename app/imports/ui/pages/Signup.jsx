@@ -88,7 +88,6 @@ class Signup extends React.Component {
           <Grid.Column>
             <Form onSubmit={this.submit}>
               <Segment stacked>
-                
                   <Grid columns={2}>
                     <Grid.Column>
                       <Form.Field>
