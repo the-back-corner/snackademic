@@ -20,7 +20,7 @@ class AllAccountsPage extends React.Component {
         <div className="backgroundPurple">
         <Container>
           <br />
-          <Header as="h2" textAlign="center" inverted>All Registered User Data: </Header>
+          <Header className="cuisine" as="h2" textAlign="center" inverted>All Registered User Data: </Header>
           <Table celled>
             <Table.Header>
               <Table.Row>

@@ -23,7 +23,7 @@ class FavoritesPage extends React.Component {
         <div className="backgroundPink">
         <Container>
           <br />
-          <Header as="h2" textAlign="center" inverted>Eatery Hours</Header>
+          <Header className="cuisine" as="h2" textAlign="center" inverted>Eatery Hours</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>

@@ -39,7 +39,7 @@ class UserProfilePage extends React.Component {
         <div className="backgroundBlue">
         <Container>
           <br />
-          <Header as="h2" textAlign="center" inverted>MY ACCOUNT</Header>
+          <Header className="cuisine" as="h2" textAlign="center" inverted>MY ACCOUNT</Header>
           <Grid verticalAlign="top" columns={2}>
             <Grid.Column width={6}>
               <ProfileComponent/>

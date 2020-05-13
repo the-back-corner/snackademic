@@ -19,10 +19,10 @@ class MyEatery extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <div className="backgroundBlue">
+        <div className="backgroundPurple">
         <Container>
           <br />
-          <Header className="firstHeader" textAlign="center">My Eatery</Header>
+          <Header className="cuisine" textAlign="center">My Eatery</Header>
           <Card centered>
             <Card.Content textAlign="center">
               {/* eslint-disable-next-line max-len */}
