@@ -66,7 +66,6 @@ class FoodTruck extends React.Component {
                   )}
 
                 </Button>
-                <Button inverted>
             </Grid.Column>
           </Grid>
 
