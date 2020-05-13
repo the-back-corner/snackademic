@@ -25,13 +25,26 @@ class AllAccountsPage extends React.Component {
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Quantity</Table.HeaderCell>
-                <Table.HeaderCell>Condition</Table.HeaderCell>
-                <Table.HeaderCell>Owner</Table.HeaderCell>
+                <Table.HeaderCell>Username</Table.HeaderCell>
+                <Table.HeaderCell>Role</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
+              <Table.Row>
+                <Table.Cell>John Foo</Table.Cell>
+                <Table.Cell>john@foo.com</Table.Cell>
+                <Table.Cell>Buyer</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Vendor Foo</Table.Cell>
+                <Table.Cell>Vendor@foo.com</Table.Cell>
+                <Table.Cell>Vendor</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>Admin Account</Table.Cell>
+                <Table.Cell>admin@foo.com</Table.Cell>
+                <Table.Cell>Admin</Table.Cell>
+              </Table.Row>
             </Table.Body>
           </Table>
         <br />
