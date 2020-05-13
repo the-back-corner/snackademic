@@ -49,7 +49,6 @@ class Restaurant extends React.Component {
           <Grid verticalAlign='middle' textAlign='center'>
             <Grid.Column>
               <Header className="cuisine" as='h1'>{this.props.doc.name}</Header>
-              <Button.Group>
                 <Button inverted>
                   {/* eslint-disable-next-line array-callback-return */}
                   {this.props.docFavorites.map((favorite) => {
@@ -65,13 +64,6 @@ class Restaurant extends React.Component {
                         <Icon name='heart' color='blue'/>Add to Favorites</Button.Content>
                   )}
                 </Button>
-                <Button inverted>
-                  <Button.Content as='h3'><Icon name='star outline' color='blue'/> Write A Review</Button.Content>
-                </Button>
-                <Button inverted>
-                  <Button.Content as='h3'><Icon name='share square outline' color='blue'/> Share </Button.Content>
-                </Button>
-              </Button.Group>
             </Grid.Column>
           </Grid>
 
